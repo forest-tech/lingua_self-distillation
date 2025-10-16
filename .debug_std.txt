@@ -1,0 +1,184 @@
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Tensor parallelism has not been tested for a while, use at your own risk
+0: WARNING 25-10-12 02:39:44.361100 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-12 02:39:44.361100 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-12 02:39:44.361907 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-12 02:39:44.361907 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-12 02:39:44.362010 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-12 02:39:44.362010 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-12 02:39:44.362095 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-12 02:39:44.362095 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-12 02:39:44.362167 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-12 02:39:44.362167 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-12 02:39:44.362224 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-12 02:39:44.362224 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-12 02:39:44.362281 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-12 02:39:44.362281 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-12 02:39:44.362335 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-12 02:39:44.362335 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-12 02:39:44.362390 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-12 02:39:44.362390 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-12 02:39:44.362444 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3797511_ZGVidWcuc2gK/tmp_8x6f7nv
+0: WARNING 25-10-12 02:39:44.362444 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3797511_ZGVidWcuc2gK/tmp_8x6f7nv
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+0: INFO    25-10-12 02:39:51.318206 - 0:00:07 - Single GPU job
+0: INFO    25-10-12 02:39:51.318545 - 0:00:07 - ENV: environ({'BASH_FUNC_ml%%': '() {  module ml "$@"\n}', 'BASH_FUNC_module%%': '() {  unset _mlshdbg;\n if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = \'1\' ]; then\n case "$-" in \n *v*x*)\n set +vx;\n _mlshdbg=\'vx\'\n ;;\n *v*)\n set +v;\n _mlshdbg=\'v\'\n ;;\n *x*)\n set +x;\n _mlshdbg=\'x\'\n ;;\n *)\n _mlshdbg=\'\'\n ;;\n esac;\n fi;\n unset _mlre _mlIFS;\n if [ -n "${IFS+x}" ]; then\n _mlIFS=$IFS;\n fi;\n IFS=\' \';\n for _mlv in ${MODULES_RUN_QUARANTINE:-};\n do\n if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then\n if [ -n "`eval \'echo ${\'$_mlv\'+x}\'`" ]; then\n _mlre="${_mlre:-}${_mlv}_modquar=\'`eval \'echo ${\'$_mlv\'}\'`\' ";\n fi;\n _mlrv="MODULES_RUNENV_${_mlv}";\n _mlre="${_mlre:-}${_mlv}=\'`eval \'echo ${\'$_mlrv\':-}\'`\' ";\n fi;\n done;\n if [ -n "${_mlre:-}" ]; then\n eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \'"$@"\'`;\n else\n eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;\n fi;\n _mlstatus=$?;\n if [ -n "${_mlIFS+x}" ]; then\n IFS=$_mlIFS;\n else\n unset IFS;\n fi;\n unset _mlre _mlv _mlrv _mlIFS;\n if [ -n "${_mlshdbg:-}" ]; then\n set -$_mlshdbg;\n fi;\n unset _mlshdbg;\n return $_mlstatus\n}', 'BASH_FUNC_scl%%': '() {  if [ "$1" = "load" -o "$1" = "unload" ]; then\n eval "module $@";\n else\n /usr/bin/scl "$@";\n fi\n}', 'BASH_FUNC_switchml%%': '() {  typeset swfound=1;\n if [ "${MODULES_USE_COMPAT_VERSION:-0}" = \'1\' ]; then\n typeset swname=\'main\';\n if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n typeset swfound=0;\n unset MODULES_USE_COMPAT_VERSION;\n fi;\n else\n typeset swname=\'compatibility\';\n if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n typeset swfound=0;\n MODULES_USE_COMPAT_VERSION=1;\n export MODULES_USE_COMPAT_VERSION;\n fi;\n fi;\n if [ $swfound -eq 0 ]; then\n echo "Switching to Modules $swname version";\n source /usr/share/Modules/init/bash;\n else\n echo "Cannot switch to Modules $swname version, command not found";\n return 1;\n fi\n}', 'BASH_FUNC_which%%': '() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}', 'CPATH': '/home/app/cuda/12.2.2/include', 'CPATH_modshare': '/home/app/cuda/12.2.2/include:1', 'CUDA_DIR': '/home/app/cuda/12.2.2', 'CUDA_HOME': '/home/app/cuda/12.2.2', 'CUDA_INSTALL_PATH': '/home/app/cuda/12.2.2', 'CUDA_MPS_LOG_DIRECTORY': '/tmp/nvidia-mps_3797511', 'CUDA_MPS_PIPE_DIRECTORY': '/tmp/nvidia-mps_3797511', 'CUDA_PATH': '/home/app/cuda/12.2.2', 'CUDA_TOP': '/home/app/cuda/12.2.2', 'CYCLECLOUD_BOOTSTRAP': '/opt/cycle/jetpack/system/bootstrap', 'CYCLECLOUD_HOME': '/opt/cycle/jetpack', 'C_INCLUDE_PATH': '/home/app/cuda/12.2.2/include', 'C_INCLUDE_PATH_modshare': '/home/app/cuda/12.2.2/include:1', 'FJPNCKPT_CONFIG': '0x00', 'GENKAI_CACHE_DIR': '/home/cache/pj24001974/ku50001532', 'GENKAI_CUDA_NAME': 'cuda', 'GENKAI_CUDA_VER': '12.2.2', 'GENKAI_FAST_DIR': '/fast/pj24001974', 'HISTCONTROL': 'ignoredups', 'HISTSIZE': '1000', 'HOME': '/home/pj24001974/ku50001532', 'HOSTNAME': 'b0038', 'JOBID': '3797511', 'LANG': 'ja_JP.UTF-8', 'LD_LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LD_LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LOADEDMODULES': 'cuda/12.2.2', 'LOADEDMODULES_modshare': 'cuda/12.2.2:1', 'LOGNAME': 'ku50001532', 'LUSTRE_JOBSTAT': 'ku50001532@3797511', 'MAIL': '/var/spool/mail/ku50001532', 'MANPATH': ':', 'MIG_PARTED_CHECKPOINT_FILE': '/var/lib/nvidia-mig-manager/checkpoint.json', 'MIG_PARTED_CONFIG_FILE': '/etc/nvidia-mig-manager/config.yaml', 'MIG_PARTED_HOOKS_FILE': '/etc/nvidia-mig-manager/hooks.yaml', 'MODULEPATH': '/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:/home/modules/modulefiles/CNB/core:/home/modules/modulefiles/CNB/util:/home/center/modulefiles:/home/rist/modulefiles', 'MODULEPATH_modshare': '/home/center/modulefiles:1:/home/rist/modulefiles:1:/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:1:/home/modules/modulefiles/CNB/core:1:/home/modules/modulefiles/CNB/util:1', 'MODULESHOME': '/usr/share/Modules', 'MODULES_CMD': '/usr/share/Modules/libexec/modulecmd.tcl', 'MODULES_LMALTNAME': 'cuda/12.2.2&cuda/default&cuda', 'MODULES_LMALTNAME_modshare': 'cuda/12.2.2&cuda/default&cuda:1', 'MODULES_LMCONFLICT': 'cuda/12.2.2&cuda', 'MODULES_LMCONFLICT_modshare': 'cuda/12.2.2&cuda:1', 'MODULES_RUN_QUARANTINE': 'LD_LIBRARY_PATH LD_PRELOAD', 'MOD_GIT_ROOTDIR': '/home/modules', 'OMPI_CKPTCONFIG': '0x00', 'PATH': '/home/pj24001974/ku50001532/lingua/.venv/bin:/home/app/cuda/12.2.2/nsight-systems-2023.2.3:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:/home/app/cuda/12.2.2/bin:/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin', 'PATH_modshare': '/home/app/cuda/12.2.2/nsight-systems-2023.2.3:1:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:1:/usr/sbin:1:/usr/bin:1:/home/app/cuda/12.2.2/bin:1:/usr/local/sbin:1:/opt/cycle/jetpack/bin:1:/home/pj24001974/ku50001532/.local/bin:1:/home/pj24001974/ku50001532/bin:1:/usr/share/Modules/bin:1:/usr/local/bin:1', 'PJM_ASSIGN_LOGICAL_CPU': 'job', 'PJM_CORE_MEM_LIMIT': '0', 'PJM_CUSTOM_RESOURCES': 'rsc011=0,rsc012=0,rsc013=0,rsc014=0,rsc015=0,rsc016=0,rsc017=0,rsc018=0,rsc019=0,rsc020=0,rsc021=0,rsc022=0,rsc023=0,rsc024=0,rsc025=0,rsc026=0,rsc027=0,rsc028=0,rsc029=0,rsc030=0,rsc031=0,rsc032=0,rsc033=0,rsc034=0,rsc035=0,rsc036=0,rsc037=0,rsc038=0,rsc039=0,rsc040=0,rsc041=0,rsc042=0,rsc043=0,rsc044=0,rsc045=0,rsc046=0,rsc047=0,rsc048=0,rsc049=0,rsc050=0,gpu/n=1,rsc001/n=0,rsc002/n=0,rsc003/n=0,rsc004/n=0,rsc005/n=0,rsc006/n=0,rsc007/n=0,rsc008/n=0,rsc009/n=0,rsc010/n=0,shared/n=true,short-job/n=false', 'PJM_DPREFIX': '#PJM', 'PJM_ELAPSED_TIME_MODE': 'fixed', 'PJM_ELAPSE_LIMIT': '21600', 'PJM_ENVIRONMENT': 'BATCH', 'PJM_EXEC_POLICY': 'share', 'PJM_JOBDIR': '/home/pj24001974/ku50001532/lingua', 'PJM_JOBID': '3797511', 'PJM_JOBNAME': 'debug.sh', 'PJM_MAILOPTION': '0x0', 'PJM_MPI_PROC': '1', 'PJM_NET_ROUTE': 'static', 'PJM_NODE_CPUTIME_LIMIT': '18446744073709551615', 'PJM_O_HOME': '/home/pj24001974/ku50001532', 'PJM_O_HOST': 'genkai0001', 'PJM_O_LANG': 'en_US.UTF-8', 'PJM_O_LOGNAME': 'ku50001532', 'PJM_O_MAIL': '/var/spool/mail/ku50001532', 'PJM_O_NODEINF': '/home/pj24001974/ku50001532/lingua/.d0003797511_nodeinfo', 'PJM_O_PATH': '/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin:/opt/cycle/jetpack/bin', 'PJM_O_SHELL': '/bin/bash', 'PJM_O_WORKDIR': '/home/pj24001974/ku50001532/lingua', 'PJM_PROC_BY_NODE': '1', 'PJM_RSCGRP': 'b-batch', 'PJM_RSCUNIT': 'rscunit_pg01', 'PJM_SHELL': '/bin/bash', 'PJM_SSD_DIR': '/ssd/3797511', 'PJM_STDERR_PATH': '/home/pj24001974/ku50001532/lingua/.debug_std.txt', 'PJM_STDOUT_PATH': '/home/pj24001974/ku50001532/lingua/.debug_std.txt', 'PJM_SUBJOBID': '3797511', 'PJM_VNODE': '1', 'PJM_VNODE_CORE': '30', 'PJM_VNODE_MEM_LIMIT': '243322060800', 'PJM_VN_POLICY': 'abs-unpack', 'PLE_SCRIPT_TYPE': 'JOB_SCRIPT', 'PWD': '/home/pj24001974/ku50001532/lingua', 'SHLVL': '2', 'SSH_ASKPASS': '/usr/libexec/openssh/gnome-ssh-askpass', 'S_COLORS': 'auto', 'TMP': '/tmp/3797511_ZGVidWcuc2gK', 'TMPDIR': '/tmp/3797511_ZGVidWcuc2gK', 'TMUX_TMPDIR': '/tmp/3797511_ZGVidWcuc2gK', 'USER': 'ku50001532', 'UV': '/home/pj24001974/ku50001532/.local/bin/uv', 'UV_RUN_RECURSION_DEPTH': '1', 'VIRTUAL_ENV': '/home/pj24001974/ku50001532/lingua/.venv', 'XDG_DATA_DIRS': '/home/pj24001974/ku50001532/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', '_': '/home/pj24001974/ku50001532/.local/bin/uv', '_LMFILES_': '/home/modules/modulefiles/CNB/core/cuda/12.2.2', '_LMFILES__modshare': '/home/modules/modulefiles/CNB/core/cuda/12.2.2:1', 'which_declare': 'declare -f', 'CUDA_MODULE_LOADING': 'LAZY', 'TORCHINDUCTOR_CACHE_DIR': '/tmp/3797511_ZGVidWcuc2gK/torchinductor_ku50001532', 'MKL_SERVICE_FORCE_INTEL': 'GNU', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'ENABLE_INTRA_NODE_COMM': '1', 'TORCH_NCCL_AVOID_RECORD_STREAMS': '1', 'NCCL_IB_TIMEOUT': '22', 'NCCL_DEBUG': 'INFO', 'TORCH_NCCL_ASYNC_ERROR_HANDLING': '1', 'TRITON_CACHE_DIR': '/tmp/3797511_ZGVidWcuc2gK/tmp_8x6f7nv', 'RANK': '0', 'WORLD_SIZE': '1', 'MASTER_ADDR': '127.0.0.1', 'MASTER_PORT': '28805'})
+[W1012 02:39:51.513198328 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [localhost]:28805 (errno: 97 - Address family not supported by protocol).
+[W1012 02:39:51.632055314 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+0: INFO    25-10-12 02:39:52.164255 - 0:00:08 - Starting job: debug
+0: INFO    25-10-12 02:39:52.164507 - 0:00:08 - Running on dp rank : 0
+0: INFO    25-10-12 02:39:52.164560 - 0:00:08 - Running on dp size : 1
+0: INFO    25-10-12 02:39:52.167615 - 0:00:08 - Building model
+0: INFO    25-10-12 02:39:52.540373 - 0:00:08 - Model is built !
+0: INFO    25-10-12 02:39:57.848340 - 0:00:13 - Model size: 103,306,240 total parameters
+0: INFO    25-10-12 02:39:57.849040 - 0:00:13 - GPU capacity: NVIDIA H100 (0) with 93.09GiB memory
+0: INFO    25-10-12 02:39:57.851785 - 0:00:13 - GPU memory usage: NVIDIA H100 (0): 93.08551025390625 GiB capacity, 0.435546875 GiB peak, 0.4678997556246652% peak
+0: INFO    25-10-12 02:39:57.851914 - 0:00:13 - Starting build of optimizer...
+0: INFO    25-10-12 02:39:57.852443 - 0:00:13 - Done with build of optimizer.
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+0: INFO    25-10-12 02:39:57.932090 - 0:00:14 - Async dataloader started
+0: INFO    25-10-12 02:39:57.933168 - 0:00:14 - Profiling active.  Traces will be saved at outputs/debug/profiling
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Process Process-2:
+Traceback (most recent call last):
+  File "/home/pj24001974/ku50001532/.local/share/uv/python/cpython-3.11.9-linux-x86_64-gnu/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/pj24001974/ku50001532/.local/share/uv/python/cpython-3.11.9-linux-x86_64-gnu/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 650, in feed_buffer
+    for item in iterator:
+  File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 438, in batch_and_shuffle_prefetched_sequences
+    prefetch_buffer[i], next_it_state = next(data_loader)
+                                        ^^^^^^^^^^^^^^^^^
+  File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 350, in pack_tokens
+    for i, (tokens, state) in enumerate(iterator):
+  File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 229, in tokenize
+    for content, state in iterator:
+  File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 278, in choose_source
+    source_choice = possible_sources[rng.choice(n_sources, p=norm_weights)]
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/_generator.pyx", line 864, in numpy.random._generator.Generator.choice
+ValueError: a must be a positive integer unless no samples are taken
+0: INFO    25-10-12 02:40:04.844409 - 0:00:20 - Async data process 308 exited with code 1
+0: INFO    25-10-12 02:40:04.844608 - 0:00:20 - Async dataloader cleaned up
+b0038:95:95 [0] NCCL INFO Bootstrap: Using ib0:172.17.17.38<0>
+b0038:95:95 [0] NCCL INFO cudaDriverVersion 13000
+b0038:95:95 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+b0038:95:95 [0] NCCL INFO Comm config Blocking set to 1
+b0038:95:302 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+b0038:95:302 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0:172.17.17.38<0>
+b0038:95:302 [0] NCCL INFO Initialized NET plugin IB
+b0038:95:302 [0] NCCL INFO Assigned NET plugin IB to comm
+b0038:95:302 [0] NCCL INFO Using network IB
+b0038:95:302 [0] NCCL INFO DMA-BUF is available on GPU device 0
+b0038:95:302 [0] NCCL INFO ncclCommInitRankConfig comm 0x561ab0488900 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bc000 commId 0xaf59675a95266b63 - Init START
+b0038:95:302 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+b0038:95:302 [0] NCCL INFO Bootstrap timings total 0.001562 (create 0.000036, send 0.000217, recv 0.000236, ring 0.000003, delay 0.000002)
+b0038:95:302 [0] NCCL INFO Setting affinity for GPU 0 to 90-119
+b0038:95:302 [0] NCCL INFO comm 0x561ab0488900 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+b0038:95:302 [0] NCCL INFO Channel 00/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 01/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 02/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 03/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 04/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 05/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 06/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 07/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 08/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 09/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 10/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 11/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 12/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 13/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 14/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 15/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 16/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 17/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 18/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 19/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 20/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 21/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 22/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 23/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 24/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 25/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 26/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 27/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 28/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 29/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 30/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 31/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 32/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 33/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 34/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 35/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 36/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 37/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 38/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 39/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 40/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 41/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 42/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 43/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 44/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 45/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 46/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 47/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 48/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 49/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 50/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 51/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 52/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 53/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 54/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 55/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 56/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 57/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 58/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 59/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 60/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 61/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 62/64 : 0
+b0038:95:302 [0] NCCL INFO Channel 63/64 : 0
+b0038:95:302 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [46] -1/-1/-1->0->-1 [47] -1/-1/-1
+b0038:95:302 [0] NCCL INFO P2P Chunksize set to 524288
+b0038:95:302 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+b0038:95:302 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+b0038:95:306 [0] NCCL INFO [Proxy Service] Device 0 CPU core 104
+b0038:95:307 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 109
+b0038:95:302 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+b0038:95:302 [0] NCCL INFO CC Off, workFifoBytes 1048576
+b0038:95:302 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+b0038:95:302 [0] NCCL INFO ncclCommInitRankConfig comm 0x561ab0488900 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bc000 commId 0xaf59675a95266b63 - Init COMPLETE
+b0038:95:302 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 0.98 (kernels 0.89, alloc 0.05, bootstrap 0.00, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.02, rest 0.01)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/train.py", line 657, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/train.py", line 653, in main
+[rank0]:     train(cfg)
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/train.py", line 355, in train
+[rank0]:     batch, train_state.data_loader_state = next(data_loader)
+[rank0]:                                            ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 677, in consume_buffer
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: Data loader quit unexpectedly, real error has been raised previously
+[rank0]:[W1012 02:40:05.476659029 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+b0038:95:317 [0] NCCL INFO comm 0x561ab0488900 rank 0 nranks 1 cudaDev 0 busId bc000 - Abort COMPLETE

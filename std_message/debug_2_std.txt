@@ -1,0 +1,204 @@
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Tensor parallelism has not been tested for a while, use at your own risk
+0: WARNING 25-10-13 10:45:30.515903 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-13 10:45:30.515903 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-13 10:45:30.516557 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-13 10:45:30.516557 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-13 10:45:30.516733 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-13 10:45:30.516733 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-13 10:45:30.516822 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-13 10:45:30.516822 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-13 10:45:30.516888 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-13 10:45:30.516888 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-13 10:45:30.516947 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-13 10:45:30.516947 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-13 10:45:30.517003 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-13 10:45:30.517003 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-13 10:45:30.517053 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-13 10:45:30.517053 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-13 10:45:30.517106 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-13 10:45:30.517106 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-13 10:45:30.517158 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3827133_ZGVidWdfMi5zaAo=/tmpxznmbeev
+0: WARNING 25-10-13 10:45:30.517158 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3827133_ZGVidWdfMi5zaAo=/tmpxznmbeev
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+0: INFO    25-10-13 10:45:37.125162 - 0:00:07 - Single GPU job
+0: INFO    25-10-13 10:45:37.125524 - 0:00:07 - ENV: environ({'BASH_FUNC_ml%%': '() {  module ml "$@"\n}', 'BASH_FUNC_module%%': '() {  unset _mlshdbg;\n if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = \'1\' ]; then\n case "$-" in \n *v*x*)\n set +vx;\n _mlshdbg=\'vx\'\n ;;\n *v*)\n set +v;\n _mlshdbg=\'v\'\n ;;\n *x*)\n set +x;\n _mlshdbg=\'x\'\n ;;\n *)\n _mlshdbg=\'\'\n ;;\n esac;\n fi;\n unset _mlre _mlIFS;\n if [ -n "${IFS+x}" ]; then\n _mlIFS=$IFS;\n fi;\n IFS=\' \';\n for _mlv in ${MODULES_RUN_QUARANTINE:-};\n do\n if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then\n if [ -n "`eval \'echo ${\'$_mlv\'+x}\'`" ]; then\n _mlre="${_mlre:-}${_mlv}_modquar=\'`eval \'echo ${\'$_mlv\'}\'`\' ";\n fi;\n _mlrv="MODULES_RUNENV_${_mlv}";\n _mlre="${_mlre:-}${_mlv}=\'`eval \'echo ${\'$_mlrv\':-}\'`\' ";\n fi;\n done;\n if [ -n "${_mlre:-}" ]; then\n eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \'"$@"\'`;\n else\n eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;\n fi;\n _mlstatus=$?;\n if [ -n "${_mlIFS+x}" ]; then\n IFS=$_mlIFS;\n else\n unset IFS;\n fi;\n unset _mlre _mlv _mlrv _mlIFS;\n if [ -n "${_mlshdbg:-}" ]; then\n set -$_mlshdbg;\n fi;\n unset _mlshdbg;\n return $_mlstatus\n}', 'BASH_FUNC_scl%%': '() {  if [ "$1" = "load" -o "$1" = "unload" ]; then\n eval "module $@";\n else\n /usr/bin/scl "$@";\n fi\n}', 'BASH_FUNC_switchml%%': '() {  typeset swfound=1;\n if [ "${MODULES_USE_COMPAT_VERSION:-0}" = \'1\' ]; then\n typeset swname=\'main\';\n if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n typeset swfound=0;\n unset MODULES_USE_COMPAT_VERSION;\n fi;\n else\n typeset swname=\'compatibility\';\n if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n typeset swfound=0;\n MODULES_USE_COMPAT_VERSION=1;\n export MODULES_USE_COMPAT_VERSION;\n fi;\n fi;\n if [ $swfound -eq 0 ]; then\n echo "Switching to Modules $swname version";\n source /usr/share/Modules/init/bash;\n else\n echo "Cannot switch to Modules $swname version, command not found";\n return 1;\n fi\n}', 'BASH_FUNC_which%%': '() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}', 'CPATH': '/home/app/cuda/12.2.2/include', 'CPATH_modshare': '/home/app/cuda/12.2.2/include:1', 'CUDA_DIR': '/home/app/cuda/12.2.2', 'CUDA_HOME': '/home/app/cuda/12.2.2', 'CUDA_INSTALL_PATH': '/home/app/cuda/12.2.2', 'CUDA_MPS_LOG_DIRECTORY': '/tmp/nvidia-mps_3827133', 'CUDA_MPS_PIPE_DIRECTORY': '/tmp/nvidia-mps_3827133', 'CUDA_PATH': '/home/app/cuda/12.2.2', 'CUDA_TOP': '/home/app/cuda/12.2.2', 'CYCLECLOUD_BOOTSTRAP': '/opt/cycle/jetpack/system/bootstrap', 'CYCLECLOUD_HOME': '/opt/cycle/jetpack', 'C_INCLUDE_PATH': '/home/app/cuda/12.2.2/include', 'C_INCLUDE_PATH_modshare': '/home/app/cuda/12.2.2/include:1', 'FJPNCKPT_CONFIG': '0x00', 'GENKAI_CACHE_DIR': '/home/cache/pj24001974/ku50001532', 'GENKAI_CUDA_NAME': 'cuda', 'GENKAI_CUDA_VER': '12.2.2', 'GENKAI_FAST_DIR': '/fast/pj24001974', 'HISTCONTROL': 'ignoredups', 'HISTSIZE': '1000', 'HOME': '/home/pj24001974/ku50001532', 'HOSTNAME': 'b0028', 'JOBID': '3827133', 'LANG': 'ja_JP.UTF-8', 'LD_LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LD_LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LOADEDMODULES': 'cuda/12.2.2', 'LOADEDMODULES_modshare': 'cuda/12.2.2:1', 'LOGNAME': 'ku50001532', 'LUSTRE_JOBSTAT': 'ku50001532@3827133', 'MAIL': '/var/spool/mail/ku50001532', 'MANPATH': ':', 'MIG_PARTED_CHECKPOINT_FILE': '/var/lib/nvidia-mig-manager/checkpoint.json', 'MIG_PARTED_CONFIG_FILE': '/etc/nvidia-mig-manager/config.yaml', 'MIG_PARTED_HOOKS_FILE': '/etc/nvidia-mig-manager/hooks.yaml', 'MODULEPATH': '/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:/home/modules/modulefiles/CNB/core:/home/modules/modulefiles/CNB/util:/home/center/modulefiles:/home/rist/modulefiles', 'MODULEPATH_modshare': '/home/center/modulefiles:1:/home/rist/modulefiles:1:/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:1:/home/modules/modulefiles/CNB/core:1:/home/modules/modulefiles/CNB/util:1', 'MODULESHOME': '/usr/share/Modules', 'MODULES_CMD': '/usr/share/Modules/libexec/modulecmd.tcl', 'MODULES_LMALTNAME': 'cuda/12.2.2&cuda/default&cuda', 'MODULES_LMALTNAME_modshare': 'cuda/12.2.2&cuda/default&cuda:1', 'MODULES_LMCONFLICT': 'cuda/12.2.2&cuda', 'MODULES_LMCONFLICT_modshare': 'cuda/12.2.2&cuda:1', 'MODULES_RUN_QUARANTINE': 'LD_LIBRARY_PATH LD_PRELOAD', 'MOD_GIT_ROOTDIR': '/home/modules', 'OMPI_CKPTCONFIG': '0x00', 'PATH': '/home/pj24001974/ku50001532/lingua/.venv/bin:/home/app/cuda/12.2.2/nsight-systems-2023.2.3:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:/home/app/cuda/12.2.2/bin:/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin', 'PATH_modshare': '/home/app/cuda/12.2.2/nsight-systems-2023.2.3:1:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:1:/usr/sbin:1:/usr/bin:1:/home/app/cuda/12.2.2/bin:1:/usr/local/sbin:1:/opt/cycle/jetpack/bin:1:/home/pj24001974/ku50001532/.local/bin:1:/home/pj24001974/ku50001532/bin:1:/usr/share/Modules/bin:1:/usr/local/bin:1', 'PJM_ASSIGN_LOGICAL_CPU': 'job', 'PJM_CORE_MEM_LIMIT': '0', 'PJM_CUSTOM_RESOURCES': 'rsc011=0,rsc012=0,rsc013=0,rsc014=0,rsc015=0,rsc016=0,rsc017=0,rsc018=0,rsc019=0,rsc020=0,rsc021=0,rsc022=0,rsc023=0,rsc024=0,rsc025=0,rsc026=0,rsc027=0,rsc028=0,rsc029=0,rsc030=0,rsc031=0,rsc032=0,rsc033=0,rsc034=0,rsc035=0,rsc036=0,rsc037=0,rsc038=0,rsc039=0,rsc040=0,rsc041=0,rsc042=0,rsc043=0,rsc044=0,rsc045=0,rsc046=0,rsc047=0,rsc048=0,rsc049=0,rsc050=0,gpu/n=1,rsc001/n=0,rsc002/n=0,rsc003/n=0,rsc004/n=0,rsc005/n=0,rsc006/n=0,rsc007/n=0,rsc008/n=0,rsc009/n=0,rsc010/n=0,shared/n=true,short-job/n=false', 'PJM_DPREFIX': '#PJM', 'PJM_ELAPSED_TIME_MODE': 'fixed', 'PJM_ELAPSE_LIMIT': '7200', 'PJM_ENVIRONMENT': 'BATCH', 'PJM_EXEC_POLICY': 'share', 'PJM_JOBDIR': '/home/pj24001974/ku50001532/lingua', 'PJM_JOBID': '3827133', 'PJM_JOBNAME': 'debug_2.sh', 'PJM_MAILOPTION': '0x0', 'PJM_MPI_PROC': '1', 'PJM_NET_ROUTE': 'static', 'PJM_NODE_CPUTIME_LIMIT': '18446744073709551615', 'PJM_O_HOME': '/home/pj24001974/ku50001532', 'PJM_O_HOST': 'genkai0001', 'PJM_O_LANG': 'en_US.UTF-8', 'PJM_O_LOGNAME': 'ku50001532', 'PJM_O_MAIL': '/var/spool/mail/ku50001532', 'PJM_O_NODEINF': '/home/pj24001974/ku50001532/lingua/.d0003827133_nodeinfo', 'PJM_O_PATH': '/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin:/opt/cycle/jetpack/bin', 'PJM_O_SHELL': '/bin/bash', 'PJM_O_WORKDIR': '/home/pj24001974/ku50001532/lingua', 'PJM_PROC_BY_NODE': '1', 'PJM_RSCGRP': 'b-batch', 'PJM_RSCUNIT': 'rscunit_pg01', 'PJM_SHELL': '/bin/bash', 'PJM_SSD_DIR': '/ssd/3827133', 'PJM_STDERR_PATH': '/home/pj24001974/ku50001532/lingua/debug_2_std.txt', 'PJM_STDOUT_PATH': '/home/pj24001974/ku50001532/lingua/debug_2_std.txt', 'PJM_SUBJOBID': '3827133', 'PJM_VNODE': '1', 'PJM_VNODE_CORE': '30', 'PJM_VNODE_MEM_LIMIT': '243322060800', 'PJM_VN_POLICY': 'abs-unpack', 'PLE_SCRIPT_TYPE': 'JOB_SCRIPT', 'PWD': '/home/pj24001974/ku50001532/lingua', 'SHLVL': '2', 'SSH_ASKPASS': '/usr/libexec/openssh/gnome-ssh-askpass', 'S_COLORS': 'auto', 'TMP': '/tmp/3827133_ZGVidWdfMi5zaAo=', 'TMPDIR': '/tmp/3827133_ZGVidWdfMi5zaAo=', 'TMUX_TMPDIR': '/tmp/3827133_ZGVidWdfMi5zaAo=', 'USER': 'ku50001532', 'UV': '/home/pj24001974/ku50001532/.local/bin/uv', 'UV_RUN_RECURSION_DEPTH': '1', 'VIRTUAL_ENV': '/home/pj24001974/ku50001532/lingua/.venv', 'WANDB_API_KEY': 'b84c9ccade31a24dcb9b92f1573576171ada67d8', 'XDG_DATA_DIRS': '/home/pj24001974/ku50001532/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', '_': '/home/pj24001974/ku50001532/.local/bin/uv', '_LMFILES_': '/home/modules/modulefiles/CNB/core/cuda/12.2.2', '_LMFILES__modshare': '/home/modules/modulefiles/CNB/core/cuda/12.2.2:1', 'which_declare': 'declare -f', 'CUDA_MODULE_LOADING': 'LAZY', 'TORCHINDUCTOR_CACHE_DIR': '/tmp/3827133_ZGVidWdfMi5zaAo=/torchinductor_ku50001532', 'MKL_SERVICE_FORCE_INTEL': 'GNU', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'ENABLE_INTRA_NODE_COMM': '1', 'TORCH_NCCL_AVOID_RECORD_STREAMS': '1', 'NCCL_IB_TIMEOUT': '22', 'NCCL_DEBUG': 'INFO', 'TORCH_NCCL_ASYNC_ERROR_HANDLING': '1', 'TRITON_CACHE_DIR': '/tmp/3827133_ZGVidWdfMi5zaAo=/tmpxznmbeev', 'RANK': '0', 'WORLD_SIZE': '1', 'MASTER_ADDR': '127.0.0.1', 'MASTER_PORT': '28805'})
+[W1013 10:45:37.364728534 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [localhost]:28805 (errno: 97 - Address family not supported by protocol).
+[W1013 10:45:37.528708214 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+0: INFO    25-10-13 10:45:38.063052 - 0:00:08 - Starting job: debug_2_2025-10-13
+0: INFO    25-10-13 10:45:38.063268 - 0:00:08 - Running on dp rank : 0
+0: INFO    25-10-13 10:45:38.063319 - 0:00:08 - Running on dp size : 1
+0: INFO    25-10-13 10:45:38.065621 - 0:00:08 - Building model
+0: INFO    25-10-13 10:45:38.306452 - 0:00:08 - Model is built !
+0: INFO    25-10-13 10:45:43.644097 - 0:00:13 - Model size: 103,306,240 total parameters
+0: INFO    25-10-13 10:45:43.644635 - 0:00:13 - GPU capacity: NVIDIA H100 (0) with 93.09GiB memory
+0: INFO    25-10-13 10:45:43.646769 - 0:00:13 - GPU memory usage: NVIDIA H100 (0): 93.08551025390625 GiB capacity, 0.435546875 GiB peak, 0.4678997556246652% peak
+0: INFO    25-10-13 10:45:43.646888 - 0:00:13 - Starting build of optimizer...
+0: INFO    25-10-13 10:45:43.647315 - 0:00:13 - Done with build of optimizer.
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+0: INFO    25-10-13 10:45:43.684378 - 0:00:13 - Async dataloader started
+0: INFO    25-10-13 10:45:43.685204 - 0:00:13 - Profiling active.  Traces will be saved at outputs/debug_2_2025-10-13/profiling
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+0: INFO    25-10-13 10:45:50.571151 - 0:00:20 - garbage collection
+0: INFO    25-10-13 10:46:10.393264 - 0:00:40 - step: 10  acc: 0  loss:  5.3926  grad: 2.72e+01  flops: 1.81e+13  wps: 2.45e+04  iter:   0.124  data: 0.0102  lr: 1.35e-06  mem: 20%  pow: 632.622 W
+0: INFO    25-10-13 10:46:11.748133 - 0:00:41 - step: 20  acc: 0  loss:  4.2992  grad: 1.47e+01  flops: 3.56e+14  wps: 4.84e+05  iter:   0.123  data: 0.0102  lr: 2.85e-06  mem: 20%  pow: 634.667 W
+0: INFO    25-10-13 10:46:13.127339 - 0:00:43 - step: 30  acc: 0  loss:  3.6278  grad: 5.62e+00  flops: 3.50e+14  wps: 4.75e+05  iter:  0.1231  data: 0.0154  lr: 4.35e-06  mem: 20%  pow: 632.032 W
+0: INFO    25-10-13 10:46:14.511218 - 0:00:44 - step: 40  acc: 0  loss:  3.2732  grad: 3.72e+00  flops: 3.49e+14  wps: 4.74e+05  iter:  0.1236  data: 0.0058  lr: 5.85e-06  mem: 20%  pow: 619.402 W
+0: INFO    25-10-13 10:46:15.873965 - 0:00:45 - step: 50  acc: 0  loss:  3.1718  grad: 2.45e+00  flops: 3.54e+14  wps: 4.81e+05  iter:  0.1242  data: 0.0102  lr: 7.35e-06  mem: 20%  pow: 631.175 W
+0: INFO    25-10-13 10:46:17.258322 - 0:00:47 - step: 60  acc: 0  loss:  2.9438  grad: 1.82e+00  flops: 3.48e+14  wps: 4.74e+05  iter:  0.1239  data: 0.0241  lr: 8.85e-06  mem: 20%  pow: 631.67 W
+0: INFO    25-10-13 10:46:18.625443 - 0:00:48 - step: 70  acc: 0  loss:  2.8728  grad: 2.56e+00  flops: 3.53e+14  wps: 4.80e+05  iter:  0.1233  data: 0.0061  lr: 1.03e-05  mem: 20%  pow: 629.189 W
+0: INFO    25-10-13 10:46:20.007630 - 0:00:49 - step: 80  acc: 0  loss:  2.8177  grad: 1.45e+00  flops: 3.49e+14  wps: 4.74e+05  iter:  0.1232  data: 0.0062  lr: 1.18e-05  mem: 20%  pow: 624.807 W
+0: INFO    25-10-13 10:46:21.380370 - 0:00:51 - step: 90  acc: 0  loss:   2.739  grad: 2.76e+00  flops: 3.51e+14  wps: 4.78e+05  iter:   0.124  data: 0.0109  lr: 1.33e-05  mem: 20%  pow: 633.816 W
+0: INFO    25-10-13 10:46:22.758116 - 0:00:52 - Starting MemSnapshotsProfilerWandb profiler...
+0: INFO    25-10-13 10:46:22.838225 - 0:00:52 - step: 100  acc: 0  loss:   2.706  grad: 2.51e+00  flops: 3.40e+14  wps: 4.62e+05  iter:  0.1241  data: 0.0148  lr: 1.49e-05  mem: 20%  pow: 629.918 W
+0: INFO    25-10-13 10:46:22.839091 - 0:00:52 - Saving to: outputs/debug_2_2025-10-13/checkpoints/0000000100
+0: INFO    25-10-13 10:46:22.839273 - 0:00:52 - Saving...
+0: INFO    25-10-13 10:46:24.750719 - 0:00:54 - State dict saved!
+0: INFO    25-10-13 10:46:24.764187 - 0:00:54 - Saving train state to: outputs/debug_2_2025-10-13/checkpoints/0000000100/train_state_00000.json
+0: INFO    25-10-13 10:46:24.765232 - 0:00:54 - Train state saved !
+0: INFO    25-10-13 10:46:24.765309 - 0:00:54 - Cleaning up checkpoints...
+0: INFO    25-10-13 10:46:24.765383 - 0:00:54 - Dump folders: [PosixPath('outputs/debug_2_2025-10-13/checkpoints/0000000100')]
+0: INFO    25-10-13 10:46:24.765426 - 0:00:54 - Eval folders: [PosixPath('outputs/debug_2_2025-10-13/checkpoints/0000000100')]
+0: INFO    25-10-13 10:46:24.765478 - 0:00:54 - Other folders: []
+0: INFO    25-10-13 10:46:24.765530 - 0:00:54 - Removing folders: set()
+0: INFO    25-10-13 10:46:30.790953 - 0:01:00 - PyTorch version 2.8.0 available.
+0: INFO    25-10-13 10:46:38.546102 - 0:01:08 - Consolidating to: outputs/debug_2_2025-10-13/checkpoints/0000000100/consolidated
+0: INFO    25-10-13 10:46:40.441403 - 0:01:10 - Consolidated !
+0: INFO    25-10-13 10:46:40.455376 - 0:01:10 - Loading model
+0: INFO    25-10-13 10:46:41.581776 - 0:01:11 - Model loaded
+0: INFO    25-10-13 10:46:41.586859 - 0:01:11 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-13 10:46:41.587013 - 0:01:11 - Using pre-initialized model
+0: WARNING 25-10-13 10:47:14.396379 - 0:01:44 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-13 10:47:14.396379 - 0:01:44 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-13 10:47:14.396658 - 0:01:44 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-13 10:47:14.396658 - 0:01:44 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-13 10:47:15.586299 - 0:01:45 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-13 10:47:15.587879 - 0:01:45 - Building contexts for piqa on rank 0...
+  0%|          | 0/1838 [00:00<?, ?it/s]  9%|▉         | 174/1838 [00:00<00:00, 1736.80it/s] 19%|█▉        | 348/1838 [00:00<00:00, 1727.50it/s] 28%|██▊       | 523/1838 [00:00<00:00, 1734.34it/s] 38%|███▊      | 698/1838 [00:00<00:00, 1739.47it/s] 47%|████▋     | 873/1838 [00:00<00:00, 1742.55it/s] 57%|█████▋    | 1048/1838 [00:00<00:00, 1744.27it/s] 67%|██████▋   | 1223/1838 [00:00<00:00, 1745.52it/s] 76%|███████▌  | 1398/1838 [00:00<00:00, 1744.97it/s] 86%|████████▌ | 1573/1838 [00:00<00:00, 1745.83it/s] 95%|█████████▌| 1748/1838 [00:01<00:00, 1742.87it/s]100%|██████████| 1838/1838 [00:01<00:00, 1741.68it/s]
+0: INFO    25-10-13 10:47:16.699918 - 0:01:46 - Building contexts for hellaswag on rank 0...
+  0%|          | 0/10042 [00:00<?, ?it/s]  5%|▍         | 469/10042 [00:00<00:02, 4680.85it/s]  9%|▉         | 946/10042 [00:00<00:01, 4732.64it/s] 14%|█▍        | 1423/10042 [00:00<00:01, 4747.75it/s] 19%|█▉        | 1900/10042 [00:00<00:01, 4753.19it/s] 24%|██▎       | 2380/10042 [00:00<00:01, 4769.15it/s] 28%|██▊       | 2861/10042 [00:00<00:01, 4781.90it/s] 33%|███▎      | 3340/10042 [00:00<00:01, 4775.69it/s] 38%|███▊      | 3818/10042 [00:00<00:01, 4764.62it/s] 43%|████▎     | 4295/10042 [00:00<00:01, 4762.57it/s] 48%|████▊     | 4772/10042 [00:01<00:01, 4762.06it/s] 52%|█████▏    | 5249/10042 [00:01<00:01, 4732.86it/s] 57%|█████▋    | 5723/10042 [00:01<00:00, 4718.33it/s] 62%|██████▏   | 6195/10042 [00:01<00:00, 4693.72it/s] 66%|██████▋   | 6665/10042 [00:01<00:00, 4692.10it/s] 71%|███████   | 7135/10042 [00:01<00:00, 4687.27it/s] 76%|███████▌  | 7604/10042 [00:01<00:00, 4672.14it/s] 80%|████████  | 8072/10042 [00:01<00:00, 4657.89it/s] 85%|████████▌ | 8538/10042 [00:01<00:00, 4648.48it/s] 90%|████████▉ | 9003/10042 [00:01<00:00, 4636.28it/s] 94%|█████████▍| 9467/10042 [00:02<00:00, 4628.11it/s] 99%|█████████▉| 9930/10042 [00:02<00:00, 4624.62it/s]100%|██████████| 10042/10042 [00:02<00:00, 4697.57it/s]
+0: INFO    25-10-13 10:47:19.784975 - 0:01:49 - Building contexts for nq_open on rank 0...
+  0%|          | 0/3610 [00:00<?, ?it/s]  1%|          | 35/3610 [00:00<00:10, 344.16it/s]  2%|▏         | 71/3610 [00:00<00:10, 348.28it/s]  3%|▎         | 107/3610 [00:00<00:10, 349.95it/s]  4%|▍         | 143/3610 [00:00<00:09, 350.79it/s]  5%|▍         | 179/3610 [00:00<00:09, 351.30it/s]  6%|▌         | 215/3610 [00:00<00:09, 351.48it/s]  7%|▋         | 251/3610 [00:00<00:09, 351.51it/s]  8%|▊         | 287/3610 [00:00<00:09, 351.44it/s]  9%|▉         | 323/3610 [00:00<00:09, 351.30it/s] 10%|▉         | 359/3610 [00:01<00:09, 350.45it/s] 11%|█         | 395/3610 [00:01<00:09, 350.44it/s] 12%|█▏        | 431/3610 [00:01<00:09, 349.78it/s] 13%|█▎        | 466/3610 [00:01<00:09, 349.32it/s] 14%|█▍        | 501/3610 [00:01<00:08, 349.31it/s] 15%|█▍        | 537/3610 [00:01<00:08, 349.53it/s] 16%|█▌        | 572/3610 [00:01<00:08, 348.91it/s] 17%|█▋        | 608/3610 [00:01<00:08, 349.62it/s] 18%|█▊        | 644/3610 [00:01<00:08, 349.93it/s] 19%|█▉        | 680/3610 [00:01<00:08, 350.70it/s] 20%|█▉        | 716/3610 [00:02<00:08, 350.68it/s] 21%|██        | 752/3610 [00:02<00:08, 350.41it/s] 22%|██▏       | 788/3610 [00:02<00:08, 350.77it/s] 23%|██▎       | 824/3610 [00:02<00:07, 351.09it/s] 24%|██▍       | 860/3610 [00:02<00:07, 351.35it/s] 25%|██▍       | 896/3610 [00:02<00:07, 351.04it/s] 26%|██▌       | 932/3610 [00:02<00:07, 351.02it/s] 27%|██▋       | 968/3610 [00:02<00:07, 350.45it/s] 28%|██▊       | 1004/3610 [00:02<00:07, 350.84it/s] 29%|██▉       | 1040/3610 [00:02<00:07, 350.87it/s] 30%|██▉       | 1076/3610 [00:03<00:07, 351.03it/s] 31%|███       | 1112/3610 [00:03<00:07, 351.25it/s] 32%|███▏      | 1148/3610 [00:03<00:07, 350.87it/s] 33%|███▎      | 1184/3610 [00:03<00:06, 351.06it/s] 34%|███▍      | 1220/3610 [00:03<00:06, 351.37it/s] 35%|███▍      | 1256/3610 [00:03<00:06, 351.11it/s] 36%|███▌      | 1292/3610 [00:03<00:06, 351.49it/s] 37%|███▋      | 1328/3610 [00:03<00:06, 351.11it/s] 38%|███▊      | 1364/3610 [00:03<00:06, 351.16it/s] 39%|███▉      | 1400/3610 [00:03<00:06, 350.98it/s] 40%|███▉      | 1436/3610 [00:04<00:06, 350.91it/s] 41%|████      | 1472/3610 [00:04<00:06, 349.43it/s] 42%|████▏     | 1507/3610 [00:04<00:06, 349.59it/s] 43%|████▎     | 1543/3610 [00:04<00:05, 350.39it/s] 44%|████▎     | 1579/3610 [00:04<00:05, 350.44it/s] 45%|████▍     | 1615/3610 [00:04<00:05, 350.52it/s] 46%|████▌     | 1651/3610 [00:04<00:05, 351.32it/s] 47%|████▋     | 1687/3610 [00:04<00:05, 350.95it/s] 48%|████▊     | 1723/3610 [00:04<00:05, 351.00it/s] 49%|████▊     | 1759/3610 [00:05<00:05, 350.70it/s] 50%|████▉     | 1795/3610 [00:05<00:05, 350.79it/s] 51%|█████     | 1831/3610 [00:05<00:05, 350.54it/s] 52%|█████▏    | 1867/3610 [00:05<00:04, 351.04it/s] 53%|█████▎    | 1903/3610 [00:05<00:04, 351.18it/s] 54%|█████▎    | 1939/3610 [00:05<00:04, 350.77it/s] 55%|█████▍    | 1975/3610 [00:05<00:04, 350.86it/s] 56%|█████▌    | 2011/3610 [00:05<00:04, 350.79it/s] 57%|█████▋    | 2047/3610 [00:05<00:04, 350.86it/s] 58%|█████▊    | 2083/3610 [00:05<00:04, 351.03it/s] 59%|█████▊    | 2119/3610 [00:06<00:04, 351.09it/s] 60%|█████▉    | 2155/3610 [00:06<00:04, 351.49it/s] 61%|██████    | 2191/3610 [00:06<00:04, 351.25it/s] 62%|██████▏   | 2227/3610 [00:06<00:03, 351.56it/s] 63%|██████▎   | 2263/3610 [00:06<00:03, 350.84it/s] 64%|██████▎   | 2299/3610 [00:06<00:03, 351.42it/s] 65%|██████▍   | 2335/3610 [00:06<00:03, 351.57it/s] 66%|██████▌   | 2371/3610 [00:06<00:03, 351.71it/s] 67%|██████▋   | 2407/3610 [00:06<00:03, 352.15it/s] 68%|██████▊   | 2443/3610 [00:06<00:03, 352.07it/s] 69%|██████▊   | 2479/3610 [00:07<00:03, 351.74it/s] 70%|██████▉   | 2515/3610 [00:07<00:03, 351.19it/s] 71%|███████   | 2551/3610 [00:07<00:03, 351.04it/s] 72%|███████▏  | 2587/3610 [00:07<00:02, 351.12it/s] 73%|███████▎  | 2623/3610 [00:07<00:02, 350.86it/s] 74%|███████▎  | 2659/3610 [00:07<00:02, 351.42it/s] 75%|███████▍  | 2695/3610 [00:07<00:02, 351.41it/s] 76%|███████▌  | 2731/3610 [00:07<00:02, 350.72it/s] 77%|███████▋  | 2767/3610 [00:07<00:02, 351.00it/s] 78%|███████▊  | 2803/3610 [00:07<00:02, 351.95it/s] 79%|███████▊  | 2839/3610 [00:08<00:02, 351.88it/s] 80%|███████▉  | 2875/3610 [00:08<00:02, 351.62it/s] 81%|████████  | 2911/3610 [00:08<00:01, 350.78it/s] 82%|████████▏ | 2947/3610 [00:08<00:01, 350.66it/s] 83%|████████▎ | 2983/3610 [00:08<00:01, 350.83it/s] 84%|████████▎ | 3019/3610 [00:08<00:01, 351.41it/s] 85%|████████▍ | 3055/3610 [00:08<00:01, 351.49it/s] 86%|████████▌ | 3091/3610 [00:08<00:01, 351.31it/s] 87%|████████▋ | 3127/3610 [00:08<00:01, 350.92it/s] 88%|████████▊ | 3163/3610 [00:09<00:01, 351.00it/s] 89%|████████▊ | 3199/3610 [00:09<00:01, 351.63it/s] 90%|████████▉ | 3235/3610 [00:09<00:01, 352.06it/s] 91%|█████████ | 3271/3610 [00:09<00:00, 352.12it/s] 92%|█████████▏| 3307/3610 [00:09<00:00, 352.17it/s] 93%|█████████▎| 3343/3610 [00:09<00:00, 352.38it/s] 94%|█████████▎| 3379/3610 [00:09<00:00, 351.90it/s] 95%|█████████▍| 3415/3610 [00:09<00:00, 351.31it/s] 96%|█████████▌| 3451/3610 [00:09<00:00, 351.13it/s] 97%|█████████▋| 3487/3610 [00:09<00:00, 351.20it/s] 98%|█████████▊| 3523/3610 [00:10<00:00, 351.30it/s] 99%|█████████▊| 3559/3610 [00:10<00:00, 350.61it/s]100%|█████████▉| 3595/3610 [00:10<00:00, 350.81it/s]100%|██████████| 3610/3610 [00:10<00:00, 350.95it/s]
+0: INFO    25-10-13 10:47:30.126917 - 0:02:00 - Running loglikelihood requests
+0: INFO    25-10-13 10:48:26.642809 - 0:02:56 - Running generate_until requests
+0: INFO    25-10-13 11:05:56.229484 - 0:20:26 - Killing async data process 307 ...
+0: INFO    25-10-13 11:05:56.229829 - 0:20:26 - Async dataloader cleaned up
+b0028:94:94 [0] NCCL INFO Bootstrap: Using ib0:172.17.17.28<0>
+b0028:94:94 [0] NCCL INFO cudaDriverVersion 13000
+b0028:94:94 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+b0028:94:94 [0] NCCL INFO Comm config Blocking set to 1
+b0028:94:301 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+b0028:94:301 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0:172.17.17.28<0>
+b0028:94:301 [0] NCCL INFO Initialized NET plugin IB
+b0028:94:301 [0] NCCL INFO Assigned NET plugin IB to comm
+b0028:94:301 [0] NCCL INFO Using network IB
+b0028:94:301 [0] NCCL INFO DMA-BUF is available on GPU device 0
+b0028:94:301 [0] NCCL INFO ncclCommInitRankConfig comm 0x55ea00cd88e0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1c000 commId 0xb3d4169da5db000d - Init START
+b0028:94:301 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+b0028:94:301 [0] NCCL INFO Bootstrap timings total 0.001263 (create 0.000027, send 0.000141, recv 0.000137, ring 0.000002, delay 0.000002)
+b0028:94:301 [0] NCCL INFO Setting affinity for GPU 0 to 0-29
+b0028:94:301 [0] NCCL INFO comm 0x55ea00cd88e0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+b0028:94:301 [0] NCCL INFO Channel 00/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 01/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 02/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 03/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 04/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 05/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 06/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 07/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 08/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 09/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 10/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 11/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 12/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 13/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 14/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 15/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 16/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 17/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 18/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 19/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 20/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 21/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 22/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 23/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 24/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 25/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 26/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 27/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 28/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 29/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 30/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 31/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 32/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 33/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 34/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 35/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 36/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 37/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 38/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 39/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 40/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 41/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 42/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 43/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 44/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 45/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 46/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 47/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 48/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 49/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 50/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 51/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 52/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 53/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 54/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 55/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 56/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 57/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 58/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 59/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 60/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 61/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 62/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 63/64 : 0
+b0028:94:301 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [46] -1/-1/-1->0->-1 [47] -1/-1/-1
+b0028:94:301 [0] NCCL INFO P2P Chunksize set to 524288
+b0028:94:301 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+b0028:94:301 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+b0028:94:305 [0] NCCL INFO [Proxy Service] Device 0 CPU core 9
+b0028:94:306 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 10
+b0028:94:301 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+b0028:94:301 [0] NCCL INFO CC Off, workFifoBytes 1048576
+b0028:94:301 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+b0028:94:301 [0] NCCL INFO ncclCommInitRankConfig comm 0x55ea00cd88e0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1c000 commId 0xb3d4169da5db000d - Init COMPLETE
+b0028:94:301 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 1.17 (kernels 1.08, alloc 0.06, bootstrap 0.00, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.01, rest 0.01)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/train.py", line 657, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/train.py", line 653, in main
+[rank0]:     train(cfg)
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/train.py", line 565, in train
+[rank0]:     launch_eval(eval_args)
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/eval.py", line 252, in launch_eval
+[rank0]:     val_results = eval_on_val(generator, cfg.validation, train_cfg)
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/apps/main/eval.py", line 175, in eval_on_val
+[rank0]:     multi_state = init_choice_state("", srcs, 0, get_global_rank(), get_world_size(), "*.val.jsonl")
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 521, in init_choice_state
+[rank0]:     jsonl_state = distribute_data_to_rank(
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 493, in distribute_data_to_rank
+[rank0]:     dataset_chunks = find_and_sanitize_chunks(dataset_path, world_size, file_pattern)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/pj24001974/ku50001532/lingua/lingua/data.py", line 478, in find_and_sanitize_chunks
+[rank0]:     world_size % n_chunks == 0
+[rank0]:     ~~~~~~~~~~~^~~~~~~~~~
+[rank0]: ZeroDivisionError: integer modulo by zero

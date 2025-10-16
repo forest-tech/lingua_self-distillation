@@ -1,0 +1,12 @@
+*.pyc
+.vscode
+*.ipynb
+slurm-*.out
+wandb
+data/**
+.venv
+models/**
+*.out
+outputs/**
+tokenizer/**
+std_messages

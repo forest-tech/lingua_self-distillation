@@ -1,0 +1,510 @@
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Tensor parallelism has not been tested for a while, use at your own risk
+0: WARNING 25-10-15 15:01:00.456737 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-15 15:01:00.456737 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-15 15:01:00.468976 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-15 15:01:00.468976 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-15 15:01:00.469085 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-15 15:01:00.469085 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-15 15:01:00.469171 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-15 15:01:00.469171 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-15 15:01:00.469236 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-15 15:01:00.469236 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-15 15:01:00.469293 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-15 15:01:00.469293 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-15 15:01:00.469350 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-15 15:01:00.469350 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-15 15:01:00.469402 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-15 15:01:00.469402 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-15 15:01:00.469460 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-15 15:01:00.469460 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-15 15:01:00.469517 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3917332_ZGVidWdfMy5zaAo=/tmpbzinq_mn
+0: WARNING 25-10-15 15:01:00.469517 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3917332_ZGVidWdfMy5zaAo=/tmpbzinq_mn
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+0: INFO    25-10-15 15:01:07.358073 - 0:00:07 - Single GPU job
+0: INFO    25-10-15 15:01:07.358413 - 0:00:07 - ENV: environ({'BASH_FUNC_ml%%': '() {  module ml "$@"\n}', 'BASH_FUNC_module%%': '() {  unset _mlshdbg;\n if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = \'1\' ]; then\n case "$-" in \n *v*x*)\n set +vx;\n _mlshdbg=\'vx\'\n ;;\n *v*)\n set +v;\n _mlshdbg=\'v\'\n ;;\n *x*)\n set +x;\n _mlshdbg=\'x\'\n ;;\n *)\n _mlshdbg=\'\'\n ;;\n esac;\n fi;\n unset _mlre _mlIFS;\n if [ -n "${IFS+x}" ]; then\n _mlIFS=$IFS;\n fi;\n IFS=\' \';\n for _mlv in ${MODULES_RUN_QUARANTINE:-};\n do\n if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then\n if [ -n "`eval \'echo ${\'$_mlv\'+x}\'`" ]; then\n _mlre="${_mlre:-}${_mlv}_modquar=\'`eval \'echo ${\'$_mlv\'}\'`\' ";\n fi;\n _mlrv="MODULES_RUNENV_${_mlv}";\n _mlre="${_mlre:-}${_mlv}=\'`eval \'echo ${\'$_mlrv\':-}\'`\' ";\n fi;\n done;\n if [ -n "${_mlre:-}" ]; then\n eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \'"$@"\'`;\n else\n eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;\n fi;\n _mlstatus=$?;\n if [ -n "${_mlIFS+x}" ]; then\n IFS=$_mlIFS;\n else\n unset IFS;\n fi;\n unset _mlre _mlv _mlrv _mlIFS;\n if [ -n "${_mlshdbg:-}" ]; then\n set -$_mlshdbg;\n fi;\n unset _mlshdbg;\n return $_mlstatus\n}', 'BASH_FUNC_scl%%': '() {  if [ "$1" = "load" -o "$1" = "unload" ]; then\n eval "module $@";\n else\n /usr/bin/scl "$@";\n fi\n}', 'BASH_FUNC_switchml%%': '() {  typeset swfound=1;\n if [ "${MODULES_USE_COMPAT_VERSION:-0}" = \'1\' ]; then\n typeset swname=\'main\';\n if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n typeset swfound=0;\n unset MODULES_USE_COMPAT_VERSION;\n fi;\n else\n typeset swname=\'compatibility\';\n if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n typeset swfound=0;\n MODULES_USE_COMPAT_VERSION=1;\n export MODULES_USE_COMPAT_VERSION;\n fi;\n fi;\n if [ $swfound -eq 0 ]; then\n echo "Switching to Modules $swname version";\n source /usr/share/Modules/init/bash;\n else\n echo "Cannot switch to Modules $swname version, command not found";\n return 1;\n fi\n}', 'BASH_FUNC_which%%': '() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}', 'CPATH': '/home/app/cuda/12.2.2/include', 'CPATH_modshare': '/home/app/cuda/12.2.2/include:1', 'CUDA_DIR': '/home/app/cuda/12.2.2', 'CUDA_HOME': '/home/app/cuda/12.2.2', 'CUDA_INSTALL_PATH': '/home/app/cuda/12.2.2', 'CUDA_MPS_LOG_DIRECTORY': '/tmp/nvidia-mps_3917332', 'CUDA_MPS_PIPE_DIRECTORY': '/tmp/nvidia-mps_3917332', 'CUDA_PATH': '/home/app/cuda/12.2.2', 'CUDA_TOP': '/home/app/cuda/12.2.2', 'CYCLECLOUD_BOOTSTRAP': '/opt/cycle/jetpack/system/bootstrap', 'CYCLECLOUD_HOME': '/opt/cycle/jetpack', 'C_INCLUDE_PATH': '/home/app/cuda/12.2.2/include', 'C_INCLUDE_PATH_modshare': '/home/app/cuda/12.2.2/include:1', 'FJPNCKPT_CONFIG': '0x00', 'GENKAI_CACHE_DIR': '/home/cache/pj24001974/ku50001532', 'GENKAI_CUDA_NAME': 'cuda', 'GENKAI_CUDA_VER': '12.2.2', 'GENKAI_FAST_DIR': '/fast/pj24001974', 'HISTCONTROL': 'ignoredups', 'HISTSIZE': '1000', 'HOME': '/home/pj24001974/ku50001532', 'HOSTNAME': 'b0028', 'JOBID': '3917332', 'LANG': 'ja_JP.UTF-8', 'LD_LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LD_LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LOADEDMODULES': 'cuda/12.2.2', 'LOADEDMODULES_modshare': 'cuda/12.2.2:1', 'LOGNAME': 'ku50001532', 'LUSTRE_JOBSTAT': 'ku50001532@3917332', 'MAIL': '/var/spool/mail/ku50001532', 'MANPATH': ':', 'MIG_PARTED_CHECKPOINT_FILE': '/var/lib/nvidia-mig-manager/checkpoint.json', 'MIG_PARTED_CONFIG_FILE': '/etc/nvidia-mig-manager/config.yaml', 'MIG_PARTED_HOOKS_FILE': '/etc/nvidia-mig-manager/hooks.yaml', 'MODULEPATH': '/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:/home/modules/modulefiles/CNB/core:/home/modules/modulefiles/CNB/util:/home/center/modulefiles:/home/rist/modulefiles', 'MODULEPATH_modshare': '/home/center/modulefiles:1:/home/rist/modulefiles:1:/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:1:/home/modules/modulefiles/CNB/core:1:/home/modules/modulefiles/CNB/util:1', 'MODULESHOME': '/usr/share/Modules', 'MODULES_CMD': '/usr/share/Modules/libexec/modulecmd.tcl', 'MODULES_LMALTNAME': 'cuda/12.2.2&cuda/default&cuda', 'MODULES_LMALTNAME_modshare': 'cuda/12.2.2&cuda/default&cuda:1', 'MODULES_LMCONFLICT': 'cuda/12.2.2&cuda', 'MODULES_LMCONFLICT_modshare': 'cuda/12.2.2&cuda:1', 'MODULES_RUN_QUARANTINE': 'LD_LIBRARY_PATH LD_PRELOAD', 'MOD_GIT_ROOTDIR': '/home/modules', 'OMPI_CKPTCONFIG': '0x00', 'PATH': '/home/pj24001974/ku50001532/lingua/.venv/bin:/home/app/cuda/12.2.2/nsight-systems-2023.2.3:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:/home/app/cuda/12.2.2/bin:/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin', 'PATH_modshare': '/home/app/cuda/12.2.2/nsight-systems-2023.2.3:1:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:1:/usr/sbin:1:/usr/bin:1:/home/app/cuda/12.2.2/bin:1:/usr/local/sbin:1:/opt/cycle/jetpack/bin:1:/home/pj24001974/ku50001532/.local/bin:1:/home/pj24001974/ku50001532/bin:1:/usr/share/Modules/bin:1:/usr/local/bin:1', 'PJM_ASSIGN_LOGICAL_CPU': 'job', 'PJM_CORE_MEM_LIMIT': '0', 'PJM_CUSTOM_RESOURCES': 'rsc011=0,rsc012=0,rsc013=0,rsc014=0,rsc015=0,rsc016=0,rsc017=0,rsc018=0,rsc019=0,rsc020=0,rsc021=0,rsc022=0,rsc023=0,rsc024=0,rsc025=0,rsc026=0,rsc027=0,rsc028=0,rsc029=0,rsc030=0,rsc031=0,rsc032=0,rsc033=0,rsc034=0,rsc035=0,rsc036=0,rsc037=0,rsc038=0,rsc039=0,rsc040=0,rsc041=0,rsc042=0,rsc043=0,rsc044=0,rsc045=0,rsc046=0,rsc047=0,rsc048=0,rsc049=0,rsc050=0,gpu/n=1,rsc001/n=0,rsc002/n=0,rsc003/n=0,rsc004/n=0,rsc005/n=0,rsc006/n=0,rsc007/n=0,rsc008/n=0,rsc009/n=0,rsc010/n=0,shared/n=true,short-job/n=false', 'PJM_DPREFIX': '#PJM', 'PJM_ELAPSED_TIME_MODE': 'fixed', 'PJM_ELAPSE_LIMIT': '7200', 'PJM_ENVIRONMENT': 'BATCH', 'PJM_EXEC_POLICY': 'share', 'PJM_JOBDIR': '/home/pj24001974/ku50001532/lingua', 'PJM_JOBID': '3917332', 'PJM_JOBNAME': 'debug_3.sh', 'PJM_MAILOPTION': '0x0', 'PJM_MPI_PROC': '1', 'PJM_NET_ROUTE': 'static', 'PJM_NODE_CPUTIME_LIMIT': '18446744073709551615', 'PJM_O_HOME': '/home/pj24001974/ku50001532', 'PJM_O_HOST': 'genkai0001', 'PJM_O_LANG': 'en_US.UTF-8', 'PJM_O_LOGNAME': 'ku50001532', 'PJM_O_MAIL': '/var/spool/mail/ku50001532', 'PJM_O_NODEINF': '/home/pj24001974/ku50001532/lingua/.d0003917332_nodeinfo', 'PJM_O_PATH': '/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin:/opt/cycle/jetpack/bin', 'PJM_O_SHELL': '/bin/bash', 'PJM_O_WORKDIR': '/home/pj24001974/ku50001532/lingua', 'PJM_PROC_BY_NODE': '1', 'PJM_RSCGRP': 'b-batch', 'PJM_RSCUNIT': 'rscunit_pg01', 'PJM_SHELL': '/bin/bash', 'PJM_SSD_DIR': '/ssd/3917332', 'PJM_STDERR_PATH': '/home/pj24001974/ku50001532/lingua/debug_3_std.txt', 'PJM_STDOUT_PATH': '/home/pj24001974/ku50001532/lingua/debug_3_std.txt', 'PJM_SUBJOBID': '3917332', 'PJM_VNODE': '1', 'PJM_VNODE_CORE': '30', 'PJM_VNODE_MEM_LIMIT': '243322060800', 'PJM_VN_POLICY': 'abs-unpack', 'PLE_SCRIPT_TYPE': 'JOB_SCRIPT', 'PWD': '/home/pj24001974/ku50001532/lingua', 'SHLVL': '2', 'SSH_ASKPASS': '/usr/libexec/openssh/gnome-ssh-askpass', 'S_COLORS': 'auto', 'TMP': '/tmp/3917332_ZGVidWdfMy5zaAo=', 'TMPDIR': '/tmp/3917332_ZGVidWdfMy5zaAo=', 'TMUX_TMPDIR': '/tmp/3917332_ZGVidWdfMy5zaAo=', 'USER': 'ku50001532', 'UV': '/home/pj24001974/ku50001532/.local/bin/uv', 'UV_RUN_RECURSION_DEPTH': '1', 'VIRTUAL_ENV': '/home/pj24001974/ku50001532/lingua/.venv', 'WANDB_API_KEY': 'b84c9ccade31a24dcb9b92f1573576171ada67d8', 'XDG_DATA_DIRS': '/home/pj24001974/ku50001532/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', '_': '/home/pj24001974/ku50001532/.local/bin/uv', '_LMFILES_': '/home/modules/modulefiles/CNB/core/cuda/12.2.2', '_LMFILES__modshare': '/home/modules/modulefiles/CNB/core/cuda/12.2.2:1', 'which_declare': 'declare -f', 'CUDA_MODULE_LOADING': 'LAZY', 'TORCHINDUCTOR_CACHE_DIR': '/tmp/3917332_ZGVidWdfMy5zaAo=/torchinductor_ku50001532', 'MKL_SERVICE_FORCE_INTEL': 'GNU', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'ENABLE_INTRA_NODE_COMM': '1', 'TORCH_NCCL_AVOID_RECORD_STREAMS': '1', 'NCCL_IB_TIMEOUT': '22', 'NCCL_DEBUG': 'INFO', 'TORCH_NCCL_ASYNC_ERROR_HANDLING': '1', 'TRITON_CACHE_DIR': '/tmp/3917332_ZGVidWdfMy5zaAo=/tmpbzinq_mn', 'RANK': '0', 'WORLD_SIZE': '1', 'MASTER_ADDR': '127.0.0.1', 'MASTER_PORT': '28805'})
+[W1015 15:01:07.532367593 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [localhost]:28805 (errno: 97 - Address family not supported by protocol).
+[W1015 15:01:07.653450058 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+0: INFO    25-10-15 15:01:08.230341 - 0:00:08 - Starting job: debug_3_2025-10-13
+0: INFO    25-10-15 15:01:08.230578 - 0:00:08 - Running on dp rank : 0
+0: INFO    25-10-15 15:01:08.230633 - 0:00:08 - Running on dp size : 1
+0: INFO    25-10-15 15:01:08.233028 - 0:00:08 - Building model
+0: INFO    25-10-15 15:01:08.532139 - 0:00:08 - Model is built !
+0: INFO    25-10-15 15:01:14.584325 - 0:00:14 - Model size: 103,306,240 total parameters
+0: INFO    25-10-15 15:01:14.584990 - 0:00:14 - GPU capacity: NVIDIA H100 (0) with 93.09GiB memory
+0: INFO    25-10-15 15:01:14.587438 - 0:00:14 - GPU memory usage: NVIDIA H100 (0): 93.08551025390625 GiB capacity, 0.435546875 GiB peak, 0.4678997556246652% peak
+0: INFO    25-10-15 15:01:14.587565 - 0:00:14 - Starting build of optimizer...
+0: INFO    25-10-15 15:01:14.588050 - 0:00:14 - Done with build of optimizer.
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+0: INFO    25-10-15 15:01:14.654794 - 0:00:14 - Reloading train state
+0: INFO    25-10-15 15:01:14.664536 - 0:00:14 - Train state reloaded
+0: INFO    25-10-15 15:01:14.664612 - 0:00:14 - Loading from: outputs/debug_3_2025-10-13/checkpoints/0000000100
+0: INFO    25-10-15 15:01:20.645299 - 0:00:20 - Model and optim reloaded
+0: INFO    25-10-15 15:01:20.664816 - 0:00:20 - Async dataloader started
+0: INFO    25-10-15 15:01:20.665894 - 0:00:20 - Profiling active.  Traces will be saved at outputs/debug_3_2025-10-13/profiling
+/home/pj24001974/ku50001532/lingua/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+0: INFO    25-10-15 15:01:50.981338 - 0:00:51 - step: 110  acc: 0  loss:  2.7298  grad: 2.77e+00  flops: 1.59e+13  wps: 2.16e+04  iter:  0.1234  data: 0.0151  lr: 1.63e-05  mem: 20%  pow: 633.859 W
+0: INFO    25-10-15 15:01:52.373825 - 0:00:52 - step: 120  acc: 0  loss:  2.6211  grad: 2.73e+00  flops: 3.46e+14  wps: 4.71e+05  iter:   0.123  data: 0.0107  lr: 1.78e-05  mem: 20%  pow: 607.213 W
+0: INFO    25-10-15 15:01:53.748750 - 0:00:53 - step: 130  acc: 0  loss:  2.5853  grad: 3.83e+00  flops: 3.51e+14  wps: 4.77e+05  iter:   0.124  data: 0.0148  lr: 1.93e-05  mem: 20%  pow: 640.306 W
+0: INFO    25-10-15 15:01:55.140691 - 0:00:55 - step: 140  acc: 0  loss:  2.5209  grad: 1.99e+00  flops: 3.47e+14  wps: 4.71e+05  iter:  0.1231  data: 0.0063  lr: 2.08e-05  mem: 20%  pow: 630.682 W
+0: INFO    25-10-15 15:01:56.501681 - 0:00:56 - step: 150  acc: 0  loss:  2.4557  grad: 3.88e+00  flops: 3.54e+14  wps: 4.82e+05  iter:   0.124  data: 0.0062  lr: 2.23e-05  mem: 20%  pow: 643.321 W
+0: INFO    25-10-15 15:01:57.879717 - 0:00:57 - step: 160  acc: 0  loss:  2.3465  grad: 2.71e+00  flops: 3.50e+14  wps: 4.76e+05  iter:  0.1234  data: 0.015  lr: 2.38e-05  mem: 20%  pow: 631.283 W
+0: INFO    25-10-15 15:01:59.252213 - 0:00:59 - step: 170  acc: 0  loss:  2.3121  grad: 4.11e+00  flops: 3.51e+14  wps: 4.78e+05  iter:  0.1231  data: 0.0104  lr: 2.53e-05  mem: 20%  pow: 641.125 W
+0: INFO    25-10-15 15:02:00.654963 - 0:01:00 - step: 180  acc: 0  loss:  2.1983  grad: 2.14e+00  flops: 3.44e+14  wps: 4.67e+05  iter:  0.1246  data: 0.0243  lr: 2.68e-05  mem: 20%  pow: 620.813 W
+0: INFO    25-10-15 15:02:02.012696 - 0:01:02 - step: 190  acc: 0  loss:  2.2335  grad: 3.84e+00  flops: 3.55e+14  wps: 4.83e+05  iter:   0.124  data: 0.0149  lr: 2.83e-05  mem: 20%  pow: 649.287 W
+0: INFO    25-10-15 15:02:03.388974 - 0:01:03 - Starting MemSnapshotsProfilerWandb profiler...
+0: INFO    25-10-15 15:02:03.450731 - 0:01:03 - step: 200  acc: 0  loss:  2.1633  grad: 2.76e+00  flops: 3.37e+14  wps: 4.58e+05  iter:  0.1239  data: 0.0194  lr: 2.99e-05  mem: 20%  pow: 633.014 W
+0: INFO    25-10-15 15:02:03.452644 - 0:01:03 - Saving to: outputs/debug_3_2025-10-13/checkpoints/0000000200
+0: INFO    25-10-15 15:02:03.452836 - 0:01:03 - Saving...
+0: INFO    25-10-15 15:02:05.360080 - 0:01:05 - State dict saved!
+0: INFO    25-10-15 15:02:05.373814 - 0:01:05 - Saving train state to: outputs/debug_3_2025-10-13/checkpoints/0000000200/train_state_00000.json
+0: INFO    25-10-15 15:02:05.375104 - 0:01:05 - Train state saved !
+0: INFO    25-10-15 15:02:05.375182 - 0:01:05 - Cleaning up checkpoints...
+0: INFO    25-10-15 15:02:05.375258 - 0:01:05 - Dump folders: [PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000100'), PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000200')]
+0: INFO    25-10-15 15:02:05.375298 - 0:01:05 - Eval folders: [PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000100'), PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000200')]
+0: INFO    25-10-15 15:02:05.375334 - 0:01:05 - Other folders: []
+0: INFO    25-10-15 15:02:05.375387 - 0:01:05 - Removing folders: {PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000100')}
+0: INFO    25-10-15 15:02:23.613321 - 0:01:23 - PyTorch version 2.8.0 available.
+0: INFO    25-10-15 15:03:08.229711 - 0:02:08 - Consolidating to: outputs/debug_3_2025-10-13/checkpoints/0000000200/consolidated
+0: INFO    25-10-15 15:03:10.204520 - 0:02:10 - Consolidated !
+0: INFO    25-10-15 15:03:10.214157 - 0:02:10 - Loading model
+0: INFO    25-10-15 15:03:11.413192 - 0:02:11 - Model loaded
+0: INFO    25-10-15 15:03:11.444867 - 0:02:11 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-15 15:03:11.445024 - 0:02:11 - Using pre-initialized model
+0: WARNING 25-10-15 15:06:17.087633 - 0:05:17 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-15 15:06:17.087633 - 0:05:17 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-15 15:06:17.088525 - 0:05:17 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-15 15:06:17.088525 - 0:05:17 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-15 15:06:18.387923 - 0:05:18 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-15 15:06:18.401910 - 0:05:18 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 174/1838 [00:00<00:00, 1731.74it/s]
+ 19%|█▉        | 348/1838 [00:00<00:00, 1725.27it/s]
+ 28%|██▊       | 521/1838 [00:00<00:00, 1726.06it/s]
+ 38%|███▊      | 694/1838 [00:00<00:00, 1725.16it/s]
+ 47%|████▋     | 868/1838 [00:00<00:00, 1727.53it/s]
+ 57%|█████▋    | 1043/1838 [00:00<00:00, 1732.83it/s]
+ 66%|██████▋   | 1219/1838 [00:00<00:00, 1738.78it/s]
+ 76%|███████▌  | 1394/1838 [00:00<00:00, 1741.84it/s]
+ 85%|████████▌ | 1569/1838 [00:00<00:00, 1743.62it/s]
+ 95%|█████████▍| 1744/1838 [00:01<00:00, 1744.92it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1737.68it/s]
+0: INFO    25-10-15 15:06:19.522875 - 0:05:19 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 469/10042 [00:00<00:02, 4682.48it/s]
+  9%|▉         | 945/10042 [00:00<00:01, 4724.72it/s]
+ 14%|█▍        | 1418/10042 [00:00<00:01, 4720.01it/s]
+ 19%|█▉        | 1892/10042 [00:00<00:01, 4725.94it/s]
+ 24%|██▎       | 2367/10042 [00:00<00:01, 4731.40it/s]
+ 28%|██▊       | 2843/10042 [00:00<00:01, 4740.96it/s]
+ 33%|███▎      | 3320/10042 [00:00<00:01, 4747.42it/s]
+ 38%|███▊      | 3795/10042 [00:00<00:01, 4718.60it/s]
+ 42%|████▏     | 4267/10042 [00:00<00:01, 4711.47it/s]
+ 47%|████▋     | 4740/10042 [00:01<00:01, 4716.05it/s]
+ 52%|█████▏    | 5212/10042 [00:01<00:01, 4715.11it/s]
+ 57%|█████▋    | 5684/10042 [00:01<00:00, 4699.89it/s]
+ 61%|██████▏   | 6155/10042 [00:01<00:00, 4691.69it/s]
+ 66%|██████▌   | 6625/10042 [00:01<00:00, 4685.88it/s]
+ 71%|███████   | 7094/10042 [00:01<00:00, 4677.88it/s]
+ 75%|███████▌  | 7562/10042 [00:01<00:00, 4675.81it/s]
+ 80%|███████▉  | 8033/10042 [00:01<00:00, 4685.78it/s]
+ 85%|████████▍ | 8502/10042 [00:01<00:00, 4681.43it/s]
+ 89%|████████▉ | 8971/10042 [00:01<00:00, 4671.69it/s]
+ 94%|█████████▍| 9439/10042 [00:02<00:00, 4652.06it/s]
+ 99%|█████████▊| 9905/10042 [00:02<00:00, 4647.78it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4691.44it/s]
+0: INFO    25-10-15 15:06:23.011133 - 0:05:23 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 345.52it/s]
+  2%|▏         | 71/3610 [00:00<00:10, 349.53it/s]
+  3%|▎         | 107/3610 [00:00<00:10, 349.84it/s]
+  4%|▍         | 143/3610 [00:00<00:09, 350.30it/s]
+  5%|▍         | 179/3610 [00:00<00:09, 351.15it/s]
+  6%|▌         | 215/3610 [00:00<00:09, 351.83it/s]
+  7%|▋         | 251/3610 [00:00<00:09, 351.66it/s]
+  8%|▊         | 287/3610 [00:00<00:09, 350.07it/s]
+  9%|▉         | 323/3610 [00:00<00:09, 350.34it/s]
+ 10%|▉         | 359/3610 [00:01<00:09, 351.20it/s]
+ 11%|█         | 395/3610 [00:01<00:09, 351.19it/s]
+ 12%|█▏        | 431/3610 [00:01<00:09, 351.58it/s]
+ 13%|█▎        | 467/3610 [00:01<00:08, 351.80it/s]
+ 14%|█▍        | 503/3610 [00:01<00:08, 351.97it/s]
+ 15%|█▍        | 539/3610 [00:01<00:09, 338.54it/s]
+ 16%|█▌        | 575/3610 [00:01<00:08, 341.93it/s]
+ 17%|█▋        | 610/3610 [00:01<00:08, 344.00it/s]
+ 18%|█▊        | 645/3610 [00:01<00:08, 345.66it/s]
+ 19%|█▉        | 681/3610 [00:01<00:08, 347.05it/s]
+ 20%|█▉        | 717/3610 [00:02<00:08, 348.25it/s]
+ 21%|██        | 752/3610 [00:02<00:08, 348.68it/s]
+ 22%|██▏       | 788/3610 [00:02<00:08, 349.30it/s]
+ 23%|██▎       | 824/3610 [00:02<00:07, 349.49it/s]
+ 24%|██▍       | 860/3610 [00:02<00:07, 350.29it/s]
+ 25%|██▍       | 896/3610 [00:02<00:07, 350.24it/s]
+ 26%|██▌       | 932/3610 [00:02<00:07, 350.87it/s]
+ 27%|██▋       | 968/3610 [00:02<00:07, 351.47it/s]
+ 28%|██▊       | 1004/3610 [00:02<00:07, 351.73it/s]
+ 29%|██▉       | 1040/3610 [00:02<00:07, 351.60it/s]
+ 30%|██▉       | 1076/3610 [00:03<00:07, 351.44it/s]
+ 31%|███       | 1112/3610 [00:03<00:07, 351.37it/s]
+ 32%|███▏      | 1148/3610 [00:03<00:07, 350.89it/s]
+ 33%|███▎      | 1184/3610 [00:03<00:06, 350.86it/s]
+ 34%|███▍      | 1220/3610 [00:03<00:06, 350.69it/s]
+ 35%|███▍      | 1256/3610 [00:03<00:06, 350.36it/s]
+ 36%|███▌      | 1292/3610 [00:03<00:06, 349.92it/s]
+ 37%|███▋      | 1328/3610 [00:03<00:06, 350.45it/s]
+ 38%|███▊      | 1364/3610 [00:03<00:06, 350.08it/s]
+ 39%|███▉      | 1400/3610 [00:04<00:06, 350.07it/s]
+ 40%|███▉      | 1436/3610 [00:04<00:06, 350.47it/s]
+ 41%|████      | 1472/3610 [00:04<00:06, 350.20it/s]
+ 42%|████▏     | 1508/3610 [00:04<00:06, 350.26it/s]
+ 43%|████▎     | 1544/3610 [00:04<00:05, 350.43it/s]
+ 44%|████▍     | 1580/3610 [00:04<00:05, 350.36it/s]
+ 45%|████▍     | 1616/3610 [00:04<00:05, 350.42it/s]
+ 46%|████▌     | 1652/3610 [00:04<00:05, 350.73it/s]
+ 47%|████▋     | 1688/3610 [00:04<00:05, 350.12it/s]
+ 48%|████▊     | 1724/3610 [00:04<00:05, 350.44it/s]
+ 49%|████▉     | 1760/3610 [00:05<00:05, 350.64it/s]
+ 50%|████▉     | 1796/3610 [00:05<00:05, 350.98it/s]
+ 51%|█████     | 1832/3610 [00:05<00:05, 350.69it/s]
+ 52%|█████▏    | 1868/3610 [00:05<00:04, 350.93it/s]
+ 53%|█████▎    | 1904/3610 [00:05<00:04, 350.76it/s]
+ 54%|█████▎    | 1940/3610 [00:05<00:04, 350.64it/s]
+ 55%|█████▍    | 1976/3610 [00:05<00:04, 350.30it/s]
+ 56%|█████▌    | 2012/3610 [00:05<00:04, 350.70it/s]
+ 57%|█████▋    | 2048/3610 [00:05<00:04, 351.21it/s]
+ 58%|█████▊    | 2084/3610 [00:05<00:04, 351.34it/s]
+ 59%|█████▊    | 2120/3610 [00:06<00:04, 351.38it/s]
+ 60%|█████▉    | 2156/3610 [00:06<00:04, 351.75it/s]
+ 61%|██████    | 2192/3610 [00:06<00:04, 351.92it/s]
+ 62%|██████▏   | 2228/3610 [00:06<00:03, 351.76it/s]
+ 63%|██████▎   | 2264/3610 [00:06<00:03, 351.50it/s]
+ 64%|██████▎   | 2300/3610 [00:06<00:03, 350.65it/s]
+ 65%|██████▍   | 2336/3610 [00:06<00:03, 350.73it/s]
+ 66%|██████▌   | 2372/3610 [00:06<00:03, 350.58it/s]
+ 67%|██████▋   | 2408/3610 [00:06<00:03, 350.40it/s]
+ 68%|██████▊   | 2444/3610 [00:06<00:03, 349.99it/s]
+ 69%|██████▊   | 2479/3610 [00:07<00:03, 349.45it/s]
+ 70%|██████▉   | 2514/3610 [00:07<00:03, 349.30it/s]
+ 71%|███████   | 2549/3610 [00:07<00:03, 348.67it/s]
+ 72%|███████▏  | 2584/3610 [00:07<00:02, 348.86it/s]
+ 73%|███████▎  | 2619/3610 [00:07<00:02, 348.71it/s]
+ 74%|███████▎  | 2654/3610 [00:07<00:02, 348.67it/s]
+ 75%|███████▍  | 2690/3610 [00:07<00:02, 349.78it/s]
+ 76%|███████▌  | 2726/3610 [00:07<00:02, 350.26it/s]
+ 77%|███████▋  | 2762/3610 [00:07<00:02, 351.28it/s]
+ 78%|███████▊  | 2798/3610 [00:07<00:02, 351.06it/s]
+ 79%|███████▊  | 2834/3610 [00:08<00:02, 350.55it/s]
+ 80%|███████▉  | 2870/3610 [00:08<00:02, 350.54it/s]
+ 80%|████████  | 2906/3610 [00:08<00:02, 349.85it/s]
+ 81%|████████▏ | 2941/3610 [00:08<00:01, 349.81it/s]
+ 82%|████████▏ | 2977/3610 [00:08<00:01, 350.04it/s]
+ 83%|████████▎ | 3013/3610 [00:08<00:01, 350.67it/s]
+ 84%|████████▍ | 3049/3610 [00:08<00:01, 351.01it/s]
+ 85%|████████▌ | 3085/3610 [00:08<00:01, 350.61it/s]
+ 86%|████████▋ | 3121/3610 [00:08<00:01, 350.44it/s]
+ 87%|████████▋ | 3157/3610 [00:09<00:01, 350.81it/s]
+ 88%|████████▊ | 3193/3610 [00:09<00:01, 350.96it/s]
+ 89%|████████▉ | 3229/3610 [00:09<00:01, 351.05it/s]
+ 90%|█████████ | 3265/3610 [00:09<00:00, 350.92it/s]
+ 91%|█████████▏| 3301/3610 [00:09<00:00, 350.70it/s]
+ 92%|█████████▏| 3337/3610 [00:09<00:00, 350.16it/s]
+ 93%|█████████▎| 3373/3610 [00:09<00:00, 349.31it/s]
+ 94%|█████████▍| 3409/3610 [00:09<00:00, 349.75it/s]
+ 95%|█████████▌| 3445/3610 [00:09<00:00, 349.89it/s]
+ 96%|█████████▋| 3481/3610 [00:09<00:00, 349.98it/s]
+ 97%|█████████▋| 3517/3610 [00:10<00:00, 350.18it/s]
+ 98%|█████████▊| 3553/3610 [00:10<00:00, 350.48it/s]
+ 99%|█████████▉| 3589/3610 [00:10<00:00, 350.48it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 350.11it/s]
+0: INFO    25-10-15 15:06:33.381572 - 0:05:33 - Running loglikelihood requests
+0: INFO    25-10-15 15:07:31.100631 - 0:06:31 - Running generate_until requests
+0: INFO    25-10-15 15:25:25.790511 - 0:24:25 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.2538338976299542, 'acc_stderr,none': 0.004343142545094232, 'acc_norm,none': 0.244672376020713, 'acc_norm_stderr,none': 0.0042901420299216765}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5244831338411317, 'acc_stderr,none': 0.011651830225709977, 'acc_norm,none': 0.5032644178454843, 'acc_norm_stderr,none': 0.01166557553076037}}
+0: INFO    25-10-15 15:25:25.791694 - 0:24:25 - Writing metric logs to outputs/debug_3_2025-10-13/metrics.eval.jsonl
+0: INFO    25-10-15 15:25:27.454315 - 0:24:27 - Shutting down MemSnapshotsProfilerWandb profiler...
+0: INFO    25-10-15 15:25:27.696467 - 0:24:27 - Starting PyTorchProfilerWandb profiler...
+b0028:94:94 [0] NCCL INFO Bootstrap: Using ib0:172.17.17.28<0>
+b0028:94:94 [0] NCCL INFO cudaDriverVersion 13000
+b0028:94:94 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+b0028:94:94 [0] NCCL INFO Comm config Blocking set to 1
+b0028:94:301 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+b0028:94:301 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0:172.17.17.28<0>
+b0028:94:301 [0] NCCL INFO Initialized NET plugin IB
+b0028:94:301 [0] NCCL INFO Assigned NET plugin IB to comm
+b0028:94:301 [0] NCCL INFO Using network IB
+b0028:94:301 [0] NCCL INFO DMA-BUF is available on GPU device 0
+b0028:94:301 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d370a0cfa0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1c000 commId 0xc664c7919c57e8c9 - Init START
+b0028:94:301 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+b0028:94:301 [0] NCCL INFO Bootstrap timings total 0.001347 (create 0.000033, send 0.000165, recv 0.000164, ring 0.000003, delay 0.000002)
+b0028:94:301 [0] NCCL INFO Setting affinity for GPU 0 to 0-29
+b0028:94:301 [0] NCCL INFO comm 0x55d370a0cfa0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+b0028:94:301 [0] NCCL INFO Channel 00/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 01/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 02/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 03/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 04/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 05/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 06/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 07/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 08/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 09/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 10/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 11/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 12/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 13/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 14/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 15/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 16/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 17/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 18/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 19/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 20/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 21/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 22/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 23/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 24/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 25/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 26/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 27/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 28/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 29/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 30/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 31/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 32/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 33/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 34/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 35/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 36/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 37/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 38/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 39/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 40/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 41/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 42/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 43/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 44/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 45/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 46/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 47/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 48/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 49/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 50/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 51/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 52/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 53/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 54/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 55/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 56/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 57/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 58/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 59/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 60/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 61/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 62/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 63/64 : 0
+b0028:94:301 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [46] -1/-1/-1->0->-1 [47] -1/-1/-1
+b0028:94:301 [0] NCCL INFO P2P Chunksize set to 524288
+b0028:94:301 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+b0028:94:301 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+b0028:94:305 [0] NCCL INFO [Proxy Service] Device 0 CPU core 23
+b0028:94:306 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 24
+b0028:94:301 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+b0028:94:301 [0] NCCL INFO CC Off, workFifoBytes 1048576
+b0028:94:301 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+b0028:94:301 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d370a0cfa0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1c000 commId 0xc664c7919c57e8c9 - Init COMPLETE
+b0028:94:301 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 0.91 (kernels 0.81, alloc 0.06, bootstrap 0.00, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.01, rest 0.01)
+[rank0]:[W1015 15:25:28.873531932 CPUAllocator.cpp:245] Memory block of unknown size was allocated before the profiling started, profiler results will not include the deallocation event
+0: INFO    25-10-15 15:25:28.564807 - 0:24:28 - Shutting down PyTorchProfilerWandb profiler...
+0: INFO    25-10-15 15:25:29.262927 - 0:24:29 - Begin analyze trace
+0: INFO    25-10-15 15:25:29.450052 - 0:24:29 - End analyze trace
+0: INFO    25-10-15 15:25:29.450376 - 0:24:29 - xFormers profiler done. summary:
+                                                  MemTrace      : /home/pj24001974/ku50001532/lingua/outputs/debug_3_2025-10-13/profiling/memory_trace_plot/000102_rank0_b0028_94.html
+                                                  Step time (ms): 183
+                                                  TFlop/step    : 46.0
+                                                  TFlops        : 251.1
+                                                  HFU           : 0.284
+                                                  MFU           : 0.224
+0: INFO    25-10-15 15:25:30.286113 - 0:24:30 - step: 210  acc: 0  loss:  2.1061  grad: 4.30e+00  flops: 3.43e+11  wps: 4.66e+02  iter:  0.1244  data: 0.0105  lr: 3.13e-05  mem: 20%  pow: 526.856 W
+0: INFO    25-10-15 15:25:31.666614 - 0:24:31 - step: 220  acc: 0  loss:  2.0102  grad: 2.80e+00  flops: 3.49e+14  wps: 4.75e+05  iter:  0.1237  data: 0.0105  lr: 3.28e-05  mem: 20%  pow: 617.584 W
+0: INFO    25-10-15 15:25:33.054609 - 0:24:33 - step: 230  acc: 0  loss:  2.0176  grad: 3.07e+00  flops: 3.48e+14  wps: 4.72e+05  iter:  0.1239  data: 0.0241  lr: 3.44e-05  mem: 20%  pow: 618.664 W
+0: INFO    25-10-15 15:25:34.430959 - 0:24:34 - step: 240  acc: 0  loss:  1.9515  grad: 2.70e+00  flops: 3.50e+14  wps: 4.76e+05  iter:  0.1239  data: 0.0151  lr: 3.58e-05  mem: 20%  pow: 634.555 W
+0: INFO    25-10-15 15:25:35.819649 - 0:24:35 - step: 250  acc: 0  loss:  1.9107  grad: 2.56e+00  flops: 3.47e+14  wps: 4.72e+05  iter:  0.1247  data: 0.0102  lr: 3.73e-05  mem: 20%  pow: 625.069 W
+0: INFO    25-10-15 15:25:37.221997 - 0:24:37 - step: 260  acc: 0  loss:  1.9497  grad: 3.14e+00  flops: 3.44e+14  wps: 4.68e+05  iter:  0.1244  data: 0.0105  lr: 3.88e-05  mem: 20%  pow: 619.722 W
+0: INFO    25-10-15 15:25:38.572581 - 0:24:38 - step: 270  acc: 0  loss:  1.8439  grad: 2.84e+00  flops: 3.57e+14  wps: 4.85e+05  iter:  0.1244  data: 0.0053  lr: 4.03e-05  mem: 20%  pow: 639.079 W
+0: INFO    25-10-15 15:25:39.945582 - 0:24:39 - step: 280  acc: 0  loss:  1.8652  grad: 2.34e+00  flops: 3.51e+14  wps: 4.78e+05  iter:  0.1239  data: 0.0104  lr: 4.19e-05  mem: 20%  pow: 621.133 W
+0: INFO    25-10-15 15:25:41.301256 - 0:24:41 - step: 290  acc: 0  loss:  1.8139  grad: 2.22e+00  flops: 3.56e+14  wps: 4.84e+05  iter:  0.1248  data: 0.0056  lr: 4.33e-05  mem: 20%  pow: 635.84 W
+0: INFO    25-10-15 15:25:42.657878 - 0:24:42 - step: 300  acc: 0  loss:  1.7604  grad: 3.12e+00  flops: 3.56e+14  wps: 4.83e+05  iter:  0.1236  data: 0.0066  lr: 4.48e-05  mem: 20%  pow: 630.07 W
+0: INFO    25-10-15 15:25:42.659418 - 0:24:42 - Saving to: outputs/debug_3_2025-10-13/checkpoints/0000000300
+0: INFO    25-10-15 15:25:42.659637 - 0:24:42 - Saving...
+0: INFO    25-10-15 15:25:43.874051 - 0:24:43 - State dict saved!
+0: INFO    25-10-15 15:25:43.887881 - 0:24:43 - Saving train state to: outputs/debug_3_2025-10-13/checkpoints/0000000300/train_state_00000.json
+0: INFO    25-10-15 15:25:43.888993 - 0:24:43 - Train state saved !
+0: INFO    25-10-15 15:25:43.889073 - 0:24:43 - Cleaning up checkpoints...
+0: INFO    25-10-15 15:25:43.889156 - 0:24:43 - Dump folders: [PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000200'), PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000300')]
+0: INFO    25-10-15 15:25:43.889202 - 0:24:43 - Eval folders: [PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000200'), PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000300')]
+0: INFO    25-10-15 15:25:43.889236 - 0:24:43 - Other folders: []
+0: INFO    25-10-15 15:25:43.889292 - 0:24:43 - Removing folders: {PosixPath('outputs/debug_3_2025-10-13/checkpoints/0000000200')}
+0: INFO    25-10-15 15:25:44.137830 - 0:24:44 - Consolidating to: outputs/debug_3_2025-10-13/checkpoints/0000000300/consolidated
+0: INFO    25-10-15 15:25:45.961791 - 0:24:46 - Consolidated !
+0: INFO    25-10-15 15:25:45.971169 - 0:24:46 - Loading model
+0: INFO    25-10-15 15:25:47.085184 - 0:24:47 - Model loaded
+0: INFO    25-10-15 15:25:47.089251 - 0:24:47 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-15 15:25:47.089393 - 0:24:47 - Using pre-initialized model
+0: WARNING 25-10-15 15:26:07.547765 - 0:25:07 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-15 15:26:07.547765 - 0:25:07 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-15 15:26:07.548038 - 0:25:07 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-15 15:26:07.548038 - 0:25:07 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-15 15:26:08.790558 - 0:25:08 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-15 15:26:08.791405 - 0:25:08 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 171/1838 [00:00<00:00, 1708.19it/s]
+ 19%|█▊        | 343/1838 [00:00<00:00, 1713.28it/s]
+ 28%|██▊       | 515/1838 [00:00<00:00, 1711.52it/s]
+ 37%|███▋      | 687/1838 [00:00<00:00, 1709.92it/s]
+ 47%|████▋     | 860/1838 [00:00<00:00, 1714.13it/s]
+ 56%|█████▌    | 1032/1838 [00:00<00:00, 1713.13it/s]
+ 66%|██████▌   | 1205/1838 [00:00<00:00, 1716.53it/s]
+ 75%|███████▍  | 1377/1838 [00:00<00:00, 1717.29it/s]
+ 84%|████████▍ | 1549/1838 [00:00<00:00, 1715.07it/s]
+ 94%|█████████▎| 1721/1838 [00:01<00:00, 1715.67it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1713.65it/s]
+0: INFO    25-10-15 15:26:09.902156 - 0:25:09 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 459/10042 [00:00<00:02, 4581.75it/s]
+  9%|▉         | 923/10042 [00:00<00:01, 4610.75it/s]
+ 14%|█▍        | 1388/10042 [00:00<00:01, 4627.11it/s]
+ 18%|█▊        | 1853/10042 [00:00<00:01, 4632.14it/s]
+ 23%|██▎       | 2321/10042 [00:00<00:01, 4645.88it/s]
+ 28%|██▊       | 2788/10042 [00:00<00:01, 4651.22it/s]
+ 32%|███▏      | 3259/10042 [00:00<00:01, 4668.00it/s]
+ 37%|███▋      | 3726/10042 [00:00<00:01, 4665.94it/s]
+ 42%|████▏     | 4193/10042 [00:00<00:01, 4655.96it/s]
+ 46%|████▋     | 4660/10042 [00:01<00:01, 4658.27it/s]
+ 51%|█████     | 5126/10042 [00:01<00:01, 4650.25it/s]
+ 56%|█████▌    | 5592/10042 [00:01<00:00, 4653.04it/s]
+ 60%|██████    | 6058/10042 [00:01<00:00, 4653.23it/s]
+ 65%|██████▍   | 6524/10042 [00:01<00:00, 4643.84it/s]
+ 70%|██████▉   | 6989/10042 [00:01<00:00, 4641.50it/s]
+ 74%|███████▍  | 7459/10042 [00:01<00:00, 4656.43it/s]
+ 79%|███████▉  | 7925/10042 [00:01<00:00, 4655.61it/s]
+ 84%|████████▎ | 8391/10042 [00:01<00:00, 4639.48it/s]
+ 88%|████████▊ | 8855/10042 [00:01<00:00, 4620.72it/s]
+ 93%|█████████▎| 9318/10042 [00:02<00:00, 4621.22it/s]
+ 97%|█████████▋| 9781/10042 [00:02<00:00, 4621.41it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4641.68it/s]
+0: INFO    25-10-15 15:26:12.686514 - 0:25:12 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 344.35it/s]
+  2%|▏         | 71/3610 [00:00<00:10, 348.38it/s]
+  3%|▎         | 107/3610 [00:00<00:10, 349.29it/s]
+  4%|▍         | 143/3610 [00:00<00:09, 349.76it/s]
+  5%|▍         | 178/3610 [00:00<00:09, 348.87it/s]
+  6%|▌         | 213/3610 [00:00<00:09, 348.43it/s]
+  7%|▋         | 248/3610 [00:00<00:09, 348.16it/s]
+  8%|▊         | 283/3610 [00:00<00:09, 348.31it/s]
+  9%|▉         | 318/3610 [00:00<00:09, 348.31it/s]
+ 10%|▉         | 353/3610 [00:01<00:09, 348.12it/s]
+ 11%|█         | 388/3610 [00:01<00:09, 348.64it/s]
+ 12%|█▏        | 423/3610 [00:01<00:09, 348.95it/s]
+ 13%|█▎        | 458/3610 [00:01<00:09, 348.73it/s]
+ 14%|█▎        | 493/3610 [00:01<00:08, 348.98it/s]
+ 15%|█▍        | 529/3610 [00:01<00:08, 349.50it/s]
+ 16%|█▌        | 565/3610 [00:01<00:08, 350.00it/s]
+ 17%|█▋        | 601/3610 [00:01<00:08, 350.52it/s]
+ 18%|█▊        | 637/3610 [00:01<00:08, 351.43it/s]
+ 19%|█▊        | 673/3610 [00:01<00:08, 351.96it/s]
+ 20%|█▉        | 709/3610 [00:02<00:08, 351.53it/s]
+ 21%|██        | 745/3610 [00:02<00:08, 352.13it/s]
+ 22%|██▏       | 781/3610 [00:02<00:08, 351.98it/s]
+ 23%|██▎       | 817/3610 [00:02<00:07, 352.10it/s]
+ 24%|██▎       | 853/3610 [00:02<00:07, 350.80it/s]
+ 25%|██▍       | 889/3610 [00:02<00:07, 350.79it/s]
+ 26%|██▌       | 925/3610 [00:02<00:07, 350.21it/s]
+ 27%|██▋       | 961/3610 [00:02<00:07, 350.11it/s]
+ 28%|██▊       | 997/3610 [00:02<00:07, 351.08it/s]
+ 29%|██▊       | 1033/3610 [00:02<00:07, 351.23it/s]
+ 30%|██▉       | 1069/3610 [00:03<00:07, 351.47it/s]
+ 31%|███       | 1105/3610 [00:03<00:07, 352.58it/s]
+ 32%|███▏      | 1141/3610 [00:03<00:06, 352.73it/s]
+ 33%|███▎      | 1177/3610 [00:03<00:06, 353.47it/s]
+ 34%|███▎      | 1213/3610 [00:03<00:06, 353.17it/s]
+ 35%|███▍      | 1249/3610 [00:03<00:06, 352.95it/s]
+ 36%|███▌      | 1285/3610 [00:03<00:06, 353.46it/s]
+ 37%|███▋      | 1321/3610 [00:03<00:06, 353.57it/s]
+ 38%|███▊      | 1357/3610 [00:03<00:06, 353.48it/s]
+ 39%|███▊      | 1393/3610 [00:03<00:06, 352.90it/s]
+ 40%|███▉      | 1429/3610 [00:04<00:06, 352.35it/s]
+ 41%|████      | 1465/3610 [00:04<00:06, 352.84it/s]
+ 42%|████▏     | 1501/3610 [00:04<00:05, 352.85it/s]
+ 43%|████▎     | 1537/3610 [00:04<00:05, 352.72it/s]
+ 44%|████▎     | 1573/3610 [00:04<00:05, 352.19it/s]
+ 45%|████▍     | 1609/3610 [00:04<00:05, 352.13it/s]
+ 46%|████▌     | 1645/3610 [00:04<00:05, 352.42it/s]
+ 47%|████▋     | 1681/3610 [00:04<00:05, 351.89it/s]
+ 48%|████▊     | 1717/3610 [00:04<00:05, 352.19it/s]
+ 49%|████▊     | 1753/3610 [00:04<00:05, 352.34it/s]
+ 50%|████▉     | 1789/3610 [00:05<00:05, 352.71it/s]
+ 51%|█████     | 1825/3610 [00:05<00:05, 352.91it/s]
+ 52%|█████▏    | 1861/3610 [00:05<00:04, 353.36it/s]
+ 53%|█████▎    | 1897/3610 [00:05<00:04, 352.83it/s]
+ 54%|█████▎    | 1933/3610 [00:05<00:04, 352.81it/s]
+ 55%|█████▍    | 1969/3610 [00:05<00:04, 352.59it/s]
+ 56%|█████▌    | 2005/3610 [00:05<00:04, 352.71it/s]
+ 57%|█████▋    | 2041/3610 [00:05<00:04, 352.95it/s]
+ 58%|█████▊    | 2077/3610 [00:05<00:04, 352.58it/s]
+ 59%|█████▊    | 2113/3610 [00:06<00:04, 352.14it/s]
+ 60%|█████▉    | 2149/3610 [00:06<00:04, 352.68it/s]
+ 61%|██████    | 2185/3610 [00:06<00:04, 353.00it/s]
+ 62%|██████▏   | 2221/3610 [00:06<00:03, 352.59it/s]
+ 63%|██████▎   | 2257/3610 [00:06<00:03, 353.35it/s]
+ 64%|██████▎   | 2293/3610 [00:06<00:03, 353.92it/s]
+ 65%|██████▍   | 2329/3610 [00:06<00:03, 353.82it/s]
+ 66%|██████▌   | 2365/3610 [00:06<00:03, 354.32it/s]
+ 67%|██████▋   | 2401/3610 [00:06<00:03, 354.15it/s]
+ 68%|██████▊   | 2437/3610 [00:06<00:03, 354.04it/s]
+ 69%|██████▊   | 2473/3610 [00:07<00:03, 353.44it/s]
+ 70%|██████▉   | 2509/3610 [00:07<00:03, 353.38it/s]
+ 70%|███████   | 2545/3610 [00:07<00:03, 353.36it/s]
+ 71%|███████▏  | 2581/3610 [00:07<00:02, 353.27it/s]
+ 72%|███████▏  | 2617/3610 [00:07<00:02, 353.11it/s]
+ 73%|███████▎  | 2653/3610 [00:07<00:02, 353.00it/s]
+ 74%|███████▍  | 2689/3610 [00:07<00:02, 353.15it/s]
+ 75%|███████▌  | 2725/3610 [00:07<00:02, 352.96it/s]
+ 76%|███████▋  | 2761/3610 [00:07<00:02, 353.13it/s]
+ 77%|███████▋  | 2797/3610 [00:07<00:02, 353.48it/s]
+ 78%|███████▊  | 2833/3610 [00:08<00:02, 353.58it/s]
+ 79%|███████▉  | 2869/3610 [00:08<00:02, 353.77it/s]
+ 80%|████████  | 2905/3610 [00:08<00:01, 354.05it/s]
+ 81%|████████▏ | 2941/3610 [00:08<00:01, 354.62it/s]
+ 82%|████████▏ | 2977/3610 [00:08<00:01, 354.26it/s]
+ 83%|████████▎ | 3013/3610 [00:08<00:01, 354.53it/s]
+ 84%|████████▍ | 3049/3610 [00:08<00:01, 354.62it/s]
+ 85%|████████▌ | 3085/3610 [00:08<00:01, 354.38it/s]
+ 86%|████████▋ | 3121/3610 [00:08<00:01, 354.74it/s]
+ 87%|████████▋ | 3157/3610 [00:08<00:01, 354.67it/s]
+ 88%|████████▊ | 3193/3610 [00:09<00:01, 354.00it/s]
+ 89%|████████▉ | 3229/3610 [00:09<00:01, 353.88it/s]
+ 90%|█████████ | 3265/3610 [00:09<00:00, 353.47it/s]
+ 91%|█████████▏| 3301/3610 [00:09<00:00, 353.57it/s]
+ 92%|█████████▏| 3337/3610 [00:09<00:00, 353.24it/s]
+ 93%|█████████▎| 3373/3610 [00:09<00:00, 353.01it/s]
+ 94%|█████████▍| 3409/3610 [00:09<00:00, 353.17it/s]
+ 95%|█████████▌| 3445/3610 [00:09<00:00, 353.21it/s]
+ 96%|█████████▋| 3481/3610 [00:09<00:00, 352.77it/s]
+ 97%|█████████▋| 3517/3610 [00:09<00:00, 353.07it/s]
+ 98%|█████████▊| 3553/3610 [00:10<00:00, 353.23it/s]
+ 99%|█████████▉| 3589/3610 [00:10<00:00, 353.19it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 352.35it/s]
+0: INFO    25-10-15 15:26:22.987659 - 0:25:23 - Running loglikelihood requests
+0: INFO    25-10-15 15:27:12.988086 - 0:26:13 - Running generate_until requests
+/home/pj24001974/ku50001532/.local/share/uv/python/cpython-3.11.9-linux-x86_64-gnu/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 9 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

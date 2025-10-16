@@ -1,0 +1,1967 @@
+/home/pj24001974/ku50001532/lingua_self-distillation/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Tensor parallelism has not been tested for a while, use at your own risk
+0: WARNING 25-10-16 04:17:37.601445 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-16 04:17:37.601445 - 0:00:00 - Signal handler installed.
+0: WARNING 25-10-16 04:17:37.601994 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-16 04:17:37.601994 - 0:00:00 - WARNING: Setting MKL_SERVICE_FORCE_INTEL to GNU
+0: WARNING 25-10-16 04:17:37.602095 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-16 04:17:37.602095 - 0:00:00 - WARNING: Setting OMP_NUM_THREADS to 1
+0: WARNING 25-10-16 04:17:37.602177 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-16 04:17:37.602177 - 0:00:00 - WARNING: Setting MKL_NUM_THREADS to 1
+0: WARNING 25-10-16 04:17:37.602240 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-16 04:17:37.602240 - 0:00:00 - WARNING: Setting ENABLE_INTRA_NODE_COMM to 1
+0: WARNING 25-10-16 04:17:37.602296 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-16 04:17:37.602296 - 0:00:00 - WARNING: Setting TORCH_NCCL_AVOID_RECORD_STREAMS to 1
+0: WARNING 25-10-16 04:17:37.602351 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-16 04:17:37.602351 - 0:00:00 - WARNING: Setting NCCL_IB_TIMEOUT to 22
+0: WARNING 25-10-16 04:17:37.602401 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-16 04:17:37.602401 - 0:00:00 - WARNING: Setting NCCL_DEBUG to INFO
+0: WARNING 25-10-16 04:17:37.602451 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-16 04:17:37.602451 - 0:00:00 - WARNING: Setting TORCH_NCCL_ASYNC_ERROR_HANDLING to 1
+0: WARNING 25-10-16 04:17:37.602510 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3927003_ZGVidWdfNC5zaAo=/tmple_iq9kt
+0: WARNING 25-10-16 04:17:37.602510 - 0:00:00 - WARNING: Setting TRITON_CACHE_DIR to /tmp/3927003_ZGVidWdfNC5zaAo=/tmple_iq9kt
+/home/pj24001974/ku50001532/lingua_self-distillation/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+0: INFO    25-10-16 04:17:44.785409 - 0:00:07 - Single GPU job
+0: INFO    25-10-16 04:17:44.785751 - 0:00:07 - ENV: environ({'BASH_FUNC_ml%%': '() {  module ml "$@"\n}', 'BASH_FUNC_module%%': '() {  unset _mlshdbg;\n if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = \'1\' ]; then\n case "$-" in \n *v*x*)\n set +vx;\n _mlshdbg=\'vx\'\n ;;\n *v*)\n set +v;\n _mlshdbg=\'v\'\n ;;\n *x*)\n set +x;\n _mlshdbg=\'x\'\n ;;\n *)\n _mlshdbg=\'\'\n ;;\n esac;\n fi;\n unset _mlre _mlIFS;\n if [ -n "${IFS+x}" ]; then\n _mlIFS=$IFS;\n fi;\n IFS=\' \';\n for _mlv in ${MODULES_RUN_QUARANTINE:-};\n do\n if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then\n if [ -n "`eval \'echo ${\'$_mlv\'+x}\'`" ]; then\n _mlre="${_mlre:-}${_mlv}_modquar=\'`eval \'echo ${\'$_mlv\'}\'`\' ";\n fi;\n _mlrv="MODULES_RUNENV_${_mlv}";\n _mlre="${_mlre:-}${_mlv}=\'`eval \'echo ${\'$_mlrv\':-}\'`\' ";\n fi;\n done;\n if [ -n "${_mlre:-}" ]; then\n eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash \'"$@"\'`;\n else\n eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;\n fi;\n _mlstatus=$?;\n if [ -n "${_mlIFS+x}" ]; then\n IFS=$_mlIFS;\n else\n unset IFS;\n fi;\n unset _mlre _mlv _mlrv _mlIFS;\n if [ -n "${_mlshdbg:-}" ]; then\n set -$_mlshdbg;\n fi;\n unset _mlshdbg;\n return $_mlstatus\n}', 'BASH_FUNC_scl%%': '() {  if [ "$1" = "load" -o "$1" = "unload" ]; then\n eval "module $@";\n else\n /usr/bin/scl "$@";\n fi\n}', 'BASH_FUNC_switchml%%': '() {  typeset swfound=1;\n if [ "${MODULES_USE_COMPAT_VERSION:-0}" = \'1\' ]; then\n typeset swname=\'main\';\n if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then\n typeset swfound=0;\n unset MODULES_USE_COMPAT_VERSION;\n fi;\n else\n typeset swname=\'compatibility\';\n if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then\n typeset swfound=0;\n MODULES_USE_COMPAT_VERSION=1;\n export MODULES_USE_COMPAT_VERSION;\n fi;\n fi;\n if [ $swfound -eq 0 ]; then\n echo "Switching to Modules $swname version";\n source /usr/share/Modules/init/bash;\n else\n echo "Cannot switch to Modules $swname version, command not found";\n return 1;\n fi\n}', 'BASH_FUNC_which%%': '() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}', 'CPATH': '/home/app/cuda/12.2.2/include', 'CPATH_modshare': '/home/app/cuda/12.2.2/include:1', 'CUDA_DIR': '/home/app/cuda/12.2.2', 'CUDA_HOME': '/home/app/cuda/12.2.2', 'CUDA_INSTALL_PATH': '/home/app/cuda/12.2.2', 'CUDA_MPS_LOG_DIRECTORY': '/tmp/nvidia-mps_3927003', 'CUDA_MPS_PIPE_DIRECTORY': '/tmp/nvidia-mps_3927003', 'CUDA_PATH': '/home/app/cuda/12.2.2', 'CUDA_TOP': '/home/app/cuda/12.2.2', 'CYCLECLOUD_BOOTSTRAP': '/opt/cycle/jetpack/system/bootstrap', 'CYCLECLOUD_HOME': '/opt/cycle/jetpack', 'C_INCLUDE_PATH': '/home/app/cuda/12.2.2/include', 'C_INCLUDE_PATH_modshare': '/home/app/cuda/12.2.2/include:1', 'FJPNCKPT_CONFIG': '0x00', 'GENKAI_CACHE_DIR': '/home/cache/pj24001974/ku50001532', 'GENKAI_CUDA_NAME': 'cuda', 'GENKAI_CUDA_VER': '12.2.2', 'GENKAI_FAST_DIR': '/fast/pj24001974', 'HISTCONTROL': 'ignoredups', 'HISTSIZE': '1000', 'HOME': '/home/pj24001974/ku50001532', 'HOSTNAME': 'b0028', 'JOBID': '3927003', 'LANG': 'ja_JP.UTF-8', 'LD_LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LD_LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'LIBRARY_PATH': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:/home/app/cuda/12.2.2/lib64', 'LIBRARY_PATH_modshare': '/home/app/cuda/12.2.2/extras/CUPTI/lib64:1:/home/app/cuda/12.2.2/lib64:1', 'LOADEDMODULES': 'cuda/12.2.2', 'LOADEDMODULES_modshare': 'cuda/12.2.2:1', 'LOGNAME': 'ku50001532', 'LUSTRE_JOBSTAT': 'ku50001532@3927003', 'MAIL': '/var/spool/mail/ku50001532', 'MANPATH': ':', 'MIG_PARTED_CHECKPOINT_FILE': '/var/lib/nvidia-mig-manager/checkpoint.json', 'MIG_PARTED_CONFIG_FILE': '/etc/nvidia-mig-manager/config.yaml', 'MIG_PARTED_HOOKS_FILE': '/etc/nvidia-mig-manager/hooks.yaml', 'MODULEPATH': '/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:/home/modules/modulefiles/CNB/core:/home/modules/modulefiles/CNB/util:/home/center/modulefiles:/home/rist/modulefiles', 'MODULEPATH_modshare': '/home/center/modulefiles:1:/home/rist/modulefiles:1:/home/modules/modulefiles/CNB/compiler/cuda/12.2.2:1:/home/modules/modulefiles/CNB/core:1:/home/modules/modulefiles/CNB/util:1', 'MODULESHOME': '/usr/share/Modules', 'MODULES_CMD': '/usr/share/Modules/libexec/modulecmd.tcl', 'MODULES_LMALTNAME': 'cuda/12.2.2&cuda/default&cuda', 'MODULES_LMALTNAME_modshare': 'cuda/12.2.2&cuda/default&cuda:1', 'MODULES_LMCONFLICT': 'cuda/12.2.2&cuda', 'MODULES_LMCONFLICT_modshare': 'cuda/12.2.2&cuda:1', 'MODULES_RUN_QUARANTINE': 'LD_LIBRARY_PATH LD_PRELOAD', 'MOD_GIT_ROOTDIR': '/home/modules', 'OMPI_CKPTCONFIG': '0x00', 'PATH': '/home/pj24001974/ku50001532/lingua_self-distillation/.venv/bin:/home/app/cuda/12.2.2/nsight-systems-2023.2.3:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:/home/app/cuda/12.2.2/bin:/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin', 'PATH_modshare': '/home/app/cuda/12.2.2/nsight-systems-2023.2.3:1:/home/app/cuda/12.2.2/nsight-compute-2023.2.2:1:/usr/sbin:1:/usr/bin:1:/home/app/cuda/12.2.2/bin:1:/usr/local/sbin:1:/opt/cycle/jetpack/bin:1:/home/pj24001974/ku50001532/.local/bin:1:/home/pj24001974/ku50001532/bin:1:/usr/share/Modules/bin:1:/usr/local/bin:1', 'PJM_ASSIGN_LOGICAL_CPU': 'job', 'PJM_CORE_MEM_LIMIT': '0', 'PJM_CUSTOM_RESOURCES': 'rsc011=0,rsc012=0,rsc013=0,rsc014=0,rsc015=0,rsc016=0,rsc017=0,rsc018=0,rsc019=0,rsc020=0,rsc021=0,rsc022=0,rsc023=0,rsc024=0,rsc025=0,rsc026=0,rsc027=0,rsc028=0,rsc029=0,rsc030=0,rsc031=0,rsc032=0,rsc033=0,rsc034=0,rsc035=0,rsc036=0,rsc037=0,rsc038=0,rsc039=0,rsc040=0,rsc041=0,rsc042=0,rsc043=0,rsc044=0,rsc045=0,rsc046=0,rsc047=0,rsc048=0,rsc049=0,rsc050=0,gpu/n=1,rsc001/n=0,rsc002/n=0,rsc003/n=0,rsc004/n=0,rsc005/n=0,rsc006/n=0,rsc007/n=0,rsc008/n=0,rsc009/n=0,rsc010/n=0,shared/n=true,short-job/n=false', 'PJM_DPREFIX': '#PJM', 'PJM_ELAPSED_TIME_MODE': 'fixed', 'PJM_ELAPSE_LIMIT': '36000', 'PJM_ENVIRONMENT': 'BATCH', 'PJM_EXEC_POLICY': 'share', 'PJM_JOBDIR': '/home/pj24001974/ku50001532/lingua_self-distillation', 'PJM_JOBID': '3927003', 'PJM_JOBNAME': 'debug_4.sh', 'PJM_MAILOPTION': '0x0', 'PJM_MPI_PROC': '1', 'PJM_NET_ROUTE': 'static', 'PJM_NODE_CPUTIME_LIMIT': '18446744073709551615', 'PJM_O_HOME': '/home/pj24001974/ku50001532', 'PJM_O_HOST': 'genkai0001', 'PJM_O_LANG': 'en_US.UTF-8', 'PJM_O_LOGNAME': 'ku50001532', 'PJM_O_MAIL': '/var/spool/mail/ku50001532', 'PJM_O_NODEINF': '/home/pj24001974/ku50001532/lingua_self-distillation/.d0003927003_nodeinfo', 'PJM_O_PATH': '/home/pj24001974/ku50001532/.local/bin:/home/pj24001974/ku50001532/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/cycle/jetpack/bin:/opt/cycle/jetpack/bin', 'PJM_O_SHELL': '/bin/bash', 'PJM_O_WORKDIR': '/home/pj24001974/ku50001532/lingua_self-distillation', 'PJM_PROC_BY_NODE': '1', 'PJM_RSCGRP': 'b-batch', 'PJM_RSCUNIT': 'rscunit_pg01', 'PJM_SHELL': '/bin/bash', 'PJM_SSD_DIR': '/ssd/3927003', 'PJM_STDERR_PATH': '/home/pj24001974/ku50001532/lingua_self-distillation/debug_4_std.txt', 'PJM_STDOUT_PATH': '/home/pj24001974/ku50001532/lingua_self-distillation/debug_4_std.txt', 'PJM_SUBJOBID': '3927003', 'PJM_VNODE': '1', 'PJM_VNODE_CORE': '30', 'PJM_VNODE_MEM_LIMIT': '243322060800', 'PJM_VN_POLICY': 'abs-unpack', 'PLE_SCRIPT_TYPE': 'JOB_SCRIPT', 'PWD': '/home/pj24001974/ku50001532/lingua_self-distillation', 'SHLVL': '2', 'SSH_ASKPASS': '/usr/libexec/openssh/gnome-ssh-askpass', 'S_COLORS': 'auto', 'TMP': '/tmp/3927003_ZGVidWdfNC5zaAo=', 'TMPDIR': '/tmp/3927003_ZGVidWdfNC5zaAo=', 'TMUX_TMPDIR': '/tmp/3927003_ZGVidWdfNC5zaAo=', 'USER': 'ku50001532', 'UV': '/home/pj24001974/ku50001532/.local/bin/uv', 'UV_RUN_RECURSION_DEPTH': '1', 'VIRTUAL_ENV': '/home/pj24001974/ku50001532/lingua_self-distillation/.venv', 'WANDB_API_KEY': 'b84c9ccade31a24dcb9b92f1573576171ada67d8', 'XDG_DATA_DIRS': '/home/pj24001974/ku50001532/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', '_': '/home/pj24001974/ku50001532/.local/bin/uv', '_LMFILES_': '/home/modules/modulefiles/CNB/core/cuda/12.2.2', '_LMFILES__modshare': '/home/modules/modulefiles/CNB/core/cuda/12.2.2:1', 'which_declare': 'declare -f', 'CUDA_MODULE_LOADING': 'LAZY', 'TORCHINDUCTOR_CACHE_DIR': '/tmp/3927003_ZGVidWdfNC5zaAo=/torchinductor_ku50001532', 'MKL_SERVICE_FORCE_INTEL': 'GNU', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'ENABLE_INTRA_NODE_COMM': '1', 'TORCH_NCCL_AVOID_RECORD_STREAMS': '1', 'NCCL_IB_TIMEOUT': '22', 'NCCL_DEBUG': 'INFO', 'TORCH_NCCL_ASYNC_ERROR_HANDLING': '1', 'TRITON_CACHE_DIR': '/tmp/3927003_ZGVidWdfNC5zaAo=/tmple_iq9kt', 'RANK': '0', 'WORLD_SIZE': '1', 'MASTER_ADDR': '127.0.0.1', 'MASTER_PORT': '28805'})
+[W1016 04:17:45.948661607 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [localhost]:28805 (errno: 97 - Address family not supported by protocol).
+[W1016 04:17:45.051101658 ProcessGroupNCCL.cpp:981] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS is the default now, this environment variable is thus deprecated. (function operator())
+0: INFO    25-10-16 04:17:45.601313 - 0:00:08 - Starting job: debug_4_2025-10-16
+0: INFO    25-10-16 04:17:45.601568 - 0:00:08 - Running on dp rank : 0
+0: INFO    25-10-16 04:17:45.601619 - 0:00:08 - Running on dp size : 1
+0: INFO    25-10-16 04:17:45.604320 - 0:00:08 - Building model
+0: INFO    25-10-16 04:17:45.925522 - 0:00:08 - Model is built !
+0: INFO    25-10-16 04:17:50.882271 - 0:00:13 - Model size: 103,306,240 total parameters
+0: INFO    25-10-16 04:17:50.882883 - 0:00:13 - GPU capacity: NVIDIA H100 (0) with 93.09GiB memory
+0: INFO    25-10-16 04:17:50.885601 - 0:00:13 - GPU memory usage: NVIDIA H100 (0): 93.08551025390625 GiB capacity, 0.435546875 GiB peak, 0.4678997556246652% peak
+0: INFO    25-10-16 04:17:50.885730 - 0:00:13 - Starting build of optimizer...
+0: INFO    25-10-16 04:17:50.886164 - 0:00:13 - Done with build of optimizer.
+/home/pj24001974/ku50001532/lingua_self-distillation/.venv/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+0: INFO    25-10-16 04:17:50.950008 - 0:00:13 - Async dataloader started
+0: INFO    25-10-16 04:17:50.950946 - 0:00:13 - Profiling active.  Traces will be saved at outputs/debug_4_2025-10-16/profiling
+/home/pj24001974/ku50001532/lingua_self-distillation/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+0: INFO    25-10-16 04:17:58.043898 - 0:00:20 - garbage collection
+0: INFO    25-10-16 04:18:17.470102 - 0:00:40 - step: 10  acc: 0  loss:  5.3973  grad: 2.64e+01  flops: 1.82e+13  wps: 2.47e+04  iter:  0.1233  data: 0.0063  lr: 1.35e-06  mem: 20%  pow: 632.279 W
+0: INFO    25-10-16 04:18:18.863418 - 0:00:41 - step: 20  acc: 0  loss:  4.2865  grad: 1.44e+01  flops: 3.46e+14  wps: 4.71e+05  iter:  0.1236  data: 0.0063  lr: 2.85e-06  mem: 20%  pow: 635.169 W
+0: INFO    25-10-16 04:18:20.245792 - 0:00:43 - step: 30  acc: 0  loss:  3.6163  grad: 5.83e+00  flops: 3.49e+14  wps: 4.74e+05  iter:  0.1236  data: 0.0148  lr: 4.35e-06  mem: 20%  pow: 628.352 W
+0: INFO    25-10-16 04:18:21.593354 - 0:00:44 - step: 40  acc: 0  loss:  3.2691  grad: 3.98e+00  flops: 3.58e+14  wps: 4.86e+05  iter:  0.1236  data: 0.0154  lr: 5.85e-06  mem: 20%  pow: 647.516 W
+0: INFO    25-10-16 04:18:22.924030 - 0:00:45 - step: 50  acc: 0  loss:  3.1255  grad: 2.26e+00  flops: 3.62e+14  wps: 4.93e+05  iter:  0.1237  data: 0.0103  lr: 7.35e-06  mem: 20%  pow: 653.843 W
+0: INFO    25-10-16 04:18:24.283675 - 0:00:47 - step: 60  acc: 0  loss:  3.0079  grad: 2.04e+00  flops: 3.55e+14  wps: 4.82e+05  iter:  0.1232  data: 0.0198  lr: 8.85e-06  mem: 20%  pow: 630.721 W
+0: INFO    25-10-16 04:18:25.692109 - 0:00:48 - step: 70  acc: 0  loss:  2.8568  grad: 1.77e+00  flops: 3.42e+14  wps: 4.66e+05  iter:  0.1234  data: 0.0196  lr: 1.03e-05  mem: 20%  pow: 622.154 W
+0: INFO    25-10-16 04:18:27.047035 - 0:00:49 - step: 80  acc: 0  loss:  2.7548  grad: 2.07e+00  flops: 3.56e+14  wps: 4.84e+05  iter:  0.1235  data: 0.0066  lr: 1.18e-05  mem: 20%  pow: 641.6 W
+0: INFO    25-10-16 04:18:28.435150 - 0:00:51 - step: 90  acc: 0  loss:  2.8201  grad: 1.64e+00  flops: 3.47e+14  wps: 4.72e+05  iter:  0.1236  data: 0.0151  lr: 1.33e-05  mem: 20%  pow: 640.979 W
+0: INFO    25-10-16 04:18:29.827922 - 0:00:52 - Starting MemSnapshotsProfilerWandb profiler...
+0: INFO    25-10-16 04:18:29.883830 - 0:00:52 - step: 100  acc: 0  loss:  2.7326  grad: 1.27e+00  flops: 3.35e+14  wps: 4.56e+05  iter:  0.1231  data: 0.0198  lr: 1.49e-05  mem: 20%  pow: 631.323 W
+0: INFO    25-10-16 04:18:29.885222 - 0:00:52 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000100
+0: INFO    25-10-16 04:18:29.885406 - 0:00:52 - Saving...
+0: INFO    25-10-16 04:18:31.767071 - 0:00:54 - State dict saved!
+0: INFO    25-10-16 04:18:31.780787 - 0:00:54 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000100/train_state_00000.json
+0: INFO    25-10-16 04:18:31.782024 - 0:00:54 - Train state saved !
+0: INFO    25-10-16 04:18:31.782109 - 0:00:54 - Cleaning up checkpoints...
+0: INFO    25-10-16 04:18:31.782187 - 0:00:54 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000100')]
+0: INFO    25-10-16 04:18:31.782227 - 0:00:54 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000100')]
+0: INFO    25-10-16 04:18:31.782260 - 0:00:54 - Other folders: []
+0: INFO    25-10-16 04:18:31.782311 - 0:00:54 - Removing folders: set()
+0: INFO    25-10-16 04:18:37.446672 - 0:01:00 - PyTorch version 2.8.0 available.
+0: INFO    25-10-16 04:18:56.857836 - 0:01:19 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000100/consolidated
+0: INFO    25-10-16 04:18:58.826793 - 0:01:21 - Consolidated !
+0: INFO    25-10-16 04:18:58.840709 - 0:01:21 - Loading model
+0: INFO    25-10-16 04:19:00.076849 - 0:01:22 - Model loaded
+0: INFO    25-10-16 04:19:00.086112 - 0:01:22 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 04:19:00.086266 - 0:01:22 - Using pre-initialized model
+0: WARNING 25-10-16 04:19:52.876242 - 0:02:15 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 04:19:52.876242 - 0:02:15 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 04:19:52.877271 - 0:02:15 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 04:19:52.877271 - 0:02:15 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 04:19:54.091048 - 0:02:16 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 04:19:54.092729 - 0:02:16 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 174/1838 [00:00<00:00, 1739.70it/s]
+ 19%|█▉        | 348/1838 [00:00<00:00, 1737.09it/s]
+ 28%|██▊       | 522/1838 [00:00<00:00, 1732.56it/s]
+ 38%|███▊      | 696/1838 [00:00<00:00, 1735.18it/s]
+ 47%|████▋     | 871/1838 [00:00<00:00, 1738.40it/s]
+ 57%|█████▋    | 1045/1838 [00:00<00:00, 1736.62it/s]
+ 66%|██████▋   | 1220/1838 [00:00<00:00, 1740.34it/s]
+ 76%|███████▌  | 1395/1838 [00:00<00:00, 1742.30it/s]
+ 85%|████████▌ | 1570/1838 [00:00<00:00, 1743.05it/s]
+ 95%|█████████▍| 1745/1838 [00:01<00:00, 1739.68it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1739.06it/s]
+0: INFO    25-10-16 04:19:55.189606 - 0:02:18 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 463/10042 [00:00<00:02, 4628.28it/s]
+  9%|▉         | 940/10042 [00:00<00:01, 4706.26it/s]
+ 14%|█▍        | 1418/10042 [00:00<00:01, 4738.85it/s]
+ 19%|█▉        | 1901/10042 [00:00<00:01, 4773.53it/s]
+ 24%|██▎       | 2382/10042 [00:00<00:01, 4783.79it/s]
+ 29%|██▊       | 2862/10042 [00:00<00:01, 4786.84it/s]
+ 33%|███▎      | 3341/10042 [00:00<00:01, 4779.47it/s]
+ 38%|███▊      | 3819/10042 [00:00<00:01, 4758.67it/s]
+ 43%|████▎     | 4295/10042 [00:00<00:01, 4745.50it/s]
+ 48%|████▊     | 4770/10042 [00:01<00:01, 4728.04it/s]
+ 52%|█████▏    | 5243/10042 [00:01<00:01, 4726.88it/s]
+ 57%|█████▋    | 5716/10042 [00:01<00:00, 4706.36it/s]
+ 62%|██████▏   | 6187/10042 [00:01<00:00, 4692.07it/s]
+ 66%|██████▋   | 6657/10042 [00:01<00:00, 4689.77it/s]
+ 71%|███████   | 7126/10042 [00:01<00:00, 4682.31it/s]
+ 76%|███████▌  | 7595/10042 [00:01<00:00, 4676.22it/s]
+ 80%|████████  | 8063/10042 [00:01<00:00, 4675.04it/s]
+ 85%|████████▍ | 8531/10042 [00:01<00:00, 4662.09it/s]
+ 90%|████████▉ | 8998/10042 [00:01<00:00, 4649.56it/s]
+ 94%|█████████▍| 9463/10042 [00:02<00:00, 4646.38it/s]
+ 99%|█████████▉| 9928/10042 [00:02<00:00, 4639.18it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4698.55it/s]
+0: INFO    25-10-16 04:19:58.761100 - 0:02:21 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 346.46it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 347.91it/s]
+  3%|▎         | 105/3610 [00:00<00:10, 348.29it/s]
+  4%|▍         | 141/3610 [00:00<00:09, 349.06it/s]
+  5%|▍         | 177/3610 [00:00<00:09, 349.56it/s]
+  6%|▌         | 213/3610 [00:00<00:09, 349.90it/s]
+  7%|▋         | 249/3610 [00:00<00:09, 350.37it/s]
+  8%|▊         | 285/3610 [00:00<00:09, 351.05it/s]
+  9%|▉         | 321/3610 [00:00<00:09, 351.43it/s]
+ 10%|▉         | 357/3610 [00:01<00:09, 351.14it/s]
+ 11%|█         | 393/3610 [00:01<00:09, 350.50it/s]
+ 12%|█▏        | 429/3610 [00:01<00:09, 349.71it/s]
+ 13%|█▎        | 464/3610 [00:01<00:09, 349.08it/s]
+ 14%|█▍        | 499/3610 [00:01<00:08, 348.51it/s]
+ 15%|█▍        | 535/3610 [00:01<00:08, 349.33it/s]
+ 16%|█▌        | 570/3610 [00:01<00:09, 325.61it/s]
+ 17%|█▋        | 606/3610 [00:01<00:09, 333.02it/s]
+ 18%|█▊        | 642/3610 [00:01<00:08, 338.79it/s]
+ 19%|█▉        | 678/3610 [00:01<00:08, 342.15it/s]
+ 20%|█▉        | 713/3610 [00:02<00:08, 344.35it/s]
+ 21%|██        | 748/3610 [00:02<00:08, 345.89it/s]
+ 22%|██▏       | 783/3610 [00:02<00:08, 347.09it/s]
+ 23%|██▎       | 819/3610 [00:02<00:08, 348.37it/s]
+ 24%|██▎       | 854/3610 [00:02<00:07, 348.74it/s]
+ 25%|██▍       | 889/3610 [00:02<00:07, 348.79it/s]
+ 26%|██▌       | 925/3610 [00:02<00:07, 349.23it/s]
+ 27%|██▋       | 961/3610 [00:02<00:07, 350.09it/s]
+ 28%|██▊       | 997/3610 [00:02<00:07, 350.06it/s]
+ 29%|██▊       | 1033/3610 [00:02<00:07, 350.06it/s]
+ 30%|██▉       | 1069/3610 [00:03<00:07, 350.74it/s]
+ 31%|███       | 1105/3610 [00:03<00:07, 350.43it/s]
+ 32%|███▏      | 1141/3610 [00:03<00:07, 350.18it/s]
+ 33%|███▎      | 1177/3610 [00:03<00:06, 350.40it/s]
+ 34%|███▎      | 1213/3610 [00:03<00:06, 349.97it/s]
+ 35%|███▍      | 1248/3610 [00:03<00:06, 349.80it/s]
+ 36%|███▌      | 1283/3610 [00:03<00:06, 349.39it/s]
+ 37%|███▋      | 1319/3610 [00:03<00:06, 350.16it/s]
+ 38%|███▊      | 1355/3610 [00:03<00:06, 350.10it/s]
+ 39%|███▊      | 1391/3610 [00:03<00:06, 349.57it/s]
+ 40%|███▉      | 1427/3610 [00:04<00:06, 350.39it/s]
+ 41%|████      | 1463/3610 [00:04<00:06, 350.63it/s]
+ 42%|████▏     | 1499/3610 [00:04<00:06, 350.98it/s]
+ 43%|████▎     | 1535/3610 [00:04<00:05, 350.83it/s]
+ 44%|████▎     | 1571/3610 [00:04<00:05, 350.56it/s]
+ 45%|████▍     | 1607/3610 [00:04<00:05, 350.32it/s]
+ 46%|████▌     | 1643/3610 [00:04<00:05, 350.27it/s]
+ 47%|████▋     | 1679/3610 [00:04<00:05, 349.95it/s]
+ 48%|████▊     | 1715/3610 [00:04<00:05, 350.37it/s]
+ 49%|████▊     | 1751/3610 [00:05<00:05, 350.70it/s]
+ 50%|████▉     | 1787/3610 [00:05<00:05, 350.87it/s]
+ 50%|█████     | 1823/3610 [00:05<00:05, 351.25it/s]
+ 51%|█████▏    | 1859/3610 [00:05<00:04, 351.61it/s]
+ 52%|█████▏    | 1895/3610 [00:05<00:04, 351.30it/s]
+ 53%|█████▎    | 1931/3610 [00:05<00:04, 350.40it/s]
+ 54%|█████▍    | 1967/3610 [00:05<00:04, 350.38it/s]
+ 55%|█████▌    | 2003/3610 [00:05<00:04, 350.46it/s]
+ 56%|█████▋    | 2039/3610 [00:05<00:04, 350.71it/s]
+ 57%|█████▋    | 2075/3610 [00:05<00:04, 350.89it/s]
+ 58%|█████▊    | 2111/3610 [00:06<00:04, 350.58it/s]
+ 59%|█████▉    | 2147/3610 [00:06<00:04, 350.33it/s]
+ 60%|██████    | 2183/3610 [00:06<00:04, 350.39it/s]
+ 61%|██████▏   | 2219/3610 [00:06<00:03, 350.58it/s]
+ 62%|██████▏   | 2255/3610 [00:06<00:03, 351.12it/s]
+ 63%|██████▎   | 2291/3610 [00:06<00:03, 351.23it/s]
+ 64%|██████▍   | 2327/3610 [00:06<00:03, 351.47it/s]
+ 65%|██████▌   | 2363/3610 [00:06<00:03, 351.89it/s]
+ 66%|██████▋   | 2399/3610 [00:06<00:03, 352.06it/s]
+ 67%|██████▋   | 2435/3610 [00:06<00:03, 351.94it/s]
+ 68%|██████▊   | 2471/3610 [00:07<00:03, 351.18it/s]
+ 69%|██████▉   | 2507/3610 [00:07<00:03, 350.93it/s]
+ 70%|███████   | 2543/3610 [00:07<00:03, 350.63it/s]
+ 71%|███████▏  | 2579/3610 [00:07<00:02, 350.03it/s]
+ 72%|███████▏  | 2615/3610 [00:07<00:02, 349.95it/s]
+ 73%|███████▎  | 2650/3610 [00:07<00:02, 349.73it/s]
+ 74%|███████▍  | 2686/3610 [00:07<00:02, 350.21it/s]
+ 75%|███████▌  | 2722/3610 [00:07<00:02, 350.64it/s]
+ 76%|███████▋  | 2758/3610 [00:07<00:02, 350.51it/s]
+ 77%|███████▋  | 2794/3610 [00:07<00:02, 350.68it/s]
+ 78%|███████▊  | 2830/3610 [00:08<00:02, 351.00it/s]
+ 79%|███████▉  | 2866/3610 [00:08<00:02, 350.96it/s]
+ 80%|████████  | 2902/3610 [00:08<00:02, 350.71it/s]
+ 81%|████████▏ | 2938/3610 [00:08<00:01, 350.98it/s]
+ 82%|████████▏ | 2974/3610 [00:08<00:01, 351.03it/s]
+ 83%|████████▎ | 3010/3610 [00:08<00:01, 350.68it/s]
+ 84%|████████▍ | 3046/3610 [00:08<00:01, 350.95it/s]
+ 85%|████████▌ | 3082/3610 [00:08<00:01, 351.43it/s]
+ 86%|████████▋ | 3118/3610 [00:08<00:01, 351.45it/s]
+ 87%|████████▋ | 3154/3610 [00:09<00:01, 351.63it/s]
+ 88%|████████▊ | 3190/3610 [00:09<00:01, 352.11it/s]
+ 89%|████████▉ | 3226/3610 [00:09<00:01, 351.78it/s]
+ 90%|█████████ | 3262/3610 [00:09<00:00, 351.35it/s]
+ 91%|█████████▏| 3298/3610 [00:09<00:00, 351.46it/s]
+ 92%|█████████▏| 3334/3610 [00:09<00:00, 350.89it/s]
+ 93%|█████████▎| 3370/3610 [00:09<00:00, 350.68it/s]
+ 94%|█████████▍| 3406/3610 [00:09<00:00, 350.66it/s]
+ 95%|█████████▌| 3442/3610 [00:09<00:00, 350.95it/s]
+ 96%|█████████▋| 3478/3610 [00:09<00:00, 350.78it/s]
+ 97%|█████████▋| 3514/3610 [00:10<00:00, 350.85it/s]
+ 98%|█████████▊| 3550/3610 [00:10<00:00, 350.83it/s]
+ 99%|█████████▉| 3586/3610 [00:10<00:00, 350.64it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 349.71it/s]
+0: INFO    25-10-16 04:20:09.140259 - 0:02:32 - Running loglikelihood requests
+0: INFO    25-10-16 04:21:07.142945 - 0:03:30 - Running generate_until requests
+0: INFO    25-10-16 04:38:44.918869 - 0:21:07 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 04:38:45.542142 - 0:21:08 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -4760.72021484375, 'nll_per_token': -2.748737335205078, 'nll_per_char': -1.8491642475128174, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 04:38:45.896515 - 0:21:08 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.25562636924915355, 'acc_stderr,none': 0.004353212146198464, 'acc_norm,none': 0.2526389165504879, 'acc_norm_stderr,none': 0.004336375492801801}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.528835690968444, 'acc_stderr,none': 0.011646407809944718, 'acc_norm,none': 0.4885745375408052, 'acc_norm_stderr,none': 0.011662778026451675}}
+0: INFO    25-10-16 04:38:45.897846 - 0:21:08 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -4760.72021484375, 'nll_per_token': -2.748737335205078, 'nll_per_char': -1.8491642475128174, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 04:38:45.897957 - 0:21:08 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 04:38:47.555935 - 0:21:10 - Shutting down MemSnapshotsProfilerWandb profiler...
+0: INFO    25-10-16 04:38:47.828543 - 0:21:10 - Starting PyTorchProfilerWandb profiler...
+b0028:94:94 [0] NCCL INFO Bootstrap: Using ib0:172.17.17.28<0>
+b0028:94:94 [0] NCCL INFO cudaDriverVersion 13000
+b0028:94:94 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+b0028:94:94 [0] NCCL INFO Comm config Blocking set to 1
+b0028:94:301 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+b0028:94:301 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [RO]; OOB ib0:172.17.17.28<0>
+b0028:94:301 [0] NCCL INFO Initialized NET plugin IB
+b0028:94:301 [0] NCCL INFO Assigned NET plugin IB to comm
+b0028:94:301 [0] NCCL INFO Using network IB
+b0028:94:301 [0] NCCL INFO DMA-BUF is available on GPU device 0
+b0028:94:301 [0] NCCL INFO ncclCommInitRankConfig comm 0x558ba80d6970 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bc000 commId 0x3aad73985f879e04 - Init START
+b0028:94:301 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+b0028:94:301 [0] NCCL INFO Bootstrap timings total 0.001280 (create 0.000024, send 0.000122, recv 0.000164, ring 0.000003, delay 0.000002)
+b0028:94:301 [0] NCCL INFO Setting affinity for GPU 0 to 90-119
+b0028:94:301 [0] NCCL INFO comm 0x558ba80d6970 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+b0028:94:301 [0] NCCL INFO Channel 00/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 01/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 02/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 03/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 04/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 05/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 06/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 07/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 08/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 09/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 10/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 11/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 12/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 13/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 14/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 15/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 16/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 17/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 18/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 19/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 20/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 21/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 22/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 23/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 24/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 25/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 26/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 27/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 28/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 29/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 30/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 31/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 32/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 33/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 34/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 35/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 36/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 37/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 38/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 39/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 40/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 41/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 42/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 43/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 44/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 45/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 46/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 47/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 48/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 49/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 50/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 51/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 52/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 53/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 54/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 55/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 56/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 57/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 58/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 59/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 60/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 61/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 62/64 : 0
+b0028:94:301 [0] NCCL INFO Channel 63/64 : 0
+b0028:94:301 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [46] -1/-1/-1->0->-1 [47] -1/-1/-1
+b0028:94:301 [0] NCCL INFO P2P Chunksize set to 524288
+b0028:94:301 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+b0028:94:301 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+b0028:94:305 [0] NCCL INFO [Proxy Service] Device 0 CPU core 110
+b0028:94:306 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 112
+b0028:94:301 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+b0028:94:301 [0] NCCL INFO CC Off, workFifoBytes 1048576
+b0028:94:301 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+b0028:94:301 [0] NCCL INFO ncclCommInitRankConfig comm 0x558ba80d6970 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bc000 commId 0x3aad73985f879e04 - Init COMPLETE
+b0028:94:301 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 0.78 (kernels 0.65, alloc 0.05, bootstrap 0.00, allgathers 0.00, topo 0.03, graphs 0.00, connections 0.01, rest 0.02)
+[rank0]:[W1016 04:38:47.758026341 CPUAllocator.cpp:245] Memory block of unknown size was allocated before the profiling started, profiler results will not include the deallocation event
+0: INFO    25-10-16 04:38:48.422101 - 0:21:11 - Shutting down PyTorchProfilerWandb profiler...
+0: INFO    25-10-16 04:38:49.124649 - 0:21:12 - Begin analyze trace
+0: INFO    25-10-16 04:38:49.318094 - 0:21:12 - End analyze trace
+0: INFO    25-10-16 04:38:49.318408 - 0:21:12 - xFormers profiler done. summary:
+                                                  MemTrace      : /home/pj24001974/ku50001532/lingua_self-distillation/outputs/debug_4_2025-10-16/profiling/memory_trace_plot/000102_rank0_b0028_94.html
+                                                  Step time (ms): 174
+                                                  TFlop/step    : 46.0
+                                                  TFlops        : 264.1
+                                                  HFU           : 0.299
+                                                  MFU           : 0.235
+0: INFO    25-10-16 04:38:50.128899 - 0:21:13 - step: 110  acc: 0  loss:  2.6342  grad: 3.14e+00  flops: 3.95e+11  wps: 5.37e+02  iter:  0.1237  data: 0.0105  lr: 1.63e-05  mem: 20%  pow: 493.612 W
+0: INFO    25-10-16 04:38:51.495178 - 0:21:14 - step: 120  acc: 0  loss:  2.6456  grad: 2.14e+00  flops: 3.53e+14  wps: 4.80e+05  iter:  0.1239  data: 0.0105  lr: 1.78e-05  mem: 20%  pow: 633.186 W
+0: INFO    25-10-16 04:38:52.882670 - 0:21:15 - step: 130  acc: 0  loss:  2.5921  grad: 2.26e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1235  data: 0.0106  lr: 1.93e-05  mem: 20%  pow: 624.01 W
+0: INFO    25-10-16 04:38:54.281196 - 0:21:17 - step: 140  acc: 0  loss:  2.5659  grad: 3.95e+00  flops: 3.45e+14  wps: 4.69e+05  iter:  0.1248  data: 0.0107  lr: 2.08e-05  mem: 20%  pow: 629.04 W
+0: INFO    25-10-16 04:38:55.659370 - 0:21:18 - step: 150  acc: 0  loss:  2.4734  grad: 3.25e+00  flops: 3.50e+14  wps: 4.76e+05  iter:  0.1241  data: 0.0104  lr: 2.23e-05  mem: 20%  pow: 627.109 W
+0: INFO    25-10-16 04:38:57.019826 - 0:21:19 - step: 160  acc: 0  loss:  2.4054  grad: 2.78e+00  flops: 3.55e+14  wps: 4.82e+05  iter:  0.1244  data: 0.0105  lr: 2.38e-05  mem: 20%  pow: 637.082 W
+0: INFO    25-10-16 04:38:58.386394 - 0:21:21 - step: 170  acc: 0  loss:  2.3464  grad: 2.67e+00  flops: 3.53e+14  wps: 4.80e+05  iter:  0.1241  data: 0.0105  lr: 2.53e-05  mem: 20%  pow: 637.554 W
+0: INFO    25-10-16 04:38:59.765984 - 0:21:22 - step: 180  acc: 0  loss:  2.2766  grad: 2.41e+00  flops: 3.50e+14  wps: 4.75e+05  iter:  0.1234  data: 0.0151  lr: 2.68e-05  mem: 20%  pow: 629.849 W
+0: INFO    25-10-16 04:39:01.113654 - 0:21:24 - step: 190  acc: 0  loss:   2.167  grad: 5.45e+00  flops: 3.58e+14  wps: 4.87e+05  iter:  0.1237  data: 0.0083  lr: 2.83e-05  mem: 20%  pow: 647.72 W
+0: INFO    25-10-16 04:39:02.516034 - 0:21:25 - step: 200  acc: 0  loss:   2.167  grad: 2.83e+00  flops: 3.44e+14  wps: 4.68e+05  iter:  0.1243  data: 0.0196  lr: 2.99e-05  mem: 20%  pow: 630.36 W
+0: INFO    25-10-16 04:39:02.517281 - 0:21:25 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000200
+0: INFO    25-10-16 04:39:02.517517 - 0:21:25 - Saving...
+0: INFO    25-10-16 04:39:03.857053 - 0:21:26 - State dict saved!
+0: INFO    25-10-16 04:39:03.871309 - 0:21:26 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000200/train_state_00000.json
+0: INFO    25-10-16 04:39:03.872705 - 0:21:26 - Train state saved !
+0: INFO    25-10-16 04:39:03.872791 - 0:21:26 - Cleaning up checkpoints...
+0: INFO    25-10-16 04:39:03.872881 - 0:21:26 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000100'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000200')]
+0: INFO    25-10-16 04:39:03.872922 - 0:21:26 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000100'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000200')]
+0: INFO    25-10-16 04:39:03.872958 - 0:21:26 - Other folders: []
+0: INFO    25-10-16 04:39:03.873014 - 0:21:26 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000100')}
+0: INFO    25-10-16 04:39:04.245975 - 0:21:27 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000200/consolidated
+0: INFO    25-10-16 04:39:06.134938 - 0:21:29 - Consolidated !
+0: INFO    25-10-16 04:39:06.145055 - 0:21:29 - Loading model
+0: INFO    25-10-16 04:39:07.314002 - 0:21:30 - Model loaded
+0: INFO    25-10-16 04:39:07.317947 - 0:21:30 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 04:39:07.318100 - 0:21:30 - Using pre-initialized model
+0: WARNING 25-10-16 04:39:29.136248 - 0:21:52 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 04:39:29.136248 - 0:21:52 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 04:39:29.136518 - 0:21:52 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 04:39:29.136518 - 0:21:52 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 04:39:30.367782 - 0:21:53 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 04:39:30.368586 - 0:21:53 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 173/1838 [00:00<00:00, 1729.88it/s]
+ 19%|█▉        | 347/1838 [00:00<00:00, 1734.18it/s]
+ 28%|██▊       | 521/1838 [00:00<00:00, 1733.84it/s]
+ 38%|███▊      | 695/1838 [00:00<00:00, 1734.81it/s]
+ 47%|████▋     | 869/1838 [00:00<00:00, 1735.62it/s]
+ 57%|█████▋    | 1043/1838 [00:00<00:00, 1735.79it/s]
+ 66%|██████▌   | 1217/1838 [00:00<00:00, 1734.60it/s]
+ 76%|███████▌  | 1391/1838 [00:00<00:00, 1732.74it/s]
+ 85%|████████▌ | 1566/1838 [00:00<00:00, 1736.01it/s]
+ 95%|█████████▍| 1740/1838 [00:01<00:00, 1737.20it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1735.95it/s]
+0: INFO    25-10-16 04:39:31.466551 - 0:21:54 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 453/10042 [00:00<00:02, 4524.11it/s]
+  9%|▉         | 921/10042 [00:00<00:01, 4610.94it/s]
+ 14%|█▍        | 1393/10042 [00:00<00:01, 4656.58it/s]
+ 19%|█▊        | 1864/10042 [00:00<00:01, 4676.88it/s]
+ 23%|██▎       | 2332/10042 [00:00<00:01, 4669.31it/s]
+ 28%|██▊       | 2800/10042 [00:00<00:01, 4672.28it/s]
+ 33%|███▎      | 3270/10042 [00:00<00:01, 4678.19it/s]
+ 37%|███▋      | 3738/10042 [00:00<00:01, 4674.64it/s]
+ 42%|████▏     | 4206/10042 [00:00<00:01, 4672.20it/s]
+ 47%|████▋     | 4675/10042 [00:01<00:01, 4676.78it/s]
+ 51%|█████     | 5143/10042 [00:01<00:01, 4671.73it/s]
+ 56%|█████▌    | 5611/10042 [00:01<00:00, 4630.35it/s]
+ 60%|██████    | 6075/10042 [00:01<00:00, 4608.34it/s]
+ 65%|██████▌   | 6536/10042 [00:01<00:00, 4594.72it/s]
+ 70%|██████▉   | 6996/10042 [00:01<00:00, 4585.90it/s]
+ 74%|███████▍  | 7455/10042 [00:01<00:00, 4580.84it/s]
+ 79%|███████▉  | 7914/10042 [00:01<00:00, 4576.58it/s]
+ 83%|████████▎ | 8372/10042 [00:01<00:00, 4575.04it/s]
+ 88%|████████▊ | 8830/10042 [00:01<00:00, 4561.62it/s]
+ 92%|█████████▏| 9287/10042 [00:02<00:00, 4563.19it/s]
+ 97%|█████████▋| 9744/10042 [00:02<00:00, 4543.67it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4608.47it/s]
+0: INFO    25-10-16 04:39:34.276590 - 0:21:57 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 340.68it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 343.45it/s]
+  3%|▎         | 105/3610 [00:00<00:10, 344.16it/s]
+  4%|▍         | 140/3610 [00:00<00:10, 345.02it/s]
+  5%|▍         | 175/3610 [00:00<00:09, 345.74it/s]
+  6%|▌         | 210/3610 [00:00<00:09, 346.99it/s]
+  7%|▋         | 245/3610 [00:00<00:09, 346.98it/s]
+  8%|▊         | 280/3610 [00:00<00:09, 347.74it/s]
+  9%|▊         | 315/3610 [00:00<00:09, 347.32it/s]
+ 10%|▉         | 350/3610 [00:01<00:09, 347.91it/s]
+ 11%|█         | 385/3610 [00:01<00:09, 348.45it/s]
+ 12%|█▏        | 420/3610 [00:01<00:09, 347.96it/s]
+ 13%|█▎        | 455/3610 [00:01<00:09, 348.02it/s]
+ 14%|█▎        | 490/3610 [00:01<00:08, 347.88it/s]
+ 15%|█▍        | 526/3610 [00:01<00:08, 348.60it/s]
+ 16%|█▌        | 561/3610 [00:01<00:08, 348.86it/s]
+ 17%|█▋        | 596/3610 [00:01<00:08, 349.06it/s]
+ 17%|█▋        | 631/3610 [00:01<00:08, 349.16it/s]
+ 18%|█▊        | 666/3610 [00:01<00:08, 349.13it/s]
+ 19%|█▉        | 701/3610 [00:02<00:08, 348.74it/s]
+ 20%|██        | 736/3610 [00:02<00:08, 348.73it/s]
+ 21%|██▏       | 771/3610 [00:02<00:08, 348.80it/s]
+ 22%|██▏       | 806/3610 [00:02<00:08, 349.13it/s]
+ 23%|██▎       | 842/3610 [00:02<00:07, 349.56it/s]
+ 24%|██▍       | 878/3610 [00:02<00:07, 350.44it/s]
+ 25%|██▌       | 914/3610 [00:02<00:07, 350.22it/s]
+ 26%|██▋       | 950/3610 [00:02<00:07, 350.47it/s]
+ 27%|██▋       | 986/3610 [00:02<00:07, 350.62it/s]
+ 28%|██▊       | 1022/3610 [00:02<00:07, 351.28it/s]
+ 29%|██▉       | 1058/3610 [00:03<00:07, 351.47it/s]
+ 30%|███       | 1094/3610 [00:03<00:07, 351.38it/s]
+ 31%|███▏      | 1130/3610 [00:03<00:07, 351.77it/s]
+ 32%|███▏      | 1166/3610 [00:03<00:06, 351.43it/s]
+ 33%|███▎      | 1202/3610 [00:03<00:06, 351.17it/s]
+ 34%|███▍      | 1238/3610 [00:03<00:06, 350.02it/s]
+ 35%|███▌      | 1274/3610 [00:03<00:06, 350.34it/s]
+ 36%|███▋      | 1310/3610 [00:03<00:06, 350.88it/s]
+ 37%|███▋      | 1346/3610 [00:03<00:06, 351.26it/s]
+ 38%|███▊      | 1382/3610 [00:03<00:06, 351.71it/s]
+ 39%|███▉      | 1418/3610 [00:04<00:06, 352.21it/s]
+ 40%|████      | 1454/3610 [00:04<00:06, 351.95it/s]
+ 41%|████▏     | 1490/3610 [00:04<00:06, 351.75it/s]
+ 42%|████▏     | 1526/3610 [00:04<00:05, 351.98it/s]
+ 43%|████▎     | 1562/3610 [00:04<00:05, 351.69it/s]
+ 44%|████▍     | 1598/3610 [00:04<00:05, 351.36it/s]
+ 45%|████▌     | 1634/3610 [00:04<00:05, 351.35it/s]
+ 46%|████▋     | 1670/3610 [00:04<00:05, 351.14it/s]
+ 47%|████▋     | 1706/3610 [00:04<00:05, 351.10it/s]
+ 48%|████▊     | 1742/3610 [00:04<00:05, 351.03it/s]
+ 49%|████▉     | 1778/3610 [00:05<00:05, 351.14it/s]
+ 50%|█████     | 1814/3610 [00:05<00:05, 351.23it/s]
+ 51%|█████     | 1850/3610 [00:05<00:05, 351.50it/s]
+ 52%|█████▏    | 1886/3610 [00:05<00:04, 351.50it/s]
+ 53%|█████▎    | 1922/3610 [00:05<00:04, 351.18it/s]
+ 54%|█████▍    | 1958/3610 [00:05<00:04, 351.57it/s]
+ 55%|█████▌    | 1994/3610 [00:05<00:04, 351.64it/s]
+ 56%|█████▌    | 2030/3610 [00:05<00:04, 351.07it/s]
+ 57%|█████▋    | 2066/3610 [00:05<00:04, 351.38it/s]
+ 58%|█████▊    | 2102/3610 [00:06<00:04, 351.44it/s]
+ 59%|█████▉    | 2138/3610 [00:06<00:04, 351.22it/s]
+ 60%|██████    | 2174/3610 [00:06<00:04, 351.08it/s]
+ 61%|██████    | 2210/3610 [00:06<00:03, 350.84it/s]
+ 62%|██████▏   | 2246/3610 [00:06<00:03, 351.13it/s]
+ 63%|██████▎   | 2282/3610 [00:06<00:03, 351.25it/s]
+ 64%|██████▍   | 2318/3610 [00:06<00:03, 351.00it/s]
+ 65%|██████▌   | 2354/3610 [00:06<00:03, 351.34it/s]
+ 66%|██████▌   | 2390/3610 [00:06<00:03, 351.30it/s]
+ 67%|██████▋   | 2426/3610 [00:06<00:03, 351.65it/s]
+ 68%|██████▊   | 2462/3610 [00:07<00:03, 352.23it/s]
+ 69%|██████▉   | 2498/3610 [00:07<00:03, 352.26it/s]
+ 70%|███████   | 2534/3610 [00:07<00:03, 352.25it/s]
+ 71%|███████   | 2570/3610 [00:07<00:02, 351.73it/s]
+ 72%|███████▏  | 2606/3610 [00:07<00:02, 352.01it/s]
+ 73%|███████▎  | 2642/3610 [00:07<00:02, 351.74it/s]
+ 74%|███████▍  | 2678/3610 [00:07<00:02, 348.72it/s]
+ 75%|███████▌  | 2714/3610 [00:07<00:02, 349.31it/s]
+ 76%|███████▌  | 2749/3610 [00:07<00:02, 349.45it/s]
+ 77%|███████▋  | 2785/3610 [00:07<00:02, 349.94it/s]
+ 78%|███████▊  | 2821/3610 [00:08<00:02, 351.22it/s]
+ 79%|███████▉  | 2857/3610 [00:08<00:02, 351.72it/s]
+ 80%|████████  | 2893/3610 [00:08<00:02, 352.18it/s]
+ 81%|████████  | 2929/3610 [00:08<00:01, 351.46it/s]
+ 82%|████████▏ | 2965/3610 [00:08<00:01, 351.22it/s]
+ 83%|████████▎ | 3001/3610 [00:08<00:01, 351.04it/s]
+ 84%|████████▍ | 3037/3610 [00:08<00:01, 350.67it/s]
+ 85%|████████▌ | 3073/3610 [00:08<00:01, 349.85it/s]
+ 86%|████████▌ | 3109/3610 [00:08<00:01, 350.50it/s]
+ 87%|████████▋ | 3145/3610 [00:08<00:01, 351.37it/s]
+ 88%|████████▊ | 3181/3610 [00:09<00:01, 351.70it/s]
+ 89%|████████▉ | 3217/3610 [00:09<00:01, 351.46it/s]
+ 90%|█████████ | 3253/3610 [00:09<00:01, 351.87it/s]
+ 91%|█████████ | 3289/3610 [00:09<00:00, 351.77it/s]
+ 92%|█████████▏| 3325/3610 [00:09<00:00, 352.06it/s]
+ 93%|█████████▎| 3361/3610 [00:09<00:00, 352.62it/s]
+ 94%|█████████▍| 3397/3610 [00:09<00:00, 352.37it/s]
+ 95%|█████████▌| 3433/3610 [00:09<00:00, 351.82it/s]
+ 96%|█████████▌| 3469/3610 [00:09<00:00, 351.09it/s]
+ 97%|█████████▋| 3505/3610 [00:10<00:00, 350.88it/s]
+ 98%|█████████▊| 3541/3610 [00:10<00:00, 351.12it/s]
+ 99%|█████████▉| 3577/3610 [00:10<00:00, 351.37it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 350.53it/s]
+0: INFO    25-10-16 04:39:44.632297 - 0:22:07 - Running loglikelihood requests
+0: INFO    25-10-16 04:40:34.781658 - 0:22:57 - Running generate_until requests
+0: INFO    25-10-16 04:59:38.512096 - 0:42:01 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 04:59:39.064621 - 0:42:01 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -3746.080078125, 'nll_per_token': -2.163963794708252, 'nll_per_char': -1.4557456970214844, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 04:59:39.410708 - 0:42:02 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.2546305516829317, 'acc_stderr,none': 0.004347629889040935, 'acc_norm,none': 0.2477594104760008, 'acc_norm_stderr,none': 0.004308290484100491}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5233949945593036, 'acc_stderr,none': 0.01165304715592779, 'acc_norm,none': 0.5032644178454843, 'acc_norm_stderr,none': 0.01166557553076037}}
+0: INFO    25-10-16 04:59:39.412099 - 0:42:02 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -3746.080078125, 'nll_per_token': -2.163963794708252, 'nll_per_char': -1.4557456970214844, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 04:59:39.412189 - 0:42:02 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 04:59:42.171362 - 0:42:05 - step: 210  acc: 0  loss:  2.0876  grad: 2.27e+00  flops: 3.89e+11  wps: 5.29e+02  iter:  0.1248  data: 0.0105  lr: 3.13e-05  mem: 21%  pow: 624.86 W
+0: INFO    25-10-16 04:59:43.551892 - 0:42:06 - step: 220  acc: 0  loss:   2.038  grad: 2.03e+00  flops: 3.49e+14  wps: 4.75e+05  iter:  0.1239  data: 0.0151  lr: 3.28e-05  mem: 21%  pow: 628.707 W
+0: INFO    25-10-16 04:59:44.935472 - 0:42:07 - step: 230  acc: 0  loss:  2.0296  grad: 2.75e+00  flops: 3.49e+14  wps: 4.74e+05  iter:  0.1245  data: 0.0105  lr: 3.44e-05  mem: 21%  pow: 632.94 W
+0: INFO    25-10-16 04:59:46.310098 - 0:42:09 - step: 240  acc: 0  loss:  2.0485  grad: 4.15e+00  flops: 3.51e+14  wps: 4.77e+05  iter:  0.1244  data: 0.0243  lr: 3.58e-05  mem: 21%  pow: 640.284 W
+0: INFO    25-10-16 04:59:47.692735 - 0:42:10 - step: 250  acc: 0  loss:  1.9126  grad: 1.99e+00  flops: 3.49e+14  wps: 4.74e+05  iter:  0.1246  data: 0.0152  lr: 3.73e-05  mem: 21%  pow: 633.363 W
+0: INFO    25-10-16 04:59:49.056101 - 0:42:11 - step: 260  acc: 0  loss:  1.8961  grad: 3.07e+00  flops: 3.54e+14  wps: 4.81e+05  iter:  0.1243  data: 0.0118  lr: 3.88e-05  mem: 21%  pow: 630.341 W
+0: INFO    25-10-16 04:59:50.406304 - 0:42:13 - step: 270  acc: 0  loss:  1.8397  grad: 2.46e+00  flops: 3.57e+14  wps: 4.86e+05  iter:  0.1246  data: 0.0105  lr: 4.03e-05  mem: 21%  pow: 644.52 W
+0: INFO    25-10-16 04:59:51.818747 - 0:42:14 - step: 280  acc: 0  loss:   1.796  grad: 2.30e+00  flops: 3.42e+14  wps: 4.64e+05  iter:  0.1236  data: 0.0151  lr: 4.19e-05  mem: 21%  pow: 621.826 W
+0: INFO    25-10-16 04:59:53.227800 - 0:42:16 - step: 290  acc: 0  loss:  1.7887  grad: 2.27e+00  flops: 3.42e+14  wps: 4.65e+05  iter:  0.1242  data: 0.0243  lr: 4.33e-05  mem: 21%  pow: 628.556 W
+0: INFO    25-10-16 04:59:54.613957 - 0:42:17 - step: 300  acc: 0  loss:   1.736  grad: 2.85e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1243  data: 0.0242  lr: 4.48e-05  mem: 21%  pow: 621.133 W
+0: INFO    25-10-16 04:59:54.614715 - 0:42:17 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000300
+0: INFO    25-10-16 04:59:54.614903 - 0:42:17 - Saving...
+0: INFO    25-10-16 04:59:56.562669 - 0:42:19 - State dict saved!
+0: INFO    25-10-16 04:59:56.576624 - 0:42:19 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000300/train_state_00000.json
+0: INFO    25-10-16 04:59:56.577922 - 0:42:19 - Train state saved !
+0: INFO    25-10-16 04:59:56.578003 - 0:42:19 - Cleaning up checkpoints...
+0: INFO    25-10-16 04:59:56.578097 - 0:42:19 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000200'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000300')]
+0: INFO    25-10-16 04:59:56.578141 - 0:42:19 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000200'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000300')]
+0: INFO    25-10-16 04:59:56.578178 - 0:42:19 - Other folders: []
+0: INFO    25-10-16 04:59:56.578234 - 0:42:19 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000200')}
+0: INFO    25-10-16 04:59:56.875489 - 0:42:19 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000300/consolidated
+0: INFO    25-10-16 04:59:58.756619 - 0:42:21 - Consolidated !
+0: INFO    25-10-16 04:59:58.766385 - 0:42:21 - Loading model
+0: INFO    25-10-16 04:59:59.948916 - 0:42:22 - Model loaded
+0: INFO    25-10-16 04:59:59.951970 - 0:42:22 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 04:59:59.952110 - 0:42:22 - Using pre-initialized model
+0: WARNING 25-10-16 05:00:22.517192 - 0:42:45 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:00:22.517192 - 0:42:45 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:00:22.517563 - 0:42:45 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:00:22.517563 - 0:42:45 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 05:00:23.734637 - 0:42:46 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 05:00:23.735447 - 0:42:46 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+ 10%|▉         | 175/1838 [00:00<00:00, 1740.97it/s]
+ 19%|█▉        | 350/1838 [00:00<00:00, 1741.05it/s]
+ 29%|██▊       | 525/1838 [00:00<00:00, 1740.90it/s]
+ 38%|███▊      | 700/1838 [00:00<00:00, 1741.86it/s]
+ 48%|████▊     | 875/1838 [00:00<00:00, 1741.32it/s]
+ 57%|█████▋    | 1050/1838 [00:00<00:00, 1740.68it/s]
+ 67%|██████▋   | 1225/1838 [00:00<00:00, 1740.92it/s]
+ 76%|███████▌  | 1400/1838 [00:00<00:00, 1741.20it/s]
+ 86%|████████▌ | 1575/1838 [00:00<00:00, 1737.62it/s]
+ 95%|█████████▌| 1749/1838 [00:01<00:00, 1736.80it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1739.27it/s]
+0: INFO    25-10-16 05:00:24.830937 - 0:42:47 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 459/10042 [00:00<00:02, 4588.25it/s]
+  9%|▉         | 927/10042 [00:00<00:01, 4636.86it/s]
+ 14%|█▍        | 1394/10042 [00:00<00:01, 4649.31it/s]
+ 19%|█▊        | 1860/10042 [00:00<00:01, 4650.00it/s]
+ 23%|██▎       | 2328/10042 [00:00<00:01, 4659.98it/s]
+ 28%|██▊       | 2796/10042 [00:00<00:01, 4665.40it/s]
+ 33%|███▎      | 3265/10042 [00:00<00:01, 4671.95it/s]
+ 37%|███▋      | 3733/10042 [00:00<00:01, 4665.13it/s]
+ 42%|████▏     | 4200/10042 [00:00<00:01, 4660.74it/s]
+ 46%|████▋     | 4667/10042 [00:01<00:01, 4638.88it/s]
+ 51%|█████     | 5131/10042 [00:01<00:01, 4616.48it/s]
+ 56%|█████▌    | 5593/10042 [00:01<00:00, 4602.13it/s]
+ 60%|██████    | 6054/10042 [00:01<00:00, 4600.17it/s]
+ 65%|██████▍   | 6515/10042 [00:01<00:00, 4599.66it/s]
+ 69%|██████▉   | 6975/10042 [00:01<00:00, 4595.56it/s]
+ 74%|███████▍  | 7435/10042 [00:01<00:00, 4588.28it/s]
+ 79%|███████▊  | 7895/10042 [00:01<00:00, 4591.62it/s]
+ 83%|████████▎ | 8355/10042 [00:01<00:00, 4578.41it/s]
+ 88%|████████▊ | 8813/10042 [00:01<00:00, 4567.94it/s]
+ 92%|█████████▏| 9270/10042 [00:02<00:00, 4555.87it/s]
+ 97%|█████████▋| 9730/10042 [00:02<00:00, 4567.16it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4608.82it/s]
+0: INFO    25-10-16 05:00:27.631057 - 0:42:50 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 343.87it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 347.03it/s]
+  3%|▎         | 105/3610 [00:00<00:10, 348.23it/s]
+  4%|▍         | 141/3610 [00:00<00:09, 348.97it/s]
+  5%|▍         | 176/3610 [00:00<00:09, 349.27it/s]
+  6%|▌         | 212/3610 [00:00<00:09, 349.81it/s]
+  7%|▋         | 247/3610 [00:00<00:09, 349.04it/s]
+  8%|▊         | 282/3610 [00:00<00:09, 348.67it/s]
+  9%|▉         | 317/3610 [00:00<00:09, 348.79it/s]
+ 10%|▉         | 352/3610 [00:01<00:09, 348.86it/s]
+ 11%|█         | 387/3610 [00:01<00:09, 348.96it/s]
+ 12%|█▏        | 422/3610 [00:01<00:09, 348.43it/s]
+ 13%|█▎        | 457/3610 [00:01<00:09, 348.51it/s]
+ 14%|█▎        | 492/3610 [00:01<00:08, 348.77it/s]
+ 15%|█▍        | 527/3610 [00:01<00:08, 348.67it/s]
+ 16%|█▌        | 562/3610 [00:01<00:08, 348.52it/s]
+ 17%|█▋        | 597/3610 [00:01<00:08, 348.60it/s]
+ 18%|█▊        | 632/3610 [00:01<00:08, 348.75it/s]
+ 18%|█▊        | 667/3610 [00:01<00:08, 348.88it/s]
+ 19%|█▉        | 703/3610 [00:02<00:08, 349.21it/s]
+ 20%|██        | 738/3610 [00:02<00:08, 348.97it/s]
+ 21%|██▏       | 773/3610 [00:02<00:08, 347.76it/s]
+ 22%|██▏       | 808/3610 [00:02<00:08, 347.79it/s]
+ 23%|██▎       | 843/3610 [00:02<00:07, 348.25it/s]
+ 24%|██▍       | 878/3610 [00:02<00:07, 348.23it/s]
+ 25%|██▌       | 913/3610 [00:02<00:07, 347.94it/s]
+ 26%|██▋       | 948/3610 [00:02<00:07, 348.48it/s]
+ 27%|██▋       | 984/3610 [00:02<00:07, 349.34it/s]
+ 28%|██▊       | 1020/3610 [00:02<00:07, 349.63it/s]
+ 29%|██▉       | 1055/3610 [00:03<00:07, 349.36it/s]
+ 30%|███       | 1090/3610 [00:03<00:07, 349.21it/s]
+ 31%|███       | 1125/3610 [00:03<00:07, 349.11it/s]
+ 32%|███▏      | 1160/3610 [00:03<00:07, 349.11it/s]
+ 33%|███▎      | 1196/3610 [00:03<00:06, 349.52it/s]
+ 34%|███▍      | 1231/3610 [00:03<00:06, 349.35it/s]
+ 35%|███▌      | 1266/3610 [00:03<00:06, 348.71it/s]
+ 36%|███▌      | 1301/3610 [00:03<00:06, 348.82it/s]
+ 37%|███▋      | 1337/3610 [00:03<00:06, 349.47it/s]
+ 38%|███▊      | 1373/3610 [00:03<00:06, 350.06it/s]
+ 39%|███▉      | 1409/3610 [00:04<00:06, 350.12it/s]
+ 40%|████      | 1445/3610 [00:04<00:06, 350.21it/s]
+ 41%|████      | 1481/3610 [00:04<00:06, 349.98it/s]
+ 42%|████▏     | 1517/3610 [00:04<00:05, 350.08it/s]
+ 43%|████▎     | 1553/3610 [00:04<00:05, 349.79it/s]
+ 44%|████▍     | 1588/3610 [00:04<00:05, 349.75it/s]
+ 45%|████▍     | 1623/3610 [00:04<00:05, 349.54it/s]
+ 46%|████▌     | 1658/3610 [00:04<00:05, 349.54it/s]
+ 47%|████▋     | 1693/3610 [00:04<00:05, 349.30it/s]
+ 48%|████▊     | 1729/3610 [00:04<00:05, 349.98it/s]
+ 49%|████▉     | 1765/3610 [00:05<00:05, 350.12it/s]
+ 50%|████▉     | 1801/3610 [00:05<00:05, 350.56it/s]
+ 51%|█████     | 1837/3610 [00:05<00:05, 350.72it/s]
+ 52%|█████▏    | 1873/3610 [00:05<00:04, 350.93it/s]
+ 53%|█████▎    | 1909/3610 [00:05<00:04, 350.50it/s]
+ 54%|█████▍    | 1945/3610 [00:05<00:04, 350.81it/s]
+ 55%|█████▍    | 1981/3610 [00:05<00:04, 350.70it/s]
+ 56%|█████▌    | 2017/3610 [00:05<00:04, 350.94it/s]
+ 57%|█████▋    | 2053/3610 [00:05<00:04, 351.26it/s]
+ 58%|█████▊    | 2089/3610 [00:05<00:04, 350.95it/s]
+ 59%|█████▉    | 2125/3610 [00:06<00:04, 351.85it/s]
+ 60%|█████▉    | 2161/3610 [00:06<00:04, 351.59it/s]
+ 61%|██████    | 2197/3610 [00:06<00:04, 351.00it/s]
+ 62%|██████▏   | 2233/3610 [00:06<00:03, 350.83it/s]
+ 63%|██████▎   | 2269/3610 [00:06<00:03, 351.38it/s]
+ 64%|██████▍   | 2305/3610 [00:06<00:03, 351.37it/s]
+ 65%|██████▍   | 2341/3610 [00:06<00:03, 351.55it/s]
+ 66%|██████▌   | 2377/3610 [00:06<00:03, 351.30it/s]
+ 67%|██████▋   | 2413/3610 [00:06<00:03, 351.17it/s]
+ 68%|██████▊   | 2449/3610 [00:07<00:03, 350.44it/s]
+ 69%|██████▉   | 2485/3610 [00:07<00:03, 350.41it/s]
+ 70%|██████▉   | 2521/3610 [00:07<00:03, 350.50it/s]
+ 71%|███████   | 2557/3610 [00:07<00:03, 350.60it/s]
+ 72%|███████▏  | 2593/3610 [00:07<00:02, 350.65it/s]
+ 73%|███████▎  | 2629/3610 [00:07<00:02, 350.57it/s]
+ 74%|███████▍  | 2665/3610 [00:07<00:02, 350.25it/s]
+ 75%|███████▍  | 2701/3610 [00:07<00:02, 350.20it/s]
+ 76%|███████▌  | 2737/3610 [00:07<00:02, 350.54it/s]
+ 77%|███████▋  | 2773/3610 [00:07<00:02, 351.04it/s]
+ 78%|███████▊  | 2809/3610 [00:08<00:02, 351.42it/s]
+ 79%|███████▉  | 2845/3610 [00:08<00:02, 351.05it/s]
+ 80%|███████▉  | 2881/3610 [00:08<00:02, 350.54it/s]
+ 81%|████████  | 2917/3610 [00:08<00:01, 350.46it/s]
+ 82%|████████▏ | 2953/3610 [00:08<00:01, 349.94it/s]
+ 83%|████████▎ | 2988/3610 [00:08<00:01, 349.73it/s]
+ 84%|████████▎ | 3023/3610 [00:08<00:01, 349.31it/s]
+ 85%|████████▍ | 3059/3610 [00:08<00:01, 350.25it/s]
+ 86%|████████▌ | 3095/3610 [00:08<00:01, 350.73it/s]
+ 87%|████████▋ | 3131/3610 [00:08<00:01, 351.30it/s]
+ 88%|████████▊ | 3167/3610 [00:09<00:01, 351.32it/s]
+ 89%|████████▊ | 3203/3610 [00:09<00:01, 351.74it/s]
+ 90%|████████▉ | 3239/3610 [00:09<00:01, 351.30it/s]
+ 91%|█████████ | 3275/3610 [00:09<00:00, 350.85it/s]
+ 92%|█████████▏| 3311/3610 [00:09<00:00, 350.69it/s]
+ 93%|█████████▎| 3347/3610 [00:09<00:00, 350.01it/s]
+ 94%|█████████▎| 3383/3610 [00:09<00:00, 349.88it/s]
+ 95%|█████████▍| 3419/3610 [00:09<00:00, 350.08it/s]
+ 96%|█████████▌| 3455/3610 [00:09<00:00, 350.37it/s]
+ 97%|█████████▋| 3491/3610 [00:09<00:00, 350.58it/s]
+ 98%|█████████▊| 3527/3610 [00:10<00:00, 349.94it/s]
+ 99%|█████████▊| 3562/3610 [00:10<00:00, 349.68it/s]
+100%|█████████▉| 3598/3610 [00:10<00:00, 349.89it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 349.89it/s]
+0: INFO    25-10-16 05:00:38.003497 - 0:43:00 - Running loglikelihood requests
+0: INFO    25-10-16 05:01:28.098409 - 0:43:50 - Running generate_until requests
+0: INFO    25-10-16 05:20:31.146517 - 1:02:54 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 05:20:31.696976 - 1:02:54 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -3126.0400390625, 'nll_per_token': -1.8068081140518188, 'nll_per_char': -1.2171082496643066, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 05:20:32.039039 - 1:02:54 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.2566221868153754, 'acc_stderr,none': 0.004358764596401048, 'acc_norm,none': 0.24985062736506672, 'acc_norm_stderr,none': 0.004320416477957659}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5184983677910773, 'acc_stderr,none': 0.011657837583818149, 'acc_norm,none': 0.49782372143634385, 'acc_norm_stderr,none': 0.011665713661738873}}
+0: INFO    25-10-16 05:20:32.040686 - 1:02:54 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -3126.0400390625, 'nll_per_token': -1.8068081140518188, 'nll_per_char': -1.2171082496643066, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 05:20:32.040793 - 1:02:54 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 05:20:34.792574 - 1:02:57 - step: 310  acc: 0  loss:  1.7033  grad: 2.32e+00  flops: 3.89e+11  wps: 5.28e+02  iter:  0.1246  data: 0.015  lr: 4.63e-05  mem: 21%  pow: 640.303 W
+0: INFO    25-10-16 05:20:36.192295 - 1:02:59 - step: 320  acc: 0  loss:  1.6975  grad: 2.63e+00  flops: 3.45e+14  wps: 4.68e+05  iter:  0.1236  data: 0.0242  lr: 4.78e-05  mem: 21%  pow: 625.871 W
+0: INFO    25-10-16 05:20:37.568100 - 1:03:00 - step: 330  acc: 0  loss:  1.7425  grad: 2.05e+00  flops: 3.51e+14  wps: 4.77e+05  iter:  0.1245  data: 0.0106  lr: 4.94e-05  mem: 21%  pow: 626.022 W
+0: INFO    25-10-16 05:20:38.965427 - 1:03:01 - step: 340  acc: 0  loss:  1.7092  grad: 2.36e+00  flops: 3.45e+14  wps: 4.69e+05  iter:  0.1245  data: 0.0199  lr: 5.08e-05  mem: 21%  pow: 637.045 W
+0: INFO    25-10-16 05:20:40.328072 - 1:03:03 - step: 350  acc: 0  loss:  1.6699  grad: 2.30e+00  flops: 3.54e+14  wps: 4.81e+05  iter:  0.1249  data: 0.0105  lr: 5.23e-05  mem: 21%  pow: 640.538 W
+0: INFO    25-10-16 05:20:41.712916 - 1:03:04 - step: 360  acc: 0  loss:  1.6689  grad: 2.45e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1237  data: 0.0105  lr: 5.38e-05  mem: 21%  pow: 625.784 W
+0: INFO    25-10-16 05:20:43.082811 - 1:03:05 - step: 370  acc: 0  loss:   1.608  grad: 2.36e+00  flops: 3.52e+14  wps: 4.79e+05  iter:   0.124  data: 0.009  lr: 5.53e-05  mem: 21%  pow: 637.002 W
+0: INFO    25-10-16 05:20:44.450081 - 1:03:07 - step: 380  acc: 0  loss:  1.6158  grad: 1.95e+00  flops: 3.53e+14  wps: 4.80e+05  iter:  0.1242  data: 0.0105  lr: 5.68e-05  mem: 21%  pow: 638.287 W
+0: INFO    25-10-16 05:20:45.855130 - 1:03:08 - step: 390  acc: 0  loss:  1.6307  grad: 2.48e+00  flops: 3.43e+14  wps: 4.67e+05  iter:   0.124  data: 0.0106  lr: 5.83e-05  mem: 21%  pow: 619.455 W
+0: INFO    25-10-16 05:20:47.270786 - 1:03:10 - step: 400  acc: 0  loss:  1.6084  grad: 2.32e+00  flops: 3.41e+14  wps: 4.63e+05  iter:   0.124  data: 0.0151  lr: 5.98e-05  mem: 21%  pow: 617.697 W
+0: INFO    25-10-16 05:20:47.272042 - 1:03:10 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000400
+0: INFO    25-10-16 05:20:47.272326 - 1:03:10 - Saving...
+0: INFO    25-10-16 05:20:49.144551 - 1:03:12 - State dict saved!
+0: INFO    25-10-16 05:20:49.158582 - 1:03:12 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000400/train_state_00000.json
+0: INFO    25-10-16 05:20:49.159811 - 1:03:12 - Train state saved !
+0: INFO    25-10-16 05:20:49.159890 - 1:03:12 - Cleaning up checkpoints...
+0: INFO    25-10-16 05:20:49.159979 - 1:03:12 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000300'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000400')]
+0: INFO    25-10-16 05:20:49.160022 - 1:03:12 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000300'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000400')]
+0: INFO    25-10-16 05:20:49.160055 - 1:03:12 - Other folders: []
+0: INFO    25-10-16 05:20:49.160108 - 1:03:12 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000300')}
+0: INFO    25-10-16 05:20:49.539826 - 1:03:12 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000400/consolidated
+0: INFO    25-10-16 05:20:51.472855 - 1:03:14 - Consolidated !
+0: INFO    25-10-16 05:20:51.482527 - 1:03:14 - Loading model
+0: INFO    25-10-16 05:20:52.568798 - 1:03:15 - Model loaded
+0: INFO    25-10-16 05:20:52.573841 - 1:03:15 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 05:20:52.573995 - 1:03:15 - Using pre-initialized model
+0: WARNING 25-10-16 05:21:14.635721 - 1:03:37 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:21:14.635721 - 1:03:37 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:21:14.635975 - 1:03:37 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:21:14.635975 - 1:03:37 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 05:21:15.878040 - 1:03:38 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 05:21:15.878823 - 1:03:38 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 173/1838 [00:00<00:00, 1725.57it/s]
+ 19%|█▉        | 346/1838 [00:00<00:00, 1726.24it/s]
+ 28%|██▊       | 520/1838 [00:00<00:00, 1728.74it/s]
+ 38%|███▊      | 694/1838 [00:00<00:00, 1733.11it/s]
+ 47%|████▋     | 868/1838 [00:00<00:00, 1733.98it/s]
+ 57%|█████▋    | 1042/1838 [00:00<00:00, 1731.83it/s]
+ 66%|██████▌   | 1216/1838 [00:00<00:00, 1731.03it/s]
+ 76%|███████▌  | 1390/1838 [00:00<00:00, 1727.67it/s]
+ 85%|████████▌ | 1564/1838 [00:00<00:00, 1728.52it/s]
+ 95%|█████████▍| 1738/1838 [00:01<00:00, 1730.40it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1729.97it/s]
+0: INFO    25-10-16 05:21:16.980483 - 1:03:39 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 467/10042 [00:00<00:02, 4669.83it/s]
+  9%|▉         | 937/10042 [00:00<00:01, 4686.58it/s]
+ 14%|█▍        | 1407/10042 [00:00<00:01, 4688.29it/s]
+ 19%|█▊        | 1876/10042 [00:00<00:01, 4683.44it/s]
+ 23%|██▎       | 2348/10042 [00:00<00:01, 4695.64it/s]
+ 28%|██▊       | 2818/10042 [00:00<00:01, 4693.22it/s]
+ 33%|███▎      | 3288/10042 [00:00<00:01, 4694.41it/s]
+ 37%|███▋      | 3758/10042 [00:00<00:01, 4686.99it/s]
+ 42%|████▏     | 4227/10042 [00:00<00:01, 4683.69it/s]
+ 47%|████▋     | 4696/10042 [00:01<00:01, 4676.04it/s]
+ 51%|█████▏    | 5164/10042 [00:01<00:01, 4660.58it/s]
+ 56%|█████▌    | 5631/10042 [00:01<00:00, 4644.58it/s]
+ 61%|██████    | 6096/10042 [00:01<00:00, 4629.46it/s]
+ 65%|██████▌   | 6559/10042 [00:01<00:00, 4625.41it/s]
+ 70%|██████▉   | 7024/10042 [00:01<00:00, 4630.47it/s]
+ 75%|███████▍  | 7489/10042 [00:01<00:00, 4633.83it/s]
+ 79%|███████▉  | 7954/10042 [00:01<00:00, 4638.11it/s]
+ 84%|████████▍ | 8418/10042 [00:01<00:00, 4628.10it/s]
+ 88%|████████▊ | 8881/10042 [00:01<00:00, 4610.53it/s]
+ 93%|█████████▎| 9343/10042 [00:02<00:00, 4603.66it/s]
+ 98%|█████████▊| 9804/10042 [00:02<00:00, 4605.00it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4646.24it/s]
+0: INFO    25-10-16 05:21:19.768807 - 1:03:42 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 343.99it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 347.05it/s]
+  3%|▎         | 106/3610 [00:00<00:10, 349.27it/s]
+  4%|▍         | 142/3610 [00:00<00:09, 349.79it/s]
+  5%|▍         | 178/3610 [00:00<00:09, 350.31it/s]
+  6%|▌         | 214/3610 [00:00<00:09, 350.80it/s]
+  7%|▋         | 250/3610 [00:00<00:09, 351.30it/s]
+  8%|▊         | 286/3610 [00:00<00:09, 350.25it/s]
+  9%|▉         | 322/3610 [00:00<00:09, 348.31it/s]
+ 10%|▉         | 357/3610 [00:01<00:09, 348.59it/s]
+ 11%|█         | 393/3610 [00:01<00:09, 349.46it/s]
+ 12%|█▏        | 429/3610 [00:01<00:09, 349.55it/s]
+ 13%|█▎        | 465/3610 [00:01<00:08, 349.72it/s]
+ 14%|█▍        | 501/3610 [00:01<00:08, 350.06it/s]
+ 15%|█▍        | 537/3610 [00:01<00:08, 350.02it/s]
+ 16%|█▌        | 573/3610 [00:01<00:08, 350.08it/s]
+ 17%|█▋        | 609/3610 [00:01<00:08, 350.94it/s]
+ 18%|█▊        | 645/3610 [00:01<00:08, 351.13it/s]
+ 19%|█▉        | 681/3610 [00:01<00:08, 351.49it/s]
+ 20%|█▉        | 717/3610 [00:02<00:08, 351.13it/s]
+ 21%|██        | 753/3610 [00:02<00:08, 350.29it/s]
+ 22%|██▏       | 789/3610 [00:02<00:08, 350.48it/s]
+ 23%|██▎       | 825/3610 [00:02<00:07, 350.25it/s]
+ 24%|██▍       | 861/3610 [00:02<00:07, 350.57it/s]
+ 25%|██▍       | 897/3610 [00:02<00:07, 350.53it/s]
+ 26%|██▌       | 933/3610 [00:02<00:07, 350.82it/s]
+ 27%|██▋       | 969/3610 [00:02<00:07, 350.33it/s]
+ 28%|██▊       | 1005/3610 [00:02<00:07, 350.18it/s]
+ 29%|██▉       | 1041/3610 [00:02<00:07, 350.78it/s]
+ 30%|██▉       | 1077/3610 [00:03<00:07, 351.05it/s]
+ 31%|███       | 1113/3610 [00:03<00:07, 351.50it/s]
+ 32%|███▏      | 1149/3610 [00:03<00:06, 351.96it/s]
+ 33%|███▎      | 1185/3610 [00:03<00:06, 351.82it/s]
+ 34%|███▍      | 1221/3610 [00:03<00:06, 351.60it/s]
+ 35%|███▍      | 1257/3610 [00:03<00:06, 352.06it/s]
+ 36%|███▌      | 1293/3610 [00:03<00:06, 351.60it/s]
+ 37%|███▋      | 1329/3610 [00:03<00:06, 351.44it/s]
+ 38%|███▊      | 1365/3610 [00:03<00:06, 351.51it/s]
+ 39%|███▉      | 1401/3610 [00:03<00:06, 351.40it/s]
+ 40%|███▉      | 1437/3610 [00:04<00:06, 350.82it/s]
+ 41%|████      | 1473/3610 [00:04<00:06, 350.61it/s]
+ 42%|████▏     | 1509/3610 [00:04<00:05, 350.86it/s]
+ 43%|████▎     | 1545/3610 [00:04<00:05, 350.77it/s]
+ 44%|████▍     | 1581/3610 [00:04<00:05, 351.41it/s]
+ 45%|████▍     | 1617/3610 [00:04<00:05, 350.61it/s]
+ 46%|████▌     | 1653/3610 [00:04<00:05, 350.61it/s]
+ 47%|████▋     | 1689/3610 [00:04<00:05, 351.22it/s]
+ 48%|████▊     | 1725/3610 [00:04<00:05, 351.92it/s]
+ 49%|████▉     | 1761/3610 [00:05<00:05, 351.98it/s]
+ 50%|████▉     | 1797/3610 [00:05<00:05, 351.85it/s]
+ 51%|█████     | 1833/3610 [00:05<00:05, 351.45it/s]
+ 52%|█████▏    | 1869/3610 [00:05<00:04, 350.62it/s]
+ 53%|█████▎    | 1905/3610 [00:05<00:04, 348.72it/s]
+ 54%|█████▍    | 1941/3610 [00:05<00:04, 349.53it/s]
+ 55%|█████▍    | 1977/3610 [00:05<00:04, 350.20it/s]
+ 56%|█████▌    | 2013/3610 [00:05<00:04, 350.95it/s]
+ 57%|█████▋    | 2049/3610 [00:05<00:04, 351.06it/s]
+ 58%|█████▊    | 2085/3610 [00:05<00:04, 351.00it/s]
+ 59%|█████▉    | 2121/3610 [00:06<00:04, 351.58it/s]
+ 60%|█████▉    | 2157/3610 [00:06<00:04, 351.86it/s]
+ 61%|██████    | 2193/3610 [00:06<00:04, 351.60it/s]
+ 62%|██████▏   | 2229/3610 [00:06<00:03, 351.57it/s]
+ 63%|██████▎   | 2265/3610 [00:06<00:03, 351.18it/s]
+ 64%|██████▎   | 2301/3610 [00:06<00:03, 350.75it/s]
+ 65%|██████▍   | 2337/3610 [00:06<00:03, 351.02it/s]
+ 66%|██████▌   | 2373/3610 [00:06<00:03, 351.36it/s]
+ 67%|██████▋   | 2409/3610 [00:06<00:03, 351.66it/s]
+ 68%|██████▊   | 2445/3610 [00:06<00:03, 351.49it/s]
+ 69%|██████▊   | 2481/3610 [00:07<00:03, 351.36it/s]
+ 70%|██████▉   | 2517/3610 [00:07<00:03, 352.02it/s]
+ 71%|███████   | 2553/3610 [00:07<00:02, 352.37it/s]
+ 72%|███████▏  | 2589/3610 [00:07<00:02, 352.23it/s]
+ 73%|███████▎  | 2625/3610 [00:07<00:02, 352.14it/s]
+ 74%|███████▎  | 2661/3610 [00:07<00:02, 351.62it/s]
+ 75%|███████▍  | 2697/3610 [00:07<00:02, 352.07it/s]
+ 76%|███████▌  | 2733/3610 [00:07<00:02, 351.62it/s]
+ 77%|███████▋  | 2769/3610 [00:07<00:02, 352.22it/s]
+ 78%|███████▊  | 2805/3610 [00:07<00:02, 352.11it/s]
+ 79%|███████▊  | 2841/3610 [00:08<00:02, 351.79it/s]
+ 80%|███████▉  | 2877/3610 [00:08<00:02, 351.63it/s]
+ 81%|████████  | 2913/3610 [00:08<00:01, 351.89it/s]
+ 82%|████████▏ | 2949/3610 [00:08<00:01, 351.61it/s]
+ 83%|████████▎ | 2985/3610 [00:08<00:01, 351.94it/s]
+ 84%|████████▎ | 3021/3610 [00:08<00:01, 351.97it/s]
+ 85%|████████▍ | 3057/3610 [00:08<00:01, 351.65it/s]
+ 86%|████████▌ | 3093/3610 [00:08<00:01, 352.25it/s]
+ 87%|████████▋ | 3129/3610 [00:08<00:01, 351.37it/s]
+ 88%|████████▊ | 3165/3610 [00:09<00:01, 350.87it/s]
+ 89%|████████▊ | 3201/3610 [00:09<00:01, 350.86it/s]
+ 90%|████████▉ | 3237/3610 [00:09<00:01, 351.93it/s]
+ 91%|█████████ | 3273/3610 [00:09<00:00, 352.09it/s]
+ 92%|█████████▏| 3309/3610 [00:09<00:00, 351.76it/s]
+ 93%|█████████▎| 3345/3610 [00:09<00:00, 351.75it/s]
+ 94%|█████████▎| 3381/3610 [00:09<00:00, 352.24it/s]
+ 95%|█████████▍| 3417/3610 [00:09<00:00, 351.66it/s]
+ 96%|█████████▌| 3453/3610 [00:09<00:00, 351.73it/s]
+ 97%|█████████▋| 3489/3610 [00:09<00:00, 351.54it/s]
+ 98%|█████████▊| 3525/3610 [00:10<00:00, 351.57it/s]
+ 99%|█████████▊| 3561/3610 [00:10<00:00, 351.41it/s]
+100%|█████████▉| 3597/3610 [00:10<00:00, 351.69it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 351.10it/s]
+0: INFO    25-10-16 05:21:30.106389 - 1:03:53 - Running loglikelihood requests
+0: INFO    25-10-16 05:22:20.346654 - 1:04:43 - Running generate_until requests
+0: INFO    25-10-16 05:41:38.131580 - 1:24:01 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 05:41:39.190010 - 1:24:02 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2816.280029296875, 'nll_per_token': -1.6295833587646484, 'nll_per_char': -1.098822832107544, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 05:41:39.525119 - 1:24:02 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.26070503883688506, 'acc_stderr,none': 0.004381220409641183, 'acc_norm,none': 0.2515435172276439, 'acc_norm_stderr,none': 0.004330134219762852}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5136017410228509, 'acc_stderr,none': 0.011661506839823784, 'acc_norm,none': 0.4929270946681175, 'acc_norm_stderr,none': 0.011664656918145945}}
+0: INFO    25-10-16 05:41:39.526429 - 1:24:02 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2816.280029296875, 'nll_per_token': -1.6295833587646484, 'nll_per_char': -1.098822832107544, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 05:41:39.526541 - 1:24:02 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 05:41:43.595816 - 1:24:06 - step: 410  acc: 0  loss:  1.6307  grad: 2.24e+00  flops: 3.84e+11  wps: 5.22e+02  iter:   0.124  data: 0.0104  lr: 6.13e-05  mem: 22%  pow: 619.134 W
+0: INFO    25-10-16 05:41:44.960281 - 1:24:07 - step: 420  acc: 0  loss:  1.6235  grad: 1.73e+00  flops: 3.54e+14  wps: 4.81e+05  iter:  0.1247  data: 0.0104  lr: 6.28e-05  mem: 22%  pow: 634.645 W
+0: INFO    25-10-16 05:41:46.347069 - 1:24:09 - step: 430  acc: 0  loss:  1.5353  grad: 1.82e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1252  data: 0.0152  lr: 6.43e-05  mem: 22%  pow: 626.601 W
+0: INFO    25-10-16 05:41:47.734528 - 1:24:10 - step: 440  acc: 0  loss:  1.5282  grad: 2.17e+00  flops: 3.48e+14  wps: 4.73e+05  iter:   0.124  data: 0.0198  lr: 6.58e-05  mem: 22%  pow: 631.483 W
+0: INFO    25-10-16 05:41:49.125241 - 1:24:12 - step: 450  acc: 0  loss:  1.5355  grad: 1.91e+00  flops: 3.47e+14  wps: 4.71e+05  iter:  0.1255  data: 0.0197  lr: 6.73e-05  mem: 22%  pow: 636.494 W
+0: INFO    25-10-16 05:41:50.516173 - 1:24:13 - step: 460  acc: 0  loss:  1.5192  grad: 1.64e+00  flops: 3.47e+14  wps: 4.71e+05  iter:   0.124  data: 0.0082  lr: 6.88e-05  mem: 22%  pow: 638.567 W
+0: INFO    25-10-16 05:41:51.903166 - 1:24:14 - step: 470  acc: 0  loss:  1.4776  grad: 1.55e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1241  data: 0.0104  lr: 7.03e-05  mem: 22%  pow: 628.778 W
+0: INFO    25-10-16 05:41:53.254074 - 1:24:16 - step: 480  acc: 0  loss:   1.551  grad: 1.99e+00  flops: 3.57e+14  wps: 4.85e+05  iter:  0.1249  data: 0.0104  lr: 7.18e-05  mem: 22%  pow: 648.479 W
+0: INFO    25-10-16 05:41:54.648169 - 1:24:17 - step: 490  acc: 0  loss:  1.4991  grad: 1.79e+00  flops: 3.46e+14  wps: 4.70e+05  iter:  0.1238  data: 0.0196  lr: 7.33e-05  mem: 22%  pow: 642.509 W
+0: INFO    25-10-16 05:41:56.034925 - 1:24:18 - step: 500  acc: 0  loss:  1.5172  grad: 1.61e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1238  data: 0.0151  lr: 7.48e-05  mem: 22%  pow: 632.374 W
+0: INFO    25-10-16 05:41:56.051802 - 1:24:18 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000500
+0: INFO    25-10-16 05:41:56.052026 - 1:24:18 - Saving...
+0: INFO    25-10-16 05:41:58.062244 - 1:24:20 - State dict saved!
+0: INFO    25-10-16 05:41:58.076219 - 1:24:20 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000500/train_state_00000.json
+0: INFO    25-10-16 05:41:58.077411 - 1:24:20 - Train state saved !
+0: INFO    25-10-16 05:41:58.077502 - 1:24:20 - Cleaning up checkpoints...
+0: INFO    25-10-16 05:41:58.077581 - 1:24:20 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000400'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000500')]
+0: INFO    25-10-16 05:41:58.077624 - 1:24:20 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000400'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000500')]
+0: INFO    25-10-16 05:41:58.077664 - 1:24:20 - Other folders: []
+0: INFO    25-10-16 05:41:58.077718 - 1:24:20 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000400')}
+0: INFO    25-10-16 05:41:58.266218 - 1:24:21 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000500/consolidated
+0: INFO    25-10-16 05:42:00.173284 - 1:24:23 - Consolidated !
+0: INFO    25-10-16 05:42:00.183055 - 1:24:23 - Loading model
+0: INFO    25-10-16 05:42:01.366452 - 1:24:24 - Model loaded
+0: INFO    25-10-16 05:42:01.416845 - 1:24:24 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 05:42:01.417023 - 1:24:24 - Using pre-initialized model
+0: WARNING 25-10-16 05:42:24.057451 - 1:24:46 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:42:24.057451 - 1:24:46 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:42:24.057824 - 1:24:46 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 05:42:24.057824 - 1:24:46 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 05:42:25.285210 - 1:24:48 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 05:42:25.286036 - 1:24:48 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 173/1838 [00:00<00:00, 1724.86it/s]
+ 19%|█▉        | 346/1838 [00:00<00:00, 1720.67it/s]
+ 28%|██▊       | 519/1838 [00:00<00:00, 1721.94it/s]
+ 38%|███▊      | 693/1838 [00:00<00:00, 1728.06it/s]
+ 47%|████▋     | 867/1838 [00:00<00:00, 1731.18it/s]
+ 57%|█████▋    | 1041/1838 [00:00<00:00, 1728.59it/s]
+ 66%|██████▌   | 1215/1838 [00:00<00:00, 1730.68it/s]
+ 76%|███████▌  | 1389/1838 [00:00<00:00, 1733.23it/s]
+ 85%|████████▌ | 1563/1838 [00:00<00:00, 1732.78it/s]
+ 95%|█████████▍| 1737/1838 [00:01<00:00, 1732.60it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1730.36it/s]
+0: INFO    25-10-16 05:42:26.415214 - 1:24:49 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 454/10042 [00:00<00:02, 4538.55it/s]
+  9%|▉         | 919/10042 [00:00<00:01, 4599.28it/s]
+ 14%|█▍        | 1386/10042 [00:00<00:01, 4629.64it/s]
+ 18%|█▊        | 1854/10042 [00:00<00:01, 4646.11it/s]
+ 23%|██▎       | 2325/10042 [00:00<00:01, 4666.74it/s]
+ 28%|██▊       | 2798/10042 [00:00<00:01, 4687.42it/s]
+ 33%|███▎      | 3270/10042 [00:00<00:01, 4695.31it/s]
+ 37%|███▋      | 3740/10042 [00:00<00:01, 4680.79it/s]
+ 42%|████▏     | 4209/10042 [00:00<00:01, 4670.63it/s]
+ 47%|████▋     | 4677/10042 [00:01<00:01, 4672.60it/s]
+ 51%|█████     | 5145/10042 [00:01<00:01, 4663.64it/s]
+ 56%|█████▌    | 5612/10042 [00:01<00:00, 4640.39it/s]
+ 61%|██████    | 6077/10042 [00:01<00:00, 4633.79it/s]
+ 65%|██████▌   | 6541/10042 [00:01<00:00, 4628.21it/s]
+ 70%|██████▉   | 7004/10042 [00:01<00:00, 4621.09it/s]
+ 74%|███████▍  | 7467/10042 [00:01<00:00, 4614.16it/s]
+ 79%|███████▉  | 7929/10042 [00:01<00:00, 4609.17it/s]
+ 84%|████████▎ | 8392/10042 [00:01<00:00, 4613.10it/s]
+ 88%|████████▊ | 8854/10042 [00:01<00:00, 4612.25it/s]
+ 93%|█████████▎| 9319/10042 [00:02<00:00, 4621.71it/s]
+ 97%|█████████▋| 9786/10042 [00:02<00:00, 4634.53it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4640.67it/s]
+0: INFO    25-10-16 05:42:29.204967 - 1:24:52 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 341.59it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 346.03it/s]
+  3%|▎         | 105/3610 [00:00<00:10, 347.50it/s]
+  4%|▍         | 140/3610 [00:00<00:09, 348.39it/s]
+  5%|▍         | 175/3610 [00:00<00:09, 348.76it/s]
+  6%|▌         | 210/3610 [00:00<00:09, 348.93it/s]
+  7%|▋         | 246/3610 [00:00<00:09, 349.74it/s]
+  8%|▊         | 281/3610 [00:00<00:09, 349.69it/s]
+  9%|▉         | 316/3610 [00:00<00:09, 349.59it/s]
+ 10%|▉         | 352/3610 [00:01<00:09, 350.08it/s]
+ 11%|█         | 388/3610 [00:01<00:09, 350.10it/s]
+ 12%|█▏        | 424/3610 [00:01<00:09, 350.44it/s]
+ 13%|█▎        | 460/3610 [00:01<00:08, 350.35it/s]
+ 14%|█▎        | 496/3610 [00:01<00:08, 350.82it/s]
+ 15%|█▍        | 532/3610 [00:01<00:08, 350.55it/s]
+ 16%|█▌        | 568/3610 [00:01<00:08, 350.74it/s]
+ 17%|█▋        | 604/3610 [00:01<00:08, 350.72it/s]
+ 18%|█▊        | 640/3610 [00:01<00:08, 350.57it/s]
+ 19%|█▊        | 676/3610 [00:01<00:08, 350.30it/s]
+ 20%|█▉        | 712/3610 [00:02<00:08, 350.47it/s]
+ 21%|██        | 748/3610 [00:02<00:08, 350.60it/s]
+ 22%|██▏       | 784/3610 [00:02<00:08, 351.04it/s]
+ 23%|██▎       | 820/3610 [00:02<00:07, 351.14it/s]
+ 24%|██▎       | 856/3610 [00:02<00:07, 351.69it/s]
+ 25%|██▍       | 892/3610 [00:02<00:07, 352.11it/s]
+ 26%|██▌       | 928/3610 [00:02<00:07, 352.74it/s]
+ 27%|██▋       | 964/3610 [00:02<00:07, 352.28it/s]
+ 28%|██▊       | 1000/3610 [00:02<00:07, 352.56it/s]
+ 29%|██▊       | 1036/3610 [00:02<00:07, 352.38it/s]
+ 30%|██▉       | 1072/3610 [00:03<00:07, 351.99it/s]
+ 31%|███       | 1108/3610 [00:03<00:07, 351.89it/s]
+ 32%|███▏      | 1144/3610 [00:03<00:07, 351.66it/s]
+ 33%|███▎      | 1180/3610 [00:03<00:06, 351.85it/s]
+ 34%|███▎      | 1216/3610 [00:03<00:06, 352.11it/s]
+ 35%|███▍      | 1252/3610 [00:03<00:06, 352.20it/s]
+ 36%|███▌      | 1288/3610 [00:03<00:06, 352.55it/s]
+ 37%|███▋      | 1324/3610 [00:03<00:06, 353.10it/s]
+ 38%|███▊      | 1360/3610 [00:03<00:06, 353.05it/s]
+ 39%|███▊      | 1396/3610 [00:03<00:06, 352.61it/s]
+ 40%|███▉      | 1432/3610 [00:04<00:06, 352.75it/s]
+ 41%|████      | 1468/3610 [00:04<00:06, 352.37it/s]
+ 42%|████▏     | 1504/3610 [00:04<00:05, 352.47it/s]
+ 43%|████▎     | 1540/3610 [00:04<00:05, 352.30it/s]
+ 44%|████▎     | 1576/3610 [00:04<00:05, 352.07it/s]
+ 45%|████▍     | 1612/3610 [00:04<00:05, 351.74it/s]
+ 46%|████▌     | 1648/3610 [00:04<00:05, 351.81it/s]
+ 47%|████▋     | 1684/3610 [00:04<00:05, 351.87it/s]
+ 48%|████▊     | 1720/3610 [00:04<00:05, 351.80it/s]
+ 49%|████▊     | 1756/3610 [00:04<00:05, 351.89it/s]
+ 50%|████▉     | 1792/3610 [00:05<00:05, 351.57it/s]
+ 51%|█████     | 1828/3610 [00:05<00:05, 351.57it/s]
+ 52%|█████▏    | 1864/3610 [00:05<00:04, 351.47it/s]
+ 53%|█████▎    | 1900/3610 [00:05<00:04, 351.36it/s]
+ 54%|█████▎    | 1936/3610 [00:05<00:04, 351.64it/s]
+ 55%|█████▍    | 1972/3610 [00:05<00:04, 351.53it/s]
+ 56%|█████▌    | 2008/3610 [00:05<00:04, 351.18it/s]
+ 57%|█████▋    | 2044/3610 [00:05<00:04, 351.68it/s]
+ 58%|█████▊    | 2080/3610 [00:05<00:04, 351.44it/s]
+ 59%|█████▊    | 2116/3610 [00:06<00:04, 351.64it/s]
+ 60%|█████▉    | 2152/3610 [00:06<00:04, 351.46it/s]
+ 61%|██████    | 2188/3610 [00:06<00:04, 351.40it/s]
+ 62%|██████▏   | 2224/3610 [00:06<00:03, 351.61it/s]
+ 63%|██████▎   | 2260/3610 [00:06<00:03, 352.11it/s]
+ 64%|██████▎   | 2296/3610 [00:06<00:03, 352.43it/s]
+ 65%|██████▍   | 2332/3610 [00:06<00:03, 351.97it/s]
+ 66%|██████▌   | 2368/3610 [00:06<00:03, 352.43it/s]
+ 67%|██████▋   | 2404/3610 [00:06<00:03, 352.23it/s]
+ 68%|██████▊   | 2440/3610 [00:06<00:03, 351.37it/s]
+ 69%|██████▊   | 2476/3610 [00:07<00:03, 351.40it/s]
+ 70%|██████▉   | 2512/3610 [00:07<00:03, 351.61it/s]
+ 71%|███████   | 2548/3610 [00:07<00:03, 351.19it/s]
+ 72%|███████▏  | 2584/3610 [00:07<00:02, 351.46it/s]
+ 73%|███████▎  | 2620/3610 [00:07<00:02, 351.88it/s]
+ 74%|███████▎  | 2656/3610 [00:07<00:02, 351.39it/s]
+ 75%|███████▍  | 2692/3610 [00:07<00:02, 350.91it/s]
+ 76%|███████▌  | 2728/3610 [00:07<00:02, 351.61it/s]
+ 77%|███████▋  | 2764/3610 [00:07<00:02, 352.11it/s]
+ 78%|███████▊  | 2800/3610 [00:07<00:02, 352.99it/s]
+ 79%|███████▊  | 2836/3610 [00:08<00:02, 353.22it/s]
+ 80%|███████▉  | 2872/3610 [00:08<00:02, 352.90it/s]
+ 81%|████████  | 2908/3610 [00:08<00:01, 352.40it/s]
+ 82%|████████▏ | 2944/3610 [00:08<00:01, 352.14it/s]
+ 83%|████████▎ | 2980/3610 [00:08<00:01, 352.12it/s]
+ 84%|████████▎ | 3016/3610 [00:08<00:01, 352.40it/s]
+ 85%|████████▍ | 3052/3610 [00:08<00:01, 351.69it/s]
+ 86%|████████▌ | 3088/3610 [00:08<00:01, 351.98it/s]
+ 87%|████████▋ | 3124/3610 [00:08<00:01, 351.91it/s]
+ 88%|████████▊ | 3160/3610 [00:08<00:01, 352.15it/s]
+ 89%|████████▊ | 3196/3610 [00:09<00:01, 352.37it/s]
+ 90%|████████▉ | 3232/3610 [00:09<00:01, 352.56it/s]
+ 91%|█████████ | 3268/3610 [00:09<00:00, 353.29it/s]
+ 92%|█████████▏| 3304/3610 [00:09<00:00, 353.21it/s]
+ 93%|█████████▎| 3340/3610 [00:09<00:00, 352.56it/s]
+ 94%|█████████▎| 3376/3610 [00:09<00:00, 352.21it/s]
+ 95%|█████████▍| 3412/3610 [00:09<00:00, 351.96it/s]
+ 96%|█████████▌| 3448/3610 [00:09<00:00, 352.33it/s]
+ 97%|█████████▋| 3484/3610 [00:09<00:00, 352.37it/s]
+ 98%|█████████▊| 3520/3610 [00:10<00:00, 352.67it/s]
+ 99%|█████████▊| 3556/3610 [00:10<00:00, 352.91it/s]
+100%|█████████▉| 3592/3610 [00:10<00:00, 352.49it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 351.64it/s]
+0: INFO    25-10-16 05:42:39.526611 - 1:25:02 - Running loglikelihood requests
+0: INFO    25-10-16 05:43:30.132644 - 1:25:53 - Running generate_until requests
+0: INFO    25-10-16 06:02:44.252730 - 1:45:07 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 06:02:44.809077 - 1:45:07 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2669.43994140625, 'nll_per_token': -1.5428214073181152, 'nll_per_char': -1.0397611856460571, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 06:02:45.163911 - 1:45:08 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.2588129854610635, 'acc_stderr,none': 0.004370875625259007, 'acc_norm,none': 0.2523401712806214, 'acc_norm_stderr,none': 0.0043346769527038585}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.514689880304679, 'acc_stderr,none': 0.011660788281735491, 'acc_norm,none': 0.4940152339499456, 'acc_norm_stderr,none': 0.011664988455853323}}
+0: INFO    25-10-16 06:02:45.165206 - 1:45:08 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2669.43994140625, 'nll_per_token': -1.5428214073181152, 'nll_per_char': -1.0397611856460571, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 06:02:45.165315 - 1:45:08 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 06:02:47.911080 - 1:45:10 - step: 510  acc: 0  loss:  1.5185  grad: 1.90e+00  flops: 3.85e+11  wps: 5.24e+02  iter:  0.1242  data: 0.0104  lr: 7.63e-05  mem: 22%  pow: 618.32 W
+0: INFO    25-10-16 06:02:49.288717 - 1:45:12 - step: 520  acc: 0  loss:  1.5075  grad: 1.85e+00  flops: 3.50e+14  wps: 4.76e+05  iter:   0.125  data: 0.0104  lr: 7.78e-05  mem: 22%  pow: 635.726 W
+0: INFO    25-10-16 06:02:50.684001 - 1:45:13 - step: 530  acc: 0  loss:  1.4864  grad: 1.50e+00  flops: 3.46e+14  wps: 4.70e+05  iter:   0.124  data: 0.0104  lr: 7.93e-05  mem: 22%  pow: 630.171 W
+0: INFO    25-10-16 06:02:52.042429 - 1:45:14 - step: 540  acc: 0  loss:  1.5245  grad: 1.27e+00  flops: 3.55e+14  wps: 4.83e+05  iter:  0.1244  data: 0.0151  lr: 8.09e-05  mem: 22%  pow: 644.028 W
+0: INFO    25-10-16 06:02:53.450516 - 1:45:16 - step: 550  acc: 0  loss:  1.4467  grad: 1.76e+00  flops: 3.43e+14  wps: 4.66e+05  iter:  0.1233  data: 0.0244  lr: 8.23e-05  mem: 22%  pow: 624.116 W
+0: INFO    25-10-16 06:02:54.833256 - 1:45:17 - step: 560  acc: 0  loss:    1.45  grad: 1.33e+00  flops: 3.49e+14  wps: 4.74e+05  iter:   0.124  data: 0.015  lr: 8.39e-05  mem: 22%  pow: 626.12 W
+0: INFO    25-10-16 06:02:56.213398 - 1:45:19 - step: 570  acc: 0  loss:   1.469  grad: 1.92e+00  flops: 3.49e+14  wps: 4.75e+05  iter:   0.124  data: 0.0104  lr: 8.53e-05  mem: 22%  pow: 636.382 W
+0: INFO    25-10-16 06:02:57.618100 - 1:45:20 - step: 580  acc: 0  loss:  1.4314  grad: 1.34e+00  flops: 3.43e+14  wps: 4.67e+05  iter:  0.1246  data: 0.0105  lr: 8.68e-05  mem: 22%  pow: 620.281 W
+0: INFO    25-10-16 06:02:58.975294 - 1:45:21 - step: 590  acc: 0  loss:  1.4879  grad: 1.46e+00  flops: 3.55e+14  wps: 4.83e+05  iter:   0.124  data: 0.0151  lr: 8.83e-05  mem: 22%  pow: 648.121 W
+0: INFO    25-10-16 06:03:00.346359 - 1:45:23 - step: 600  acc: 0  loss:   1.409  grad: 1.11e+00  flops: 3.52e+14  wps: 4.78e+05  iter:  0.1243  data: 0.0105  lr: 8.98e-05  mem: 22%  pow: 640.791 W
+0: INFO    25-10-16 06:03:00.347540 - 1:45:23 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000600
+0: INFO    25-10-16 06:03:00.347768 - 1:45:23 - Saving...
+0: INFO    25-10-16 06:03:02.230831 - 1:45:25 - State dict saved!
+0: INFO    25-10-16 06:03:02.244815 - 1:45:25 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000600/train_state_00000.json
+0: INFO    25-10-16 06:03:02.246047 - 1:45:25 - Train state saved !
+0: INFO    25-10-16 06:03:02.246138 - 1:45:25 - Cleaning up checkpoints...
+0: INFO    25-10-16 06:03:02.246219 - 1:45:25 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000500'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000600')]
+0: INFO    25-10-16 06:03:02.246265 - 1:45:25 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000500'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000600')]
+0: INFO    25-10-16 06:03:02.246301 - 1:45:25 - Other folders: []
+0: INFO    25-10-16 06:03:02.246356 - 1:45:25 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000500')}
+0: INFO    25-10-16 06:03:02.632146 - 1:45:25 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000600/consolidated
+0: INFO    25-10-16 06:03:04.641041 - 1:45:27 - Consolidated !
+0: INFO    25-10-16 06:03:04.651071 - 1:45:27 - Loading model
+0: INFO    25-10-16 06:03:05.742593 - 1:45:28 - Model loaded
+0: INFO    25-10-16 06:03:05.747927 - 1:45:28 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 06:03:05.748099 - 1:45:28 - Using pre-initialized model
+0: WARNING 25-10-16 06:03:27.559361 - 1:45:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:03:27.559361 - 1:45:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:03:27.559632 - 1:45:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:03:27.559632 - 1:45:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 06:03:28.783975 - 1:45:51 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 06:03:28.784766 - 1:45:51 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 172/1838 [00:00<00:00, 1711.70it/s]
+ 19%|█▊        | 344/1838 [00:00<00:00, 1713.02it/s]
+ 28%|██▊       | 516/1838 [00:00<00:00, 1715.22it/s]
+ 37%|███▋      | 689/1838 [00:00<00:00, 1720.85it/s]
+ 47%|████▋     | 863/1838 [00:00<00:00, 1727.64it/s]
+ 56%|█████▋    | 1036/1838 [00:00<00:00, 1727.38it/s]
+ 66%|██████▌   | 1209/1838 [00:00<00:00, 1726.49it/s]
+ 75%|███████▌  | 1382/1838 [00:00<00:00, 1726.44it/s]
+ 85%|████████▍ | 1555/1838 [00:00<00:00, 1725.87it/s]
+ 94%|█████████▍| 1728/1838 [00:01<00:00, 1724.82it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1724.22it/s]
+0: INFO    25-10-16 06:03:29.889498 - 1:45:52 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 460/10042 [00:00<00:02, 4592.11it/s]
+  9%|▉         | 931/10042 [00:00<00:01, 4656.71it/s]
+ 14%|█▍        | 1401/10042 [00:00<00:01, 4675.67it/s]
+ 19%|█▊        | 1871/10042 [00:00<00:01, 4682.21it/s]
+ 23%|██▎       | 2340/10042 [00:00<00:01, 4678.67it/s]
+ 28%|██▊       | 2811/10042 [00:00<00:01, 4687.16it/s]
+ 33%|███▎      | 3280/10042 [00:00<00:01, 4686.89it/s]
+ 37%|███▋      | 3749/10042 [00:00<00:01, 4672.50it/s]
+ 42%|████▏     | 4217/10042 [00:00<00:01, 4666.98it/s]
+ 47%|████▋     | 4685/10042 [00:01<00:01, 4668.73it/s]
+ 51%|█████▏    | 5152/10042 [00:01<00:01, 4655.41it/s]
+ 56%|█████▌    | 5618/10042 [00:01<00:00, 4638.66it/s]
+ 61%|██████    | 6082/10042 [00:01<00:00, 4623.03it/s]
+ 65%|██████▌   | 6545/10042 [00:01<00:00, 4616.32it/s]
+ 70%|██████▉   | 7007/10042 [00:01<00:00, 4611.41it/s]
+ 74%|███████▍  | 7469/10042 [00:01<00:00, 4605.50it/s]
+ 79%|███████▉  | 7930/10042 [00:01<00:00, 4598.35it/s]
+ 84%|████████▎ | 8390/10042 [00:01<00:00, 4598.68it/s]
+ 88%|████████▊ | 8850/10042 [00:01<00:00, 4597.02it/s]
+ 93%|█████████▎| 9310/10042 [00:02<00:00, 4595.07it/s]
+ 97%|█████████▋| 9771/10042 [00:02<00:00, 4598.68it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4631.45it/s]
+0: INFO    25-10-16 06:03:32.707039 - 1:45:55 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 344.90it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 346.51it/s]
+  3%|▎         | 106/3610 [00:00<00:10, 348.96it/s]
+  4%|▍         | 142/3610 [00:00<00:09, 350.16it/s]
+  5%|▍         | 178/3610 [00:00<00:09, 350.90it/s]
+  6%|▌         | 214/3610 [00:00<00:09, 351.00it/s]
+  7%|▋         | 250/3610 [00:00<00:09, 351.14it/s]
+  8%|▊         | 286/3610 [00:00<00:09, 350.50it/s]
+  9%|▉         | 322/3610 [00:00<00:09, 350.63it/s]
+ 10%|▉         | 358/3610 [00:01<00:09, 350.35it/s]
+ 11%|█         | 394/3610 [00:01<00:09, 350.32it/s]
+ 12%|█▏        | 430/3610 [00:01<00:09, 350.03it/s]
+ 13%|█▎        | 466/3610 [00:01<00:08, 350.48it/s]
+ 14%|█▍        | 502/3610 [00:01<00:08, 351.01it/s]
+ 15%|█▍        | 538/3610 [00:01<00:08, 351.13it/s]
+ 16%|█▌        | 574/3610 [00:01<00:08, 351.21it/s]
+ 17%|█▋        | 610/3610 [00:01<00:08, 351.23it/s]
+ 18%|█▊        | 646/3610 [00:01<00:08, 350.50it/s]
+ 19%|█▉        | 682/3610 [00:01<00:08, 350.31it/s]
+ 20%|█▉        | 718/3610 [00:02<00:08, 350.06it/s]
+ 21%|██        | 754/3610 [00:02<00:08, 350.35it/s]
+ 22%|██▏       | 790/3610 [00:02<00:08, 350.36it/s]
+ 23%|██▎       | 826/3610 [00:02<00:07, 349.97it/s]
+ 24%|██▍       | 862/3610 [00:02<00:07, 350.59it/s]
+ 25%|██▍       | 898/3610 [00:02<00:07, 350.48it/s]
+ 26%|██▌       | 934/3610 [00:02<00:07, 349.63it/s]
+ 27%|██▋       | 970/3610 [00:02<00:07, 350.26it/s]
+ 28%|██▊       | 1006/3610 [00:02<00:07, 350.52it/s]
+ 29%|██▉       | 1042/3610 [00:02<00:07, 351.00it/s]
+ 30%|██▉       | 1078/3610 [00:03<00:07, 351.83it/s]
+ 31%|███       | 1114/3610 [00:03<00:07, 351.88it/s]
+ 32%|███▏      | 1150/3610 [00:03<00:07, 350.96it/s]
+ 33%|███▎      | 1186/3610 [00:03<00:06, 350.56it/s]
+ 34%|███▍      | 1222/3610 [00:03<00:06, 349.65it/s]
+ 35%|███▍      | 1257/3610 [00:03<00:06, 349.46it/s]
+ 36%|███▌      | 1292/3610 [00:03<00:06, 349.50it/s]
+ 37%|███▋      | 1328/3610 [00:03<00:06, 350.00it/s]
+ 38%|███▊      | 1364/3610 [00:03<00:06, 350.14it/s]
+ 39%|███▉      | 1400/3610 [00:03<00:06, 351.20it/s]
+ 40%|███▉      | 1436/3610 [00:04<00:06, 351.58it/s]
+ 41%|████      | 1472/3610 [00:04<00:06, 351.10it/s]
+ 42%|████▏     | 1508/3610 [00:04<00:06, 349.94it/s]
+ 43%|████▎     | 1544/3610 [00:04<00:05, 350.53it/s]
+ 44%|████▍     | 1580/3610 [00:04<00:05, 350.62it/s]
+ 45%|████▍     | 1616/3610 [00:04<00:05, 350.56it/s]
+ 46%|████▌     | 1652/3610 [00:04<00:05, 351.02it/s]
+ 47%|████▋     | 1688/3610 [00:04<00:05, 350.65it/s]
+ 48%|████▊     | 1724/3610 [00:04<00:05, 350.10it/s]
+ 49%|████▉     | 1760/3610 [00:05<00:05, 350.20it/s]
+ 50%|████▉     | 1796/3610 [00:05<00:05, 349.23it/s]
+ 51%|█████     | 1831/3610 [00:05<00:05, 349.41it/s]
+ 52%|█████▏    | 1867/3610 [00:05<00:04, 349.72it/s]
+ 53%|█████▎    | 1903/3610 [00:05<00:04, 349.89it/s]
+ 54%|█████▎    | 1939/3610 [00:05<00:04, 350.29it/s]
+ 55%|█████▍    | 1975/3610 [00:05<00:04, 350.31it/s]
+ 56%|█████▌    | 2011/3610 [00:05<00:04, 350.32it/s]
+ 57%|█████▋    | 2047/3610 [00:05<00:04, 350.77it/s]
+ 58%|█████▊    | 2083/3610 [00:05<00:04, 349.78it/s]
+ 59%|█████▊    | 2119/3610 [00:06<00:04, 350.16it/s]
+ 60%|█████▉    | 2155/3610 [00:06<00:04, 350.19it/s]
+ 61%|██████    | 2191/3610 [00:06<00:04, 350.06it/s]
+ 62%|██████▏   | 2227/3610 [00:06<00:03, 349.73it/s]
+ 63%|██████▎   | 2262/3610 [00:06<00:03, 349.57it/s]
+ 64%|██████▎   | 2297/3610 [00:06<00:03, 349.67it/s]
+ 65%|██████▍   | 2333/3610 [00:06<00:03, 349.94it/s]
+ 66%|██████▌   | 2369/3610 [00:06<00:03, 350.05it/s]
+ 67%|██████▋   | 2405/3610 [00:06<00:03, 351.08it/s]
+ 68%|██████▊   | 2441/3610 [00:06<00:03, 350.72it/s]
+ 69%|██████▊   | 2477/3610 [00:07<00:03, 350.70it/s]
+ 70%|██████▉   | 2513/3610 [00:07<00:03, 350.69it/s]
+ 71%|███████   | 2549/3610 [00:07<00:03, 350.17it/s]
+ 72%|███████▏  | 2585/3610 [00:07<00:02, 350.06it/s]
+ 73%|███████▎  | 2621/3610 [00:07<00:02, 349.61it/s]
+ 74%|███████▎  | 2656/3610 [00:07<00:02, 349.36it/s]
+ 75%|███████▍  | 2691/3610 [00:07<00:02, 349.51it/s]
+ 76%|███████▌  | 2727/3610 [00:07<00:02, 349.93it/s]
+ 77%|███████▋  | 2763/3610 [00:07<00:02, 350.36it/s]
+ 78%|███████▊  | 2799/3610 [00:07<00:02, 350.17it/s]
+ 79%|███████▊  | 2835/3610 [00:08<00:02, 350.47it/s]
+ 80%|███████▉  | 2871/3610 [00:08<00:02, 350.67it/s]
+ 81%|████████  | 2907/3610 [00:08<00:02, 350.27it/s]
+ 82%|████████▏ | 2943/3610 [00:08<00:01, 349.59it/s]
+ 82%|████████▏ | 2978/3610 [00:08<00:01, 349.37it/s]
+ 83%|████████▎ | 3014/3610 [00:08<00:01, 350.20it/s]
+ 84%|████████▍ | 3050/3610 [00:08<00:01, 350.10it/s]
+ 85%|████████▌ | 3086/3610 [00:08<00:01, 351.00it/s]
+ 86%|████████▋ | 3122/3610 [00:08<00:01, 351.39it/s]
+ 87%|████████▋ | 3158/3610 [00:09<00:01, 351.66it/s]
+ 88%|████████▊ | 3194/3610 [00:09<00:01, 351.71it/s]
+ 89%|████████▉ | 3230/3610 [00:09<00:01, 351.24it/s]
+ 90%|█████████ | 3266/3610 [00:09<00:00, 351.26it/s]
+ 91%|█████████▏| 3302/3610 [00:09<00:00, 351.32it/s]
+ 92%|█████████▏| 3338/3610 [00:09<00:00, 351.41it/s]
+ 93%|█████████▎| 3374/3610 [00:09<00:00, 351.98it/s]
+ 94%|█████████▍| 3410/3610 [00:09<00:00, 351.93it/s]
+ 95%|█████████▌| 3446/3610 [00:09<00:00, 351.27it/s]
+ 96%|█████████▋| 3482/3610 [00:09<00:00, 351.18it/s]
+ 97%|█████████▋| 3518/3610 [00:10<00:00, 350.47it/s]
+ 98%|█████████▊| 3554/3610 [00:10<00:00, 350.05it/s]
+ 99%|█████████▉| 3590/3610 [00:10<00:00, 350.05it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 350.39it/s]
+0: INFO    25-10-16 06:03:43.064965 - 1:46:05 - Running loglikelihood requests
+0: INFO    25-10-16 06:04:33.492118 - 1:46:56 - Running generate_until requests
+0: INFO    25-10-16 06:23:44.821619 - 2:06:07 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 06:23:45.377441 - 2:06:08 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2561.0400390625, 'nll_per_token': -1.47848641872406, 'nll_per_char': -0.995121419429779, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 06:23:45.707554 - 2:06:08 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.26010754829715194, 'acc_stderr,none': 0.004377965074211624, 'acc_norm,none': 0.2546305516829317, 'acc_norm_stderr,none': 0.004347629889040931}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5217627856365615, 'acc_stderr,none': 0.011654768618560072, 'acc_norm,none': 0.5065288356909684, 'acc_norm_stderr,none': 0.011664829595210969}}
+0: INFO    25-10-16 06:23:45.708883 - 2:06:08 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2561.0400390625, 'nll_per_token': -1.47848641872406, 'nll_per_char': -0.995121419429779, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 06:23:45.708986 - 2:06:08 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 06:23:48.504137 - 2:06:11 - step: 610  acc: 0  loss:  1.4116  grad: 1.40e+00  flops: 3.86e+11  wps: 5.25e+02  iter:  0.1245  data: 0.0151  lr: 9.13e-05  mem: 23%  pow: 621.058 W
+0: INFO    25-10-16 06:23:49.864179 - 2:06:12 - step: 620  acc: 0  loss:  1.4601  grad: 1.28e+00  flops: 3.55e+14  wps: 4.82e+05  iter:  0.1243  data: 0.0242  lr: 9.28e-05  mem: 23%  pow: 631.23 W
+0: INFO    25-10-16 06:23:51.231527 - 2:06:14 - step: 630  acc: 0  loss:  1.3792  grad: 1.39e+00  flops: 3.53e+14  wps: 4.80e+05  iter:   0.125  data: 0.0105  lr: 9.43e-05  mem: 23%  pow: 637.43 W
+0: INFO    25-10-16 06:23:52.632725 - 2:06:15 - step: 640  acc: 0  loss:  1.4444  grad: 1.23e+00  flops: 3.44e+14  wps: 4.68e+05  iter:  0.1249  data: 0.0245  lr: 9.58e-05  mem: 23%  pow: 625.295 W
+0: INFO    25-10-16 06:23:54.005732 - 2:06:16 - step: 650  acc: 0  loss:  1.3936  grad: 1.25e+00  flops: 3.51e+14  wps: 4.78e+05  iter:   0.124  data: 0.0196  lr: 9.73e-05  mem: 23%  pow: 638.482 W
+0: INFO    25-10-16 06:23:55.386352 - 2:06:18 - step: 660  acc: 0  loss:  1.3981  grad: 1.37e+00  flops: 3.49e+14  wps: 4.75e+05  iter:  0.1241  data: 0.0105  lr: 9.88e-05  mem: 23%  pow: 626.036 W
+0: INFO    25-10-16 06:23:56.774445 - 2:06:19 - step: 670  acc: 0  loss:   1.413  grad: 1.27e+00  flops: 3.47e+14  wps: 4.72e+05  iter:  0.1235  data: 0.0074  lr: 1.00e-04  mem: 23%  pow: 634.686 W
+0: INFO    25-10-16 06:23:58.145617 - 2:06:21 - step: 680  acc: 0  loss:  1.3988  grad: 1.16e+00  flops: 3.52e+14  wps: 4.78e+05  iter:  0.1246  data: 0.0104  lr: 1.02e-04  mem: 23%  pow: 642.503 W
+0: INFO    25-10-16 06:23:59.528292 - 2:06:22 - step: 690  acc: 0  loss:  1.4072  grad: 1.11e+00  flops: 3.49e+14  wps: 4.74e+05  iter:   0.124  data: 0.0151  lr: 1.03e-04  mem: 23%  pow: 633.847 W
+0: INFO    25-10-16 06:24:00.905926 - 2:06:23 - step: 700  acc: 0  loss:   1.382  grad: 1.11e+00  flops: 3.50e+14  wps: 4.76e+05  iter:  0.1241  data: 0.0196  lr: 1.05e-04  mem: 23%  pow: 624.626 W
+0: INFO    25-10-16 06:24:00.907042 - 2:06:23 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000700
+0: INFO    25-10-16 06:24:00.907263 - 2:06:23 - Saving...
+0: INFO    25-10-16 06:24:02.807706 - 2:06:25 - State dict saved!
+0: INFO    25-10-16 06:24:02.821881 - 2:06:25 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000700/train_state_00000.json
+0: INFO    25-10-16 06:24:02.823112 - 2:06:25 - Train state saved !
+0: INFO    25-10-16 06:24:02.823195 - 2:06:25 - Cleaning up checkpoints...
+0: INFO    25-10-16 06:24:02.823272 - 2:06:25 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000600'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000700')]
+0: INFO    25-10-16 06:24:02.823313 - 2:06:25 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000600'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000700')]
+0: INFO    25-10-16 06:24:02.823348 - 2:06:25 - Other folders: []
+0: INFO    25-10-16 06:24:02.823401 - 2:06:25 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000600')}
+0: INFO    25-10-16 06:24:03.221284 - 2:06:26 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000700/consolidated
+0: INFO    25-10-16 06:24:05.166127 - 2:06:28 - Consolidated !
+0: INFO    25-10-16 06:24:05.177092 - 2:06:28 - Loading model
+0: INFO    25-10-16 06:24:06.354577 - 2:06:29 - Model loaded
+0: INFO    25-10-16 06:24:06.360444 - 2:06:29 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 06:24:06.360612 - 2:06:29 - Using pre-initialized model
+0: WARNING 25-10-16 06:24:27.758687 - 2:06:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:24:27.758687 - 2:06:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:24:27.758952 - 2:06:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:24:27.758952 - 2:06:50 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 06:24:28.977869 - 2:06:51 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 06:24:28.978657 - 2:06:51 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 173/1838 [00:00<00:00, 1723.84it/s]
+ 19%|█▉        | 346/1838 [00:00<00:00, 1726.03it/s]
+ 28%|██▊       | 519/1838 [00:00<00:00, 1726.99it/s]
+ 38%|███▊      | 694/1838 [00:00<00:00, 1732.40it/s]
+ 47%|████▋     | 868/1838 [00:00<00:00, 1731.20it/s]
+ 57%|█████▋    | 1042/1838 [00:00<00:00, 1733.08it/s]
+ 66%|██████▌   | 1216/1838 [00:00<00:00, 1732.53it/s]
+ 76%|███████▌  | 1390/1838 [00:00<00:00, 1730.81it/s]
+ 85%|████████▌ | 1564/1838 [00:00<00:00, 1729.80it/s]
+ 95%|█████████▍| 1738/1838 [00:01<00:00, 1730.95it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1730.81it/s]
+0: INFO    25-10-16 06:24:30.079117 - 2:06:52 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 460/10042 [00:00<00:02, 4599.84it/s]
+  9%|▉         | 929/10042 [00:00<00:01, 4649.77it/s]
+ 14%|█▍        | 1398/10042 [00:00<00:01, 4666.03it/s]
+ 19%|█▊        | 1868/10042 [00:00<00:01, 4678.35it/s]
+ 23%|██▎       | 2340/10042 [00:00<00:01, 4690.60it/s]
+ 28%|██▊       | 2813/10042 [00:00<00:01, 4702.75it/s]
+ 33%|███▎      | 3288/10042 [00:00<00:01, 4716.81it/s]
+ 37%|███▋      | 3760/10042 [00:00<00:01, 4717.16it/s]
+ 42%|████▏     | 4232/10042 [00:00<00:01, 4713.31it/s]
+ 47%|████▋     | 4704/10042 [00:01<00:01, 4697.40it/s]
+ 52%|█████▏    | 5174/10042 [00:01<00:01, 4670.70it/s]
+ 56%|█████▌    | 5642/10042 [00:01<00:00, 4664.63it/s]
+ 61%|██████    | 6109/10042 [00:01<00:00, 4657.06it/s]
+ 65%|██████▌   | 6575/10042 [00:01<00:00, 4654.52it/s]
+ 70%|███████   | 7041/10042 [00:01<00:00, 4647.54it/s]
+ 75%|███████▍  | 7508/10042 [00:01<00:00, 4653.39it/s]
+ 79%|███████▉  | 7978/10042 [00:01<00:00, 4665.29it/s]
+ 84%|████████▍ | 8445/10042 [00:01<00:00, 4658.35it/s]
+ 89%|████████▊ | 8912/10042 [00:01<00:00, 4661.54it/s]
+ 93%|█████████▎| 9381/10042 [00:02<00:00, 4669.56it/s]
+ 98%|█████████▊| 9848/10042 [00:02<00:00, 4665.65it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4672.69it/s]
+0: INFO    25-10-16 06:24:32.872220 - 2:06:55 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 347.49it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 348.37it/s]
+  3%|▎         | 106/3610 [00:00<00:10, 349.72it/s]
+  4%|▍         | 142/3610 [00:00<00:09, 350.52it/s]
+  5%|▍         | 178/3610 [00:00<00:09, 350.48it/s]
+  6%|▌         | 214/3610 [00:00<00:09, 350.69it/s]
+  7%|▋         | 250/3610 [00:00<00:09, 350.98it/s]
+  8%|▊         | 286/3610 [00:00<00:09, 350.97it/s]
+  9%|▉         | 322/3610 [00:00<00:09, 350.86it/s]
+ 10%|▉         | 358/3610 [00:01<00:09, 351.46it/s]
+ 11%|█         | 394/3610 [00:01<00:09, 351.63it/s]
+ 12%|█▏        | 430/3610 [00:01<00:09, 351.59it/s]
+ 13%|█▎        | 466/3610 [00:01<00:08, 352.18it/s]
+ 14%|█▍        | 502/3610 [00:01<00:08, 352.33it/s]
+ 15%|█▍        | 538/3610 [00:01<00:08, 352.11it/s]
+ 16%|█▌        | 574/3610 [00:01<00:08, 351.51it/s]
+ 17%|█▋        | 610/3610 [00:01<00:08, 351.68it/s]
+ 18%|█▊        | 646/3610 [00:01<00:08, 352.20it/s]
+ 19%|█▉        | 682/3610 [00:01<00:08, 352.15it/s]
+ 20%|█▉        | 718/3610 [00:02<00:08, 352.54it/s]
+ 21%|██        | 754/3610 [00:02<00:08, 352.12it/s]
+ 22%|██▏       | 790/3610 [00:02<00:08, 352.03it/s]
+ 23%|██▎       | 826/3610 [00:02<00:07, 352.14it/s]
+ 24%|██▍       | 862/3610 [00:02<00:07, 351.78it/s]
+ 25%|██▍       | 898/3610 [00:02<00:07, 352.35it/s]
+ 26%|██▌       | 934/3610 [00:02<00:07, 352.56it/s]
+ 27%|██▋       | 970/3610 [00:02<00:07, 352.51it/s]
+ 28%|██▊       | 1006/3610 [00:02<00:07, 352.52it/s]
+ 29%|██▉       | 1042/3610 [00:02<00:07, 352.70it/s]
+ 30%|██▉       | 1078/3610 [00:03<00:07, 353.33it/s]
+ 31%|███       | 1114/3610 [00:03<00:07, 352.47it/s]
+ 32%|███▏      | 1150/3610 [00:03<00:06, 351.96it/s]
+ 33%|███▎      | 1186/3610 [00:03<00:06, 352.19it/s]
+ 34%|███▍      | 1222/3610 [00:03<00:06, 351.92it/s]
+ 35%|███▍      | 1258/3610 [00:03<00:06, 351.90it/s]
+ 36%|███▌      | 1294/3610 [00:03<00:06, 351.83it/s]
+ 37%|███▋      | 1330/3610 [00:03<00:06, 351.67it/s]
+ 38%|███▊      | 1366/3610 [00:03<00:06, 351.63it/s]
+ 39%|███▉      | 1402/3610 [00:03<00:06, 351.60it/s]
+ 40%|███▉      | 1438/3610 [00:04<00:06, 347.97it/s]
+ 41%|████      | 1473/3610 [00:04<00:06, 348.24it/s]
+ 42%|████▏     | 1508/3610 [00:04<00:06, 348.37it/s]
+ 43%|████▎     | 1543/3610 [00:04<00:05, 348.62it/s]
+ 44%|████▎     | 1579/3610 [00:04<00:05, 349.28it/s]
+ 45%|████▍     | 1615/3610 [00:04<00:05, 349.63it/s]
+ 46%|████▌     | 1650/3610 [00:04<00:05, 348.24it/s]
+ 47%|████▋     | 1685/3610 [00:04<00:05, 348.59it/s]
+ 48%|████▊     | 1721/3610 [00:04<00:05, 349.28it/s]
+ 49%|████▊     | 1757/3610 [00:05<00:05, 349.55it/s]
+ 50%|████▉     | 1793/3610 [00:05<00:05, 350.00it/s]
+ 51%|█████     | 1828/3610 [00:05<00:05, 349.54it/s]
+ 52%|█████▏    | 1863/3610 [00:05<00:04, 349.60it/s]
+ 53%|█████▎    | 1899/3610 [00:05<00:04, 350.09it/s]
+ 54%|█████▎    | 1935/3610 [00:05<00:04, 350.01it/s]
+ 55%|█████▍    | 1971/3610 [00:05<00:04, 350.37it/s]
+ 56%|█████▌    | 2007/3610 [00:05<00:04, 350.74it/s]
+ 57%|█████▋    | 2043/3610 [00:05<00:04, 350.60it/s]
+ 58%|█████▊    | 2079/3610 [00:05<00:04, 350.68it/s]
+ 59%|█████▊    | 2115/3610 [00:06<00:04, 351.25it/s]
+ 60%|█████▉    | 2151/3610 [00:06<00:04, 351.01it/s]
+ 61%|██████    | 2187/3610 [00:06<00:04, 351.14it/s]
+ 62%|██████▏   | 2223/3610 [00:06<00:03, 350.83it/s]
+ 63%|██████▎   | 2259/3610 [00:06<00:03, 350.73it/s]
+ 64%|██████▎   | 2295/3610 [00:06<00:03, 350.15it/s]
+ 65%|██████▍   | 2331/3610 [00:06<00:03, 350.69it/s]
+ 66%|██████▌   | 2367/3610 [00:06<00:03, 351.00it/s]
+ 67%|██████▋   | 2403/3610 [00:06<00:03, 350.94it/s]
+ 68%|██████▊   | 2439/3610 [00:06<00:03, 351.13it/s]
+ 69%|██████▊   | 2475/3610 [00:07<00:03, 351.14it/s]
+ 70%|██████▉   | 2511/3610 [00:07<00:03, 351.27it/s]
+ 71%|███████   | 2547/3610 [00:07<00:03, 351.40it/s]
+ 72%|███████▏  | 2583/3610 [00:07<00:02, 351.77it/s]
+ 73%|███████▎  | 2619/3610 [00:07<00:02, 352.04it/s]
+ 74%|███████▎  | 2655/3610 [00:07<00:02, 351.23it/s]
+ 75%|███████▍  | 2691/3610 [00:07<00:02, 352.02it/s]
+ 76%|███████▌  | 2727/3610 [00:07<00:02, 352.14it/s]
+ 77%|███████▋  | 2763/3610 [00:07<00:02, 352.17it/s]
+ 78%|███████▊  | 2799/3610 [00:07<00:02, 352.03it/s]
+ 79%|███████▊  | 2835/3610 [00:08<00:02, 351.74it/s]
+ 80%|███████▉  | 2871/3610 [00:08<00:02, 351.82it/s]
+ 81%|████████  | 2907/3610 [00:08<00:01, 351.52it/s]
+ 82%|████████▏ | 2943/3610 [00:08<00:01, 351.20it/s]
+ 83%|████████▎ | 2979/3610 [00:08<00:01, 351.79it/s]
+ 84%|████████▎ | 3015/3610 [00:08<00:01, 352.05it/s]
+ 85%|████████▍ | 3051/3610 [00:08<00:01, 352.25it/s]
+ 86%|████████▌ | 3087/3610 [00:08<00:01, 352.74it/s]
+ 87%|████████▋ | 3123/3610 [00:08<00:01, 353.20it/s]
+ 88%|████████▊ | 3159/3610 [00:08<00:01, 352.23it/s]
+ 89%|████████▊ | 3195/3610 [00:09<00:01, 352.04it/s]
+ 90%|████████▉ | 3231/3610 [00:09<00:01, 352.79it/s]
+ 90%|█████████ | 3267/3610 [00:09<00:00, 352.35it/s]
+ 91%|█████████▏| 3303/3610 [00:09<00:00, 351.90it/s]
+ 92%|█████████▏| 3339/3610 [00:09<00:00, 351.76it/s]
+ 93%|█████████▎| 3375/3610 [00:09<00:00, 351.42it/s]
+ 94%|█████████▍| 3411/3610 [00:09<00:00, 350.89it/s]
+ 95%|█████████▌| 3447/3610 [00:09<00:00, 351.05it/s]
+ 96%|█████████▋| 3483/3610 [00:09<00:00, 351.29it/s]
+ 97%|█████████▋| 3519/3610 [00:10<00:00, 351.51it/s]
+ 98%|█████████▊| 3555/3610 [00:10<00:00, 351.98it/s]
+ 99%|█████████▉| 3591/3610 [00:10<00:00, 351.29it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 351.24it/s]
+0: INFO    25-10-16 06:24:43.209807 - 2:07:06 - Running loglikelihood requests
+0: INFO    25-10-16 06:25:33.823241 - 2:07:56 - Running generate_until requests
+0: INFO    25-10-16 06:44:48.615777 - 2:27:11 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 06:44:49.348177 - 2:27:12 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2479.679931640625, 'nll_per_token': -1.4323400259017944, 'nll_per_char': -0.9647209644317627, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 06:44:49.700432 - 2:27:12 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.2605058753236407, 'acc_stderr,none': 0.004380136468543931, 'acc_norm,none': 0.25761800438159727, 'acc_norm_stderr,none': 0.004364287353415478}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.514689880304679, 'acc_stderr,none': 0.011660788281735496, 'acc_norm,none': 0.499455930359086, 'acc_norm_stderr,none': 0.011665817258899173}}
+0: INFO    25-10-16 06:44:49.701744 - 2:27:12 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2479.679931640625, 'nll_per_token': -1.4323400259017944, 'nll_per_char': -0.9647209644317627, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 06:44:49.701848 - 2:27:12 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 06:44:53.005411 - 2:27:15 - step: 710  acc: 0  loss:  1.3802  grad: 1.18e+00  flops: 3.85e+11  wps: 5.23e+02  iter:  0.1244  data: 0.0105  lr: 1.06e-04  mem: 23%  pow: 637.06 W
+0: INFO    25-10-16 06:44:54.391578 - 2:27:17 - step: 720  acc: 0  loss:  1.4062  grad: 1.08e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1238  data: 0.0196  lr: 1.08e-04  mem: 23%  pow: 626.249 W
+0: INFO    25-10-16 06:44:55.753651 - 2:27:18 - step: 730  acc: 0  loss:  1.3676  grad: 1.02e+00  flops: 3.54e+14  wps: 4.81e+05  iter:   0.124  data: 0.0104  lr: 1.09e-04  mem: 23%  pow: 639.961 W
+0: INFO    25-10-16 06:44:57.121616 - 2:27:20 - step: 740  acc: 0  loss:  1.4079  grad: 1.12e+00  flops: 3.53e+14  wps: 4.79e+05  iter:  0.1245  data: 0.0151  lr: 1.11e-04  mem: 23%  pow: 637.722 W
+0: INFO    25-10-16 06:44:58.490365 - 2:27:21 - step: 750  acc: 0  loss:   1.354  grad: 9.70e-01  flops: 3.52e+14  wps: 4.79e+05  iter:  0.1236  data: 0.0104  lr: 1.12e-04  mem: 23%  pow: 637.27 W
+0: INFO    25-10-16 06:44:59.891856 - 2:27:22 - step: 760  acc: 0  loss:  1.3687  grad: 9.40e-01  flops: 3.44e+14  wps: 4.68e+05  iter:   0.124  data: 0.0059  lr: 1.14e-04  mem: 23%  pow: 625.561 W
+0: INFO    25-10-16 06:45:01.293337 - 2:27:24 - step: 770  acc: 0  loss:  1.3698  grad: 1.01e+00  flops: 3.44e+14  wps: 4.68e+05  iter:  0.1239  data: 0.0105  lr: 1.15e-04  mem: 23%  pow: 613.894 W
+0: INFO    25-10-16 06:45:02.680105 - 2:27:25 - step: 780  acc: 0  loss:  1.3744  grad: 1.01e+00  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1243  data: 0.0243  lr: 1.17e-04  mem: 23%  pow: 616.815 W
+0: INFO    25-10-16 06:45:04.052756 - 2:27:26 - step: 790  acc: 0  loss:  1.4151  grad: 9.53e-01  flops: 3.51e+14  wps: 4.78e+05  iter:  0.1239  data: 0.0107  lr: 1.18e-04  mem: 23%  pow: 643.128 W
+0: INFO    25-10-16 06:45:05.453276 - 2:27:28 - step: 800  acc: 0  loss:  1.3812  grad: 9.06e-01  flops: 3.44e+14  wps: 4.68e+05  iter:  0.1246  data: 0.0105  lr: 1.20e-04  mem: 23%  pow: 629.734 W
+0: INFO    25-10-16 06:45:05.496034 - 2:27:28 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000800
+0: INFO    25-10-16 06:45:05.496272 - 2:27:28 - Saving...
+0: INFO    25-10-16 06:45:07.500360 - 2:27:30 - State dict saved!
+0: INFO    25-10-16 06:45:07.514711 - 2:27:30 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000800/train_state_00000.json
+0: INFO    25-10-16 06:45:07.515914 - 2:27:30 - Train state saved !
+0: INFO    25-10-16 06:45:07.515997 - 2:27:30 - Cleaning up checkpoints...
+0: INFO    25-10-16 06:45:07.516088 - 2:27:30 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000700'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000800')]
+0: INFO    25-10-16 06:45:07.516132 - 2:27:30 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000700'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000800')]
+0: INFO    25-10-16 06:45:07.516167 - 2:27:30 - Other folders: []
+0: INFO    25-10-16 06:45:07.516219 - 2:27:30 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000700')}
+0: INFO    25-10-16 06:45:07.924502 - 2:27:30 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000800/consolidated
+0: INFO    25-10-16 06:45:09.823122 - 2:27:32 - Consolidated !
+0: INFO    25-10-16 06:45:09.832902 - 2:27:32 - Loading model
+0: INFO    25-10-16 06:45:11.032767 - 2:27:33 - Model loaded
+0: INFO    25-10-16 06:45:11.041342 - 2:27:33 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 06:45:11.041514 - 2:27:33 - Using pre-initialized model
+0: WARNING 25-10-16 06:45:33.462819 - 2:27:56 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:45:33.462819 - 2:27:56 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:45:33.463079 - 2:27:56 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 06:45:33.463079 - 2:27:56 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 06:45:34.730971 - 2:27:57 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 06:45:34.731805 - 2:27:57 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 171/1838 [00:00<00:00, 1704.63it/s]
+ 19%|█▊        | 343/1838 [00:00<00:00, 1711.04it/s]
+ 28%|██▊       | 515/1838 [00:00<00:00, 1714.32it/s]
+ 37%|███▋      | 687/1838 [00:00<00:00, 1716.19it/s]
+ 47%|████▋     | 860/1838 [00:00<00:00, 1719.55it/s]
+ 56%|█████▌    | 1033/1838 [00:00<00:00, 1720.37it/s]
+ 66%|██████▌   | 1207/1838 [00:00<00:00, 1724.34it/s]
+ 75%|███████▌  | 1381/1838 [00:00<00:00, 1726.83it/s]
+ 85%|████████▍ | 1555/1838 [00:00<00:00, 1727.85it/s]
+ 94%|█████████▍| 1728/1838 [00:01<00:00, 1727.01it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1722.02it/s]
+0: INFO    25-10-16 06:45:35.837891 - 2:27:58 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 454/10042 [00:00<00:02, 4533.56it/s]
+  9%|▉         | 921/10042 [00:00<00:01, 4611.55it/s]
+ 14%|█▍        | 1388/10042 [00:00<00:01, 4635.01it/s]
+ 19%|█▊        | 1858/10042 [00:00<00:01, 4657.57it/s]
+ 23%|██▎       | 2333/10042 [00:00<00:01, 4687.77it/s]
+ 28%|██▊       | 2804/10042 [00:00<00:01, 4695.21it/s]
+ 33%|███▎      | 3277/10042 [00:00<00:01, 4705.14it/s]
+ 37%|███▋      | 3748/10042 [00:00<00:01, 4698.28it/s]
+ 42%|████▏     | 4218/10042 [00:00<00:01, 4688.46it/s]
+ 47%|████▋     | 4689/10042 [00:01<00:01, 4694.75it/s]
+ 51%|█████▏    | 5159/10042 [00:01<00:01, 4694.45it/s]
+ 56%|█████▌    | 5629/10042 [00:01<00:00, 4684.09it/s]
+ 61%|██████    | 6098/10042 [00:01<00:00, 4684.57it/s]
+ 65%|██████▌   | 6567/10042 [00:01<00:00, 4684.51it/s]
+ 70%|███████   | 7037/10042 [00:01<00:00, 4688.99it/s]
+ 75%|███████▍  | 7506/10042 [00:01<00:00, 4678.74it/s]
+ 79%|███████▉  | 7974/10042 [00:01<00:00, 4677.24it/s]
+ 84%|████████▍ | 8446/10042 [00:01<00:00, 4687.71it/s]
+ 89%|████████▉ | 8915/10042 [00:01<00:00, 4679.13it/s]
+ 93%|█████████▎| 9383/10042 [00:02<00:00, 4677.42it/s]
+ 98%|█████████▊| 9851/10042 [00:02<00:00, 4658.34it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4676.02it/s]
+0: INFO    25-10-16 06:45:38.637799 - 2:28:01 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 346.92it/s]
+  2%|▏         | 71/3610 [00:00<00:10, 349.76it/s]
+  3%|▎         | 107/3610 [00:00<00:10, 350.07it/s]
+  4%|▍         | 143/3610 [00:00<00:09, 351.10it/s]
+  5%|▍         | 179/3610 [00:00<00:09, 351.23it/s]
+  6%|▌         | 215/3610 [00:00<00:09, 350.73it/s]
+  7%|▋         | 251/3610 [00:00<00:09, 351.16it/s]
+  8%|▊         | 287/3610 [00:00<00:09, 351.37it/s]
+  9%|▉         | 323/3610 [00:00<00:09, 351.55it/s]
+ 10%|▉         | 359/3610 [00:01<00:09, 351.94it/s]
+ 11%|█         | 395/3610 [00:01<00:09, 351.38it/s]
+ 12%|█▏        | 431/3610 [00:01<00:09, 351.96it/s]
+ 13%|█▎        | 467/3610 [00:01<00:08, 351.58it/s]
+ 14%|█▍        | 503/3610 [00:01<00:08, 351.93it/s]
+ 15%|█▍        | 539/3610 [00:01<00:08, 351.81it/s]
+ 16%|█▌        | 575/3610 [00:01<00:08, 351.84it/s]
+ 17%|█▋        | 611/3610 [00:01<00:08, 351.94it/s]
+ 18%|█▊        | 647/3610 [00:01<00:08, 352.10it/s]
+ 19%|█▉        | 683/3610 [00:01<00:08, 352.44it/s]
+ 20%|█▉        | 719/3610 [00:02<00:08, 352.17it/s]
+ 21%|██        | 755/3610 [00:02<00:08, 352.92it/s]
+ 22%|██▏       | 791/3610 [00:02<00:07, 352.94it/s]
+ 23%|██▎       | 827/3610 [00:02<00:07, 352.82it/s]
+ 24%|██▍       | 863/3610 [00:02<00:07, 352.67it/s]
+ 25%|██▍       | 899/3610 [00:02<00:07, 352.64it/s]
+ 26%|██▌       | 935/3610 [00:02<00:07, 352.90it/s]
+ 27%|██▋       | 971/3610 [00:02<00:07, 353.32it/s]
+ 28%|██▊       | 1007/3610 [00:02<00:07, 352.85it/s]
+ 29%|██▉       | 1043/3610 [00:02<00:07, 352.92it/s]
+ 30%|██▉       | 1079/3610 [00:03<00:07, 352.21it/s]
+ 31%|███       | 1115/3610 [00:03<00:07, 352.15it/s]
+ 32%|███▏      | 1151/3610 [00:03<00:06, 352.61it/s]
+ 33%|███▎      | 1187/3610 [00:03<00:06, 352.37it/s]
+ 34%|███▍      | 1223/3610 [00:03<00:06, 352.02it/s]
+ 35%|███▍      | 1259/3610 [00:03<00:06, 352.10it/s]
+ 36%|███▌      | 1295/3610 [00:03<00:06, 351.95it/s]
+ 37%|███▋      | 1331/3610 [00:03<00:06, 351.71it/s]
+ 38%|███▊      | 1367/3610 [00:03<00:06, 352.15it/s]
+ 39%|███▉      | 1403/3610 [00:03<00:06, 352.05it/s]
+ 40%|███▉      | 1439/3610 [00:04<00:06, 352.15it/s]
+ 41%|████      | 1475/3610 [00:04<00:06, 352.07it/s]
+ 42%|████▏     | 1511/3610 [00:04<00:05, 351.82it/s]
+ 43%|████▎     | 1547/3610 [00:04<00:05, 351.79it/s]
+ 44%|████▍     | 1583/3610 [00:04<00:05, 351.85it/s]
+ 45%|████▍     | 1619/3610 [00:04<00:05, 352.05it/s]
+ 46%|████▌     | 1655/3610 [00:04<00:05, 352.53it/s]
+ 47%|████▋     | 1691/3610 [00:04<00:05, 352.50it/s]
+ 48%|████▊     | 1727/3610 [00:04<00:05, 352.36it/s]
+ 49%|████▉     | 1763/3610 [00:05<00:05, 351.82it/s]
+ 50%|████▉     | 1799/3610 [00:05<00:05, 352.72it/s]
+ 51%|█████     | 1835/3610 [00:05<00:05, 352.72it/s]
+ 52%|█████▏    | 1871/3610 [00:05<00:04, 352.76it/s]
+ 53%|█████▎    | 1907/3610 [00:05<00:04, 352.80it/s]
+ 54%|█████▍    | 1943/3610 [00:05<00:04, 352.71it/s]
+ 55%|█████▍    | 1979/3610 [00:05<00:04, 352.35it/s]
+ 56%|█████▌    | 2015/3610 [00:05<00:04, 352.03it/s]
+ 57%|█████▋    | 2051/3610 [00:05<00:04, 352.51it/s]
+ 58%|█████▊    | 2087/3610 [00:05<00:04, 352.83it/s]
+ 59%|█████▉    | 2123/3610 [00:06<00:04, 352.55it/s]
+ 60%|█████▉    | 2159/3610 [00:06<00:04, 352.28it/s]
+ 61%|██████    | 2195/3610 [00:06<00:04, 352.24it/s]
+ 62%|██████▏   | 2231/3610 [00:06<00:03, 352.44it/s]
+ 63%|██████▎   | 2267/3610 [00:06<00:03, 352.07it/s]
+ 64%|██████▍   | 2303/3610 [00:06<00:03, 350.82it/s]
+ 65%|██████▍   | 2339/3610 [00:06<00:03, 350.40it/s]
+ 66%|██████▌   | 2375/3610 [00:06<00:03, 350.54it/s]
+ 67%|██████▋   | 2411/3610 [00:06<00:03, 350.56it/s]
+ 68%|██████▊   | 2447/3610 [00:06<00:03, 350.75it/s]
+ 69%|██████▉   | 2483/3610 [00:07<00:03, 351.80it/s]
+ 70%|██████▉   | 2519/3610 [00:07<00:03, 350.91it/s]
+ 71%|███████   | 2555/3610 [00:07<00:03, 351.32it/s]
+ 72%|███████▏  | 2591/3610 [00:07<00:02, 351.73it/s]
+ 73%|███████▎  | 2627/3610 [00:07<00:02, 352.33it/s]
+ 74%|███████▍  | 2663/3610 [00:07<00:02, 352.87it/s]
+ 75%|███████▍  | 2699/3610 [00:07<00:02, 351.26it/s]
+ 76%|███████▌  | 2735/3610 [00:07<00:02, 351.58it/s]
+ 77%|███████▋  | 2771/3610 [00:07<00:02, 352.33it/s]
+ 78%|███████▊  | 2807/3610 [00:07<00:02, 352.47it/s]
+ 79%|███████▉  | 2843/3610 [00:08<00:02, 331.16it/s]
+ 80%|███████▉  | 2879/3610 [00:08<00:02, 336.85it/s]
+ 81%|████████  | 2915/3610 [00:08<00:02, 342.22it/s]
+ 82%|████████▏ | 2951/3610 [00:08<00:01, 346.21it/s]
+ 83%|████████▎ | 2987/3610 [00:08<00:01, 348.64it/s]
+ 84%|████████▎ | 3023/3610 [00:08<00:01, 350.63it/s]
+ 85%|████████▍ | 3059/3610 [00:08<00:01, 352.06it/s]
+ 86%|████████▌ | 3095/3610 [00:08<00:01, 353.97it/s]
+ 87%|████████▋ | 3131/3610 [00:08<00:01, 354.61it/s]
+ 88%|████████▊ | 3167/3610 [00:09<00:01, 355.13it/s]
+ 89%|████████▊ | 3203/3610 [00:09<00:01, 354.69it/s]
+ 90%|████████▉ | 3239/3610 [00:09<00:01, 354.33it/s]
+ 91%|█████████ | 3275/3610 [00:09<00:00, 354.57it/s]
+ 92%|█████████▏| 3311/3610 [00:09<00:00, 355.00it/s]
+ 93%|█████████▎| 3347/3610 [00:09<00:00, 354.79it/s]
+ 94%|█████████▎| 3383/3610 [00:09<00:00, 354.63it/s]
+ 95%|█████████▍| 3419/3610 [00:09<00:00, 354.04it/s]
+ 96%|█████████▌| 3455/3610 [00:09<00:00, 354.46it/s]
+ 97%|█████████▋| 3491/3610 [00:09<00:00, 354.50it/s]
+ 98%|█████████▊| 3527/3610 [00:10<00:00, 354.59it/s]
+ 99%|█████████▊| 3563/3610 [00:10<00:00, 355.05it/s]
+100%|█████████▉| 3599/3610 [00:10<00:00, 355.05it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 351.86it/s]
+0: INFO    25-10-16 06:45:48.952941 - 2:28:11 - Running loglikelihood requests
+0: INFO    25-10-16 06:46:39.636561 - 2:29:02 - Running generate_until requests
+0: INFO    25-10-16 07:05:56.196193 - 2:48:19 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 07:05:57.014543 - 2:48:19 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2438.360107421875, 'nll_per_token': -1.4072108268737793, 'nll_per_char': -0.9470957517623901, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 07:05:57.364748 - 2:48:20 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.25851424019119695, 'acc_stderr,none': 0.004369232540125848, 'acc_norm,none': 0.2568213503286198, 'acc_norm_stderr,none': 0.004359871519639555}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5163220892274211, 'acc_stderr,none': 0.011659606710151786, 'acc_norm,none': 0.4961915125136017, 'acc_norm_stderr,none': 0.011665485744746797}}
+0: INFO    25-10-16 07:05:57.366027 - 2:48:20 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2438.360107421875, 'nll_per_token': -1.4072108268737793, 'nll_per_char': -0.9470957517623901, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 07:05:57.366130 - 2:48:20 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 07:06:01.555405 - 2:48:24 - step: 810  acc: 0  loss:  1.3759  grad: 1.07e+00  flops: 3.84e+11  wps: 5.22e+02  iter:  0.1244  data: 0.0243  lr: 1.21e-04  mem: 24%  pow: 639.299 W
+0: INFO    25-10-16 07:06:02.901313 - 2:48:25 - step: 820  acc: 0  loss:  1.3428  grad: 8.26e-01  flops: 3.58e+14  wps: 4.87e+05  iter:   0.125  data: 0.0066  lr: 1.23e-04  mem: 24%  pow: 650.181 W
+0: INFO    25-10-16 07:06:04.272443 - 2:48:27 - step: 830  acc: 0  loss:  1.3092  grad: 7.42e-01  flops: 3.52e+14  wps: 4.78e+05  iter:   0.125  data: 0.0243  lr: 1.24e-04  mem: 24%  pow: 634.705 W
+0: INFO    25-10-16 07:06:05.659399 - 2:48:28 - step: 840  acc: 0  loss:   1.327  grad: 8.94e-01  flops: 3.48e+14  wps: 4.73e+05  iter:  0.1244  data: 0.0152  lr: 1.26e-04  mem: 24%  pow: 639.862 W
+0: INFO    25-10-16 07:06:07.035966 - 2:48:29 - step: 850  acc: 0  loss:  1.3557  grad: 8.38e-01  flops: 3.50e+14  wps: 4.76e+05  iter:  0.1239  data: 0.0065  lr: 1.27e-04  mem: 24%  pow: 627.748 W
+0: INFO    25-10-16 07:06:08.407931 - 2:48:31 - step: 860  acc: 0  loss:  1.3211  grad: 9.13e-01  flops: 3.52e+14  wps: 4.78e+05  iter:  0.1244  data: 0.0061  lr: 1.29e-04  mem: 24%  pow: 638.48 W
+0: INFO    25-10-16 07:06:09.787432 - 2:48:32 - step: 870  acc: 0  loss:  1.3521  grad: 7.67e-01  flops: 3.50e+14  wps: 4.75e+05  iter:  0.1239  data: 0.0107  lr: 1.30e-04  mem: 24%  pow: 633.388 W
+0: INFO    25-10-16 07:06:11.152168 - 2:48:34 - step: 880  acc: 0  loss:  1.3136  grad: 7.95e-01  flops: 3.53e+14  wps: 4.80e+05  iter:   0.124  data: 0.0105  lr: 1.32e-04  mem: 24%  pow: 637.579 W
+0: INFO    25-10-16 07:06:12.527786 - 2:48:35 - step: 890  acc: 0  loss:  1.4113  grad: 8.10e-01  flops: 3.51e+14  wps: 4.77e+05  iter:   0.124  data: 0.0196  lr: 1.33e-04  mem: 24%  pow: 632.773 W
+0: INFO    25-10-16 07:06:13.907358 - 2:48:36 - step: 900  acc: 0  loss:  1.3909  grad: 8.94e-01  flops: 3.50e+14  wps: 4.75e+05  iter:  0.1241  data: 0.0081  lr: 1.35e-04  mem: 24%  pow: 639.533 W
+0: INFO    25-10-16 07:06:13.923310 - 2:48:36 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000000900
+0: INFO    25-10-16 07:06:13.923543 - 2:48:36 - Saving...
+0: INFO    25-10-16 07:06:15.848850 - 2:48:38 - State dict saved!
+0: INFO    25-10-16 07:06:15.862891 - 2:48:38 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000000900/train_state_00000.json
+0: INFO    25-10-16 07:06:15.864065 - 2:48:38 - Train state saved !
+0: INFO    25-10-16 07:06:15.864148 - 2:48:38 - Cleaning up checkpoints...
+0: INFO    25-10-16 07:06:15.864228 - 2:48:38 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000800'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000900')]
+0: INFO    25-10-16 07:06:15.864271 - 2:48:38 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000800'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000900')]
+0: INFO    25-10-16 07:06:15.864315 - 2:48:38 - Other folders: []
+0: INFO    25-10-16 07:06:15.864368 - 2:48:38 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000800')}
+0: INFO    25-10-16 07:06:16.275590 - 2:48:39 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000000900/consolidated
+0: INFO    25-10-16 07:06:18.125942 - 2:48:41 - Consolidated !
+0: INFO    25-10-16 07:06:18.136870 - 2:48:41 - Loading model
+0: INFO    25-10-16 07:06:19.315702 - 2:48:42 - Model loaded
+0: INFO    25-10-16 07:06:19.374127 - 2:48:42 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 07:06:19.374311 - 2:48:42 - Using pre-initialized model
+0: WARNING 25-10-16 07:06:41.561106 - 2:49:04 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 07:06:41.561106 - 2:49:04 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 07:06:41.561370 - 2:49:04 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 07:06:41.561370 - 2:49:04 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 07:06:42.794581 - 2:49:05 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 07:06:42.795370 - 2:49:05 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 173/1838 [00:00<00:00, 1727.14it/s]
+ 19%|█▉        | 346/1838 [00:00<00:00, 1718.98it/s]
+ 28%|██▊       | 519/1838 [00:00<00:00, 1719.91it/s]
+ 38%|███▊      | 693/1838 [00:00<00:00, 1726.83it/s]
+ 47%|████▋     | 867/1838 [00:00<00:00, 1731.12it/s]
+ 57%|█████▋    | 1041/1838 [00:00<00:00, 1731.23it/s]
+ 66%|██████▌   | 1216/1838 [00:00<00:00, 1736.41it/s]
+ 76%|███████▌  | 1390/1838 [00:00<00:00, 1733.27it/s]
+ 85%|████████▌ | 1564/1838 [00:00<00:00, 1734.32it/s]
+ 95%|█████████▍| 1739/1838 [00:01<00:00, 1736.41it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1731.79it/s]
+0: INFO    25-10-16 07:06:43.895309 - 2:49:06 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 459/10042 [00:00<00:02, 4583.19it/s]
+  9%|▉         | 928/10042 [00:00<00:01, 4640.21it/s]
+ 14%|█▍        | 1406/10042 [00:00<00:01, 4700.21it/s]
+ 19%|█▊        | 1880/10042 [00:00<00:01, 4714.29it/s]
+ 23%|██▎       | 2355/10042 [00:00<00:01, 4725.77it/s]
+ 28%|██▊       | 2831/10042 [00:00<00:01, 4737.35it/s]
+ 33%|███▎      | 3305/10042 [00:00<00:01, 4733.80it/s]
+ 38%|███▊      | 3779/10042 [00:00<00:01, 4735.07it/s]
+ 42%|████▏     | 4253/10042 [00:00<00:01, 4724.41it/s]
+ 47%|████▋     | 4726/10042 [00:01<00:01, 4718.40it/s]
+ 52%|█████▏    | 5198/10042 [00:01<00:01, 4705.17it/s]
+ 56%|█████▋    | 5669/10042 [00:01<00:00, 4682.75it/s]
+ 61%|██████    | 6138/10042 [00:01<00:00, 4674.81it/s]
+ 66%|██████▌   | 6606/10042 [00:01<00:00, 4667.72it/s]
+ 70%|███████   | 7073/10042 [00:01<00:00, 4657.52it/s]
+ 75%|███████▌  | 7539/10042 [00:01<00:00, 4647.65it/s]
+ 80%|███████▉  | 8004/10042 [00:01<00:00, 4634.38it/s]
+ 84%|████████▍ | 8468/10042 [00:01<00:00, 4627.38it/s]
+ 89%|████████▉ | 8931/10042 [00:01<00:00, 4622.48it/s]
+ 94%|█████████▎| 9394/10042 [00:02<00:00, 4620.57it/s]
+ 98%|█████████▊| 9863/10042 [00:02<00:00, 4639.35it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4673.16it/s]
+0: INFO    25-10-16 07:06:46.694509 - 2:49:09 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 343.07it/s]
+  2%|▏         | 70/3610 [00:00<00:10, 347.00it/s]
+  3%|▎         | 106/3610 [00:00<00:10, 348.46it/s]
+  4%|▍         | 141/3610 [00:00<00:09, 348.35it/s]
+  5%|▍         | 176/3610 [00:00<00:09, 348.33it/s]
+  6%|▌         | 211/3610 [00:00<00:09, 348.10it/s]
+  7%|▋         | 246/3610 [00:00<00:09, 348.54it/s]
+  8%|▊         | 281/3610 [00:00<00:09, 348.80it/s]
+  9%|▉         | 316/3610 [00:00<00:09, 348.89it/s]
+ 10%|▉         | 351/3610 [00:01<00:09, 349.09it/s]
+ 11%|█         | 386/3610 [00:01<00:09, 349.27it/s]
+ 12%|█▏        | 421/3610 [00:01<00:09, 349.48it/s]
+ 13%|█▎        | 456/3610 [00:01<00:09, 349.24it/s]
+ 14%|█▎        | 492/3610 [00:01<00:08, 350.01it/s]
+ 15%|█▍        | 528/3610 [00:01<00:08, 350.16it/s]
+ 16%|█▌        | 564/3610 [00:01<00:08, 350.01it/s]
+ 17%|█▋        | 600/3610 [00:01<00:08, 349.39it/s]
+ 18%|█▊        | 636/3610 [00:01<00:08, 350.22it/s]
+ 19%|█▊        | 672/3610 [00:01<00:08, 350.87it/s]
+ 20%|█▉        | 708/3610 [00:02<00:08, 350.37it/s]
+ 21%|██        | 744/3610 [00:02<00:08, 349.34it/s]
+ 22%|██▏       | 779/3610 [00:02<00:08, 348.75it/s]
+ 23%|██▎       | 814/3610 [00:02<00:08, 348.99it/s]
+ 24%|██▎       | 849/3610 [00:02<00:07, 349.19it/s]
+ 25%|██▍       | 885/3610 [00:02<00:07, 349.89it/s]
+ 25%|██▌       | 920/3610 [00:02<00:07, 348.81it/s]
+ 26%|██▋       | 955/3610 [00:02<00:07, 348.96it/s]
+ 27%|██▋       | 991/3610 [00:02<00:07, 349.57it/s]
+ 28%|██▊       | 1027/3610 [00:02<00:07, 350.20it/s]
+ 29%|██▉       | 1063/3610 [00:03<00:07, 350.16it/s]
+ 30%|███       | 1099/3610 [00:03<00:07, 349.86it/s]
+ 31%|███▏      | 1134/3610 [00:03<00:07, 349.59it/s]
+ 32%|███▏      | 1170/3610 [00:03<00:06, 349.75it/s]
+ 33%|███▎      | 1205/3610 [00:03<00:06, 349.42it/s]
+ 34%|███▍      | 1241/3610 [00:03<00:06, 349.82it/s]
+ 35%|███▌      | 1276/3610 [00:03<00:06, 349.29it/s]
+ 36%|███▋      | 1311/3610 [00:03<00:06, 349.50it/s]
+ 37%|███▋      | 1347/3610 [00:03<00:06, 349.76it/s]
+ 38%|███▊      | 1383/3610 [00:03<00:06, 350.23it/s]
+ 39%|███▉      | 1419/3610 [00:04<00:06, 350.47it/s]
+ 40%|████      | 1455/3610 [00:04<00:06, 349.68it/s]
+ 41%|████▏     | 1490/3610 [00:04<00:06, 349.29it/s]
+ 42%|████▏     | 1525/3610 [00:04<00:05, 349.20it/s]
+ 43%|████▎     | 1560/3610 [00:04<00:05, 349.13it/s]
+ 44%|████▍     | 1595/3610 [00:04<00:05, 349.38it/s]
+ 45%|████▌     | 1630/3610 [00:04<00:05, 348.81it/s]
+ 46%|████▌     | 1665/3610 [00:04<00:05, 348.87it/s]
+ 47%|████▋     | 1700/3610 [00:04<00:05, 348.64it/s]
+ 48%|████▊     | 1735/3610 [00:04<00:05, 348.13it/s]
+ 49%|████▉     | 1771/3610 [00:05<00:05, 349.08it/s]
+ 50%|█████     | 1807/3610 [00:05<00:05, 349.64it/s]
+ 51%|█████     | 1843/3610 [00:05<00:05, 350.52it/s]
+ 52%|█████▏    | 1879/3610 [00:05<00:04, 349.96it/s]
+ 53%|█████▎    | 1915/3610 [00:05<00:04, 350.04it/s]
+ 54%|█████▍    | 1951/3610 [00:05<00:04, 350.03it/s]
+ 55%|█████▌    | 1987/3610 [00:05<00:04, 349.82it/s]
+ 56%|█████▌    | 2022/3610 [00:05<00:04, 349.34it/s]
+ 57%|█████▋    | 2058/3610 [00:05<00:04, 349.87it/s]
+ 58%|█████▊    | 2094/3610 [00:05<00:04, 350.00it/s]
+ 59%|█████▉    | 2130/3610 [00:06<00:04, 350.04it/s]
+ 60%|██████    | 2166/3610 [00:06<00:04, 349.79it/s]
+ 61%|██████    | 2201/3610 [00:06<00:04, 349.41it/s]
+ 62%|██████▏   | 2237/3610 [00:06<00:03, 349.61it/s]
+ 63%|██████▎   | 2273/3610 [00:06<00:03, 349.98it/s]
+ 64%|██████▍   | 2308/3610 [00:06<00:03, 349.91it/s]
+ 65%|██████▍   | 2343/3610 [00:06<00:03, 349.32it/s]
+ 66%|██████▌   | 2378/3610 [00:06<00:03, 349.34it/s]
+ 67%|██████▋   | 2414/3610 [00:06<00:03, 349.70it/s]
+ 68%|██████▊   | 2450/3610 [00:07<00:03, 349.75it/s]
+ 69%|██████▉   | 2485/3610 [00:07<00:03, 349.18it/s]
+ 70%|██████▉   | 2520/3610 [00:07<00:03, 348.70it/s]
+ 71%|███████   | 2555/3610 [00:07<00:03, 348.72it/s]
+ 72%|███████▏  | 2590/3610 [00:07<00:02, 348.59it/s]
+ 73%|███████▎  | 2625/3610 [00:07<00:02, 348.36it/s]
+ 74%|███████▎  | 2660/3610 [00:07<00:02, 348.64it/s]
+ 75%|███████▍  | 2695/3610 [00:07<00:02, 348.61it/s]
+ 76%|███████▌  | 2731/3610 [00:07<00:02, 349.11it/s]
+ 77%|███████▋  | 2767/3610 [00:07<00:02, 349.51it/s]
+ 78%|███████▊  | 2803/3610 [00:08<00:02, 350.26it/s]
+ 79%|███████▊  | 2839/3610 [00:08<00:02, 350.29it/s]
+ 80%|███████▉  | 2875/3610 [00:08<00:02, 350.15it/s]
+ 81%|████████  | 2911/3610 [00:08<00:01, 350.01it/s]
+ 82%|████████▏ | 2947/3610 [00:08<00:01, 349.97it/s]
+ 83%|████████▎ | 2982/3610 [00:08<00:01, 349.10it/s]
+ 84%|████████▎ | 3017/3610 [00:08<00:01, 349.33it/s]
+ 85%|████████▍ | 3052/3610 [00:08<00:01, 349.40it/s]
+ 86%|████████▌ | 3087/3610 [00:08<00:01, 349.51it/s]
+ 87%|████████▋ | 3123/3610 [00:08<00:01, 350.00it/s]
+ 88%|████████▊ | 3159/3610 [00:09<00:01, 350.09it/s]
+ 89%|████████▊ | 3195/3610 [00:09<00:01, 350.44it/s]
+ 90%|████████▉ | 3231/3610 [00:09<00:01, 349.85it/s]
+ 90%|█████████ | 3267/3610 [00:09<00:00, 350.15it/s]
+ 91%|█████████▏| 3303/3610 [00:09<00:00, 349.93it/s]
+ 92%|█████████▏| 3338/3610 [00:09<00:00, 347.85it/s]
+ 93%|█████████▎| 3373/3610 [00:09<00:00, 347.99it/s]
+ 94%|█████████▍| 3408/3610 [00:09<00:00, 347.69it/s]
+ 95%|█████████▌| 3443/3610 [00:09<00:00, 347.24it/s]
+ 96%|█████████▋| 3478/3610 [00:09<00:00, 347.15it/s]
+ 97%|█████████▋| 3513/3610 [00:10<00:00, 345.75it/s]
+ 98%|█████████▊| 3548/3610 [00:10<00:00, 345.57it/s]
+ 99%|█████████▉| 3583/3610 [00:10<00:00, 346.00it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 349.16it/s]
+0: INFO    25-10-16 07:06:57.099572 - 2:49:19 - Running loglikelihood requests
+0: INFO    25-10-16 07:07:47.924561 - 2:50:10 - Running generate_until requests
+0: INFO    25-10-16 07:14:53.412844 - 2:57:16 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 07:14:53.967126 - 2:57:16 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2395.320068359375, 'nll_per_token': -1.3824506998062134, 'nll_per_char': -0.9300968647003174, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 07:14:54.282218 - 2:57:17 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.26090420235012945, 'acc_stderr,none': 0.004382303181183612, 'acc_norm,none': 0.25632344154550885, 'acc_norm_stderr,none': 0.004357101984278621}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5310119695321001, 'acc_stderr,none': 0.011643363511107459, 'acc_norm,none': 0.5076169749727966, 'acc_norm_stderr,none': 0.011664470424044981}}
+0: INFO    25-10-16 07:14:54.283498 - 2:57:17 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2395.320068359375, 'nll_per_token': -1.3824506998062134, 'nll_per_char': -0.9300968647003174, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 07:14:54.283596 - 2:57:17 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 07:14:57.076882 - 2:57:19 - step: 910  acc: 0  loss:   1.378  grad: 7.79e-01  flops: 9.22e+11  wps: 1.25e+03  iter:  0.1235  data: 0.0242  lr: 1.36e-04  mem: 24%  pow: 616.242 W
+0: INFO    25-10-16 07:14:58.435158 - 2:57:21 - step: 920  acc: 0  loss:  1.3437  grad: 8.95e-01  flops: 3.55e+14  wps: 4.83e+05  iter:  0.1242  data: 0.0062  lr: 1.38e-04  mem: 24%  pow: 637.993 W
+0: INFO    25-10-16 07:14:59.804111 - 2:57:22 - step: 930  acc: 0  loss:   1.401  grad: 8.09e-01  flops: 3.52e+14  wps: 4.79e+05  iter:  0.1241  data: 0.0151  lr: 1.39e-04  mem: 24%  pow: 627.321 W
+0: INFO    25-10-16 07:15:01.170554 - 2:57:24 - step: 940  acc: 0  loss:  1.3361  grad: 7.76e-01  flops: 3.53e+14  wps: 4.80e+05  iter:  0.1235  data: 0.0196  lr: 1.41e-04  mem: 24%  pow: 646.796 W
+0: INFO    25-10-16 07:15:02.572124 - 2:57:25 - step: 950  acc: 0  loss:  1.3039  grad: 7.77e-01  flops: 3.44e+14  wps: 4.68e+05  iter:  0.1238  data: 0.0243  lr: 1.42e-04  mem: 24%  pow: 625.53 W
+0: INFO    25-10-16 07:15:03.988778 - 2:57:26 - step: 960  acc: 0  loss:  1.3236  grad: 6.84e-01  flops: 3.41e+14  wps: 4.63e+05  iter:  0.1243  data: 0.0244  lr: 1.44e-04  mem: 24%  pow: 613.282 W
+0: INFO    25-10-16 07:15:05.356194 - 2:57:28 - step: 970  acc: 0  loss:  1.3873  grad: 8.21e-01  flops: 3.53e+14  wps: 4.79e+05  iter:  0.1245  data: 0.0111  lr: 1.45e-04  mem: 24%  pow: 639.665 W
+0: INFO    25-10-16 07:15:06.768729 - 2:57:29 - step: 980  acc: 0  loss:  1.3142  grad: 6.89e-01  flops: 3.41e+14  wps: 4.64e+05  iter:  0.1246  data: 0.0245  lr: 1.47e-04  mem: 24%  pow: 626.283 W
+0: INFO    25-10-16 07:15:08.187983 - 2:57:31 - step: 990  acc: 0  loss:  1.3303  grad: 7.62e-01  flops: 3.40e+14  wps: 4.62e+05  iter:  0.1243  data: 0.0104  lr: 1.48e-04  mem: 24%  pow: 629.149 W
+0: INFO    25-10-16 07:15:09.550744 - 2:57:32 - step: 1000  acc: 0  loss:  1.3248  grad: 7.38e-01  flops: 3.54e+14  wps: 4.81e+05  iter:  0.1241  data: 0.0105  lr: 1.50e-04  mem: 24%  pow: 644.17 W
+0: INFO    25-10-16 07:15:09.551504 - 2:57:32 - Saving to: outputs/debug_4_2025-10-16/checkpoints/0000001000
+0: INFO    25-10-16 07:15:09.551697 - 2:57:32 - Saving...
+0: INFO    25-10-16 07:15:11.445926 - 2:57:34 - State dict saved!
+0: INFO    25-10-16 07:15:11.460036 - 2:57:34 - Saving train state to: outputs/debug_4_2025-10-16/checkpoints/0000001000/train_state_00000.json
+0: INFO    25-10-16 07:15:11.461346 - 2:57:34 - Train state saved !
+0: INFO    25-10-16 07:15:11.461429 - 2:57:34 - Cleaning up checkpoints...
+0: INFO    25-10-16 07:15:11.461515 - 2:57:34 - Dump folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000900'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000001000')]
+0: INFO    25-10-16 07:15:11.461558 - 2:57:34 - Eval folders: [PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000900'), PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000001000')]
+0: INFO    25-10-16 07:15:11.461593 - 2:57:34 - Other folders: []
+0: INFO    25-10-16 07:15:11.461646 - 2:57:34 - Removing folders: {PosixPath('outputs/debug_4_2025-10-16/checkpoints/0000000900')}
+0: INFO    25-10-16 07:15:11.852006 - 2:57:34 - Consolidating to: outputs/debug_4_2025-10-16/checkpoints/0000001000/consolidated
+0: INFO    25-10-16 07:15:13.581506 - 2:57:36 - Consolidated !
+0: INFO    25-10-16 07:15:13.591187 - 2:57:36 - Loading model
+0: INFO    25-10-16 07:15:14.737774 - 2:57:37 - Model loaded
+0: INFO    25-10-16 07:15:14.743664 - 2:57:37 - Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+0: INFO    25-10-16 07:15:14.743821 - 2:57:37 - Using pre-initialized model
+0: WARNING 25-10-16 07:15:37.307588 - 2:58:00 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 07:15:37.307588 - 2:58:00 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 07:15:37.307949 - 2:58:00 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: WARNING 25-10-16 07:15:37.307949 - 2:58:00 - [Task: nq_open] num_fewshot > 0 but fewshot_split is None. using preconfigured rule.
+0: INFO    25-10-16 07:15:38.522598 - 2:58:01 - nq_open: Using gen_kwargs: {'until': ['\n', '.', ','], 'do_sample': False, 'temperature': 0.0}
+0: INFO    25-10-16 07:15:38.523417 - 2:58:01 - Building contexts for piqa on rank 0...
+
+  0%|          | 0/1838 [00:00<?, ?it/s]
+  9%|▉         | 172/1838 [00:00<00:00, 1710.82it/s]
+ 19%|█▉        | 346/1838 [00:00<00:00, 1726.88it/s]
+ 28%|██▊       | 520/1838 [00:00<00:00, 1729.55it/s]
+ 38%|███▊      | 693/1838 [00:00<00:00, 1728.06it/s]
+ 47%|████▋     | 866/1838 [00:00<00:00, 1728.71it/s]
+ 57%|█████▋    | 1039/1838 [00:00<00:00, 1725.87it/s]
+ 66%|██████▌   | 1212/1838 [00:00<00:00, 1726.64it/s]
+ 75%|███████▌  | 1385/1838 [00:00<00:00, 1727.32it/s]
+ 85%|████████▍ | 1558/1838 [00:00<00:00, 1726.47it/s]
+ 94%|█████████▍| 1732/1838 [00:01<00:00, 1730.31it/s]
+100%|██████████| 1838/1838 [00:01<00:00, 1728.93it/s]
+0: INFO    25-10-16 07:15:39.624946 - 2:58:02 - Building contexts for hellaswag on rank 0...
+
+  0%|          | 0/10042 [00:00<?, ?it/s]
+  5%|▍         | 467/10042 [00:00<00:02, 4667.92it/s]
+  9%|▉         | 941/10042 [00:00<00:01, 4705.25it/s]
+ 14%|█▍        | 1412/10042 [00:00<00:01, 4693.40it/s]
+ 19%|█▉        | 1883/10042 [00:00<00:01, 4696.62it/s]
+ 23%|██▎       | 2357/10042 [00:00<00:01, 4709.09it/s]
+ 28%|██▊       | 2829/10042 [00:00<00:01, 4712.23it/s]
+ 33%|███▎      | 3301/10042 [00:00<00:01, 4709.69it/s]
+ 38%|███▊      | 3772/10042 [00:00<00:01, 4697.69it/s]
+ 42%|████▏     | 4243/10042 [00:00<00:01, 4699.47it/s]
+ 47%|████▋     | 4713/10042 [00:01<00:01, 4691.52it/s]
+ 52%|█████▏    | 5183/10042 [00:01<00:01, 4686.00it/s]
+ 56%|█████▋    | 5652/10042 [00:01<00:00, 4678.64it/s]
+ 61%|██████    | 6120/10042 [00:01<00:00, 4677.11it/s]
+ 66%|██████▌   | 6588/10042 [00:01<00:00, 4664.42it/s]
+ 70%|███████   | 7055/10042 [00:01<00:00, 4647.86it/s]
+ 75%|███████▍  | 7520/10042 [00:01<00:00, 4637.53it/s]
+ 80%|███████▉  | 7987/10042 [00:01<00:00, 4645.73it/s]
+ 84%|████████▍ | 8456/10042 [00:01<00:00, 4657.40it/s]
+ 89%|████████▉ | 8922/10042 [00:01<00:00, 4656.29it/s]
+ 94%|█████████▎| 9392/10042 [00:02<00:00, 4668.51it/s]
+ 98%|█████████▊| 9859/10042 [00:02<00:00, 4657.45it/s]
+100%|██████████| 10042/10042 [00:02<00:00, 4675.45it/s]
+0: INFO    25-10-16 07:15:42.422935 - 2:58:05 - Building contexts for nq_open on rank 0...
+
+  0%|          | 0/3610 [00:00<?, ?it/s]
+  1%|          | 35/3610 [00:00<00:10, 345.31it/s]
+  2%|▏         | 71/3610 [00:00<00:10, 349.80it/s]
+  3%|▎         | 107/3610 [00:00<00:09, 351.05it/s]
+  4%|▍         | 143/3610 [00:00<00:09, 352.04it/s]
+  5%|▍         | 179/3610 [00:00<00:09, 351.43it/s]
+  6%|▌         | 215/3610 [00:00<00:09, 351.18it/s]
+  7%|▋         | 251/3610 [00:00<00:09, 351.49it/s]
+  8%|▊         | 287/3610 [00:00<00:09, 351.91it/s]
+  9%|▉         | 323/3610 [00:00<00:09, 352.48it/s]
+ 10%|▉         | 359/3610 [00:01<00:09, 352.06it/s]
+ 11%|█         | 395/3610 [00:01<00:09, 351.98it/s]
+ 12%|█▏        | 431/3610 [00:01<00:09, 351.61it/s]
+ 13%|█▎        | 467/3610 [00:01<00:08, 351.38it/s]
+ 14%|█▍        | 503/3610 [00:01<00:08, 350.95it/s]
+ 15%|█▍        | 539/3610 [00:01<00:08, 351.30it/s]
+ 16%|█▌        | 575/3610 [00:01<00:08, 351.62it/s]
+ 17%|█▋        | 611/3610 [00:01<00:08, 351.83it/s]
+ 18%|█▊        | 647/3610 [00:01<00:08, 351.62it/s]
+ 19%|█▉        | 683/3610 [00:01<00:08, 351.41it/s]
+ 20%|█▉        | 719/3610 [00:02<00:08, 351.38it/s]
+ 21%|██        | 755/3610 [00:02<00:08, 350.85it/s]
+ 22%|██▏       | 791/3610 [00:02<00:08, 350.37it/s]
+ 23%|██▎       | 827/3610 [00:02<00:07, 350.04it/s]
+ 24%|██▍       | 863/3610 [00:02<00:07, 350.70it/s]
+ 25%|██▍       | 899/3610 [00:02<00:07, 350.13it/s]
+ 26%|██▌       | 935/3610 [00:02<00:07, 350.37it/s]
+ 27%|██▋       | 971/3610 [00:02<00:07, 350.42it/s]
+ 28%|██▊       | 1007/3610 [00:02<00:07, 350.47it/s]
+ 29%|██▉       | 1043/3610 [00:02<00:07, 350.21it/s]
+ 30%|██▉       | 1079/3610 [00:03<00:07, 350.78it/s]
+ 31%|███       | 1115/3610 [00:03<00:07, 350.65it/s]
+ 32%|███▏      | 1151/3610 [00:03<00:07, 350.34it/s]
+ 33%|███▎      | 1187/3610 [00:03<00:06, 350.56it/s]
+ 34%|███▍      | 1223/3610 [00:03<00:06, 350.22it/s]
+ 35%|███▍      | 1259/3610 [00:03<00:06, 350.32it/s]
+ 36%|███▌      | 1295/3610 [00:03<00:06, 350.06it/s]
+ 37%|███▋      | 1331/3610 [00:03<00:06, 349.69it/s]
+ 38%|███▊      | 1366/3610 [00:03<00:06, 349.68it/s]
+ 39%|███▉      | 1402/3610 [00:03<00:06, 349.86it/s]
+ 40%|███▉      | 1437/3610 [00:04<00:06, 349.69it/s]
+ 41%|████      | 1472/3610 [00:04<00:06, 349.73it/s]
+ 42%|████▏     | 1508/3610 [00:04<00:06, 350.09it/s]
+ 43%|████▎     | 1544/3610 [00:04<00:05, 349.48it/s]
+ 44%|████▍     | 1580/3610 [00:04<00:05, 349.70it/s]
+ 45%|████▍     | 1615/3610 [00:04<00:05, 349.76it/s]
+ 46%|████▌     | 1650/3610 [00:04<00:05, 349.55it/s]
+ 47%|████▋     | 1685/3610 [00:04<00:05, 348.74it/s]
+ 48%|████▊     | 1720/3610 [00:04<00:05, 348.70it/s]
+ 49%|████▊     | 1756/3610 [00:05<00:05, 349.42it/s]
+ 50%|████▉     | 1792/3610 [00:05<00:05, 350.64it/s]
+ 51%|█████     | 1828/3610 [00:05<00:05, 351.05it/s]
+ 52%|█████▏    | 1864/3610 [00:05<00:04, 351.45it/s]
+ 53%|█████▎    | 1900/3610 [00:05<00:04, 351.24it/s]
+ 54%|█████▎    | 1936/3610 [00:05<00:04, 350.65it/s]
+ 55%|█████▍    | 1972/3610 [00:05<00:04, 350.76it/s]
+ 56%|█████▌    | 2008/3610 [00:05<00:04, 351.01it/s]
+ 57%|█████▋    | 2044/3610 [00:05<00:04, 351.10it/s]
+ 58%|█████▊    | 2080/3610 [00:05<00:04, 350.72it/s]
+ 59%|█████▊    | 2116/3610 [00:06<00:04, 350.68it/s]
+ 60%|█████▉    | 2152/3610 [00:06<00:04, 350.72it/s]
+ 61%|██████    | 2188/3610 [00:06<00:04, 351.00it/s]
+ 62%|██████▏   | 2224/3610 [00:06<00:03, 350.79it/s]
+ 63%|██████▎   | 2260/3610 [00:06<00:03, 350.66it/s]
+ 64%|██████▎   | 2296/3610 [00:06<00:03, 350.62it/s]
+ 65%|██████▍   | 2332/3610 [00:06<00:03, 350.57it/s]
+ 66%|██████▌   | 2368/3610 [00:06<00:03, 350.25it/s]
+ 67%|██████▋   | 2404/3610 [00:06<00:03, 350.09it/s]
+ 68%|██████▊   | 2440/3610 [00:06<00:03, 349.88it/s]
+ 69%|██████▊   | 2475/3610 [00:07<00:03, 349.61it/s]
+ 70%|██████▉   | 2511/3610 [00:07<00:03, 349.93it/s]
+ 71%|███████   | 2546/3610 [00:07<00:03, 349.36it/s]
+ 71%|███████▏  | 2581/3610 [00:07<00:02, 348.79it/s]
+ 72%|███████▏  | 2616/3610 [00:07<00:02, 348.61it/s]
+ 73%|███████▎  | 2652/3610 [00:07<00:02, 349.30it/s]
+ 74%|███████▍  | 2687/3610 [00:07<00:02, 349.47it/s]
+ 75%|███████▌  | 2722/3610 [00:07<00:02, 349.61it/s]
+ 76%|███████▋  | 2757/3610 [00:07<00:02, 349.42it/s]
+ 77%|███████▋  | 2792/3610 [00:07<00:02, 349.45it/s]
+ 78%|███████▊  | 2828/3610 [00:08<00:02, 350.23it/s]
+ 79%|███████▉  | 2864/3610 [00:08<00:02, 349.83it/s]
+ 80%|████████  | 2899/3610 [00:08<00:02, 349.32it/s]
+ 81%|████████▏ | 2935/3610 [00:08<00:01, 350.13it/s]
+ 82%|████████▏ | 2971/3610 [00:08<00:01, 350.31it/s]
+ 83%|████████▎ | 3007/3610 [00:08<00:01, 350.10it/s]
+ 84%|████████▍ | 3043/3610 [00:08<00:01, 350.21it/s]
+ 85%|████████▌ | 3079/3610 [00:08<00:01, 348.98it/s]
+ 86%|████████▋ | 3115/3610 [00:08<00:01, 349.48it/s]
+ 87%|████████▋ | 3151/3610 [00:08<00:01, 349.69it/s]
+ 88%|████████▊ | 3187/3610 [00:09<00:01, 350.04it/s]
+ 89%|████████▉ | 3223/3610 [00:09<00:01, 349.61it/s]
+ 90%|█████████ | 3258/3610 [00:09<00:01, 349.54it/s]
+ 91%|█████████ | 3294/3610 [00:09<00:00, 349.71it/s]
+ 92%|█████████▏| 3330/3610 [00:09<00:00, 349.91it/s]
+ 93%|█████████▎| 3365/3610 [00:09<00:00, 349.37it/s]
+ 94%|█████████▍| 3400/3610 [00:09<00:00, 349.02it/s]
+ 95%|█████████▌| 3435/3610 [00:09<00:00, 348.75it/s]
+ 96%|█████████▌| 3471/3610 [00:09<00:00, 349.43it/s]
+ 97%|█████████▋| 3506/3610 [00:10<00:00, 349.38it/s]
+ 98%|█████████▊| 3542/3610 [00:10<00:00, 349.60it/s]
+ 99%|█████████▉| 3577/3610 [00:10<00:00, 349.58it/s]
+100%|██████████| 3610/3610 [00:10<00:00, 350.27it/s]
+0: INFO    25-10-16 07:15:52.784533 - 2:58:15 - Running loglikelihood requests
+0: INFO    25-10-16 07:16:43.518079 - 2:59:06 - Running generate_until requests
+0: INFO    25-10-16 07:33:49.338541 - 3:16:12 - Running validation on data/fineweb_edu_10bt_shuffled...
+0: INFO    25-10-16 07:33:49.894035 - 3:16:12 - Validation on data/fineweb_edu_10bt_shuffled done. Metrics: defaultdict(<class 'list'>, {'nll': -2354.0, 'nll_per_token': -1.3572595119476318, 'nll_per_char': -0.911846935749054, 'avg_seqlen': 1742.8199462890625})
+0: INFO    25-10-16 07:33:50.223832 - 3:16:13 - All evaluation results: {'hellaswag': {'alias': 'hellaswag', 'acc,none': 0.2593108942441745, 'acc_stderr,none': 0.0043736082125610375, 'acc_norm,none': 0.2544313881696873, 'acc_norm_stderr,none': 0.004346509850679529}, 'nq_open': {'alias': 'nq_open', 'exact_match,remove_whitespace': 0.0, 'exact_match_stderr,remove_whitespace': 0.0}, 'piqa': {'alias': 'piqa', 'acc,none': 0.5212187159956474, 'acc_stderr,none': 0.01165531473228886, 'acc_norm,none': 0.5114254624591947, 'acc_norm_stderr,none': 0.011662778026451671}}
+0: INFO    25-10-16 07:33:50.225119 - 3:16:13 - All validation results: {'fineweb_edu_10bt_shuffled': defaultdict(<class 'list'>, {'nll': -2354.0, 'nll_per_token': -1.3572595119476318, 'nll_per_char': -0.911846935749054, 'avg_seqlen': 1742.8199462890625})}
+0: INFO    25-10-16 07:33:50.225224 - 3:16:13 - Writing metric logs to outputs/debug_4_2025-10-16/metrics.eval.jsonl
+0: INFO    25-10-16 07:33:50.449508 - 3:16:13 - Killing async data process 307 ...
+0: INFO    25-10-16 07:33:50.449729 - 3:16:13 - Async dataloader cleaned up
+[rank0]:[W1016 07:34:29.139695197 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+b0028:94:1672 [0] NCCL INFO comm 0x558ba80d6970 rank 0 nranks 1 cudaDev 0 busId bc000 - Abort COMPLETE
