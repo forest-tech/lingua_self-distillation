@@ -4,8 +4,12 @@ steps: 60_000
 probe_freq: null
 seed: 777
 
+# Self-distillation hyperparameters
+sd_alpha: 1.0
+sd_k: 0.25
+
 optim:
-  lr: 3e-3
+  lr: 1e-4
   weight_decay: 0.033
   warmup: 5000
   lr_min_ratio: 0.000001
@@ -25,54 +29,57 @@ model:
   n_layers: 16  # num_hidden_layers
   n_heads: 32  # num_attention_heads
   n_kv_heads: 8  # num_key_value_heads
-  head_dim: 64
-  intermediate_size: 8192
-  vocab_size: 128256
-  max_position_embeddings: 131072
-  rms_norm_eps: 1e-05
-  rope_theta: 500000.0
-  rope_scaling:
-    factor: 32.0
-    high_freq_factor: 4.0
-    low_freq_factor: 1.0
-    original_max_position_embeddings: 8192
-    rope_type: llama3
-  attention_bias: false
-  mlp_bias: false
-  tie_word_embeddings: true
+#   head_dim: 64
+#   intermediate_size: 8192
+#   vocab_size: 128256
+#   max_position_embeddings: 131072
+#   rms_norm_eps: 1e-05
+#   rope_theta: 500000.0
+#   rope_scaling:
+#     factor: 32.0
+#     high_freq_factor: 4.0
+#     low_freq_factor: 1.0
+#     original_max_position_embeddings: 8192
+#     rope_type: llama3
+#   attention_bias: false
+#   mlp_bias: false
+#   tie_word_embeddings: true
 
 data:
-  root_dir: data/shuffled
-  sources:
-    dclm_baseline_1.0: 100.0
-  batch_size: 4
-  prefetch_size: 1024
-  seq_len: 4096
-  n_views: 2
-  load_async: true
-  add_bos: true
-  add_eos: true
-  tokenizer:
-    name: tiktoken
-    path: tokenizers/cl_toplang_128k.tiktoken
+    root_dir: data
+    sources:
+        fineweb_edu_10bt_shuffled: 1.0
+    batch_size: 32
+    prefetch_size: 64
+    seq_len: 2048
+    n_views: 2
+    load_async: true
+    tokenizer:
+        name: bytes
+        path: tokenizer/original/tokenizer.model
 
 profiling:
-  run: true
-  mem_warmup: 0
-  mem_steps: 4
-  profile_warmup: 100
-  profile_steps: 4
+    run: true
 
 checkpoint:
-  dump:
-    every: 2500
-    keep: 3
-  eval:
-    every: 5000
-    keep: -1
+    dump:
+        every: 100
+        keep: 1
+    eval:
+        every: 100
+        keep: 1
 
 logging:
-  freq: 1
+    freq: 10
+    wandb:
+        job_type: train
+        dir: /home/pj24001974/ku50001532/lingua_self-distillation/wandb
+        project: DEBUG_${model.dim}dim_${model.n_layers}_${model.n_heads}
+        name: ${name}
+        id: ${name}
+        tags: 
+            - test
+        resume: auto
 
 async_eval_gpus: 8
 eval:

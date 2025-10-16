@@ -13,7 +13,7 @@ from omegaconf import OmegaConf
 from torch.nn import functional as F
 import xformers
 
-from apps.main.transformer import LMTransformer, LMTransformerArgs
+from apps.self_distillation.transformer import LMTransformer, LMTransformerArgs
 from lingua.args import dataclass_from_dict
 from lingua.checkpoint import CONSOLIDATE_NAME
 from lingua.tokenizer import Tokenizer, build_tokenizer

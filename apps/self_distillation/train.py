@@ -53,10 +53,11 @@ from lingua.metrics import (
     MetricLogger,
     get_num_params,
 )
+import torch.nn.functional as F
 from lingua.optim import OptimArgs, build_optimizer
 from lingua.profiling import ProfilerArgs, maybe_run_profiler
 from lingua.tokenizer import build_tokenizer
-from apps.main.transformer import (
+from apps.self_distillation.transformer import (
     LMTransformerArgs,
     LMTransformer,
     get_num_flop_per_token,
@@ -102,6 +103,10 @@ class TrainArgs:
     # If set to None, eval is run locally otherwise it launches a new job with the given number of gpus
     async_eval_gpus: Optional[int] = None
     eval: Optional[Any] = None
+
+    # Self-distillation hyperparameters
+    sd_alpha: float = 1.0  # alpha coefficient for zeta2
+    sd_k: float = 0.25  # k coefficient for layer weighting
 
 
 @dataclass
@@ -216,6 +221,57 @@ def every_n_steps(train_state, freq, acc_step=None, acc_freq=None):
     elif acc_freq is not None:
         test = test and ((train_state.acc_step % acc_freq) == 0)
     return test
+
+#########################
+# Self-distillation helpers
+#########################
+
+
+def compute_layer_weights(L: int, k: float, device: torch.device) -> torch.Tensor:
+    """Compute normalized layer weights w_l = exp(k*l) / sum_i exp(k*i) for l=0..L
+
+    Returns tensor of shape (L+1,)
+    """
+    ks = torch.arange(0, L + 1, device=device, dtype=torch.float32)
+    w = torch.exp(k * ks)
+    w = w / (w.sum() + 1e-12)
+    return w
+
+
+def compute_zeta1(per_layer_logits: List[torch.Tensor], q_target: torch.Tensor, w: torch.Tensor) -> torch.Tensor:
+    """Compute zeta1 = sum_l w_l * KL(q_l || q_target)
+
+    per_layer_logits: list of logits tensors (batch, seq, vocab)
+    q_target: logits tensor (batch, seq, vocab)
+    w: tensor of shape (L+1,)
+    """
+    device = q_target.device
+    zeta1 = torch.tensor(0.0, device=device)
+    log_q_target = F.log_softmax(q_target, dim=-1)
+    for l, ql in enumerate(per_layer_logits):
+        prob_ql = F.softmax(ql, dim=-1)
+        kl = F.kl_div(log_q_target, prob_ql, reduction="batchmean")
+        zeta1 = zeta1 + w[l] * kl
+    return zeta1
+
+
+def compute_zeta2(hidden_states: List[torch.Tensor], w: torch.Tensor, eps: float = 1e-12) -> torch.Tensor:
+    """Compute zeta2 = sum_{l=1..L} w_l * ||h_l - h_{l-1}||^2 / ||h_{l-1}||^2
+
+    hidden_states: list of tensors where hidden_states[0] is embedding output and subsequent are layers
+    w: tensor of shape (L+1,)
+    """
+    device = hidden_states[0].device
+    L = len(hidden_states) - 1
+    zeta2 = torch.tensor(0.0, device=device)
+    for l in range(1, L + 1):
+        hl = hidden_states[l]
+        hprev = hidden_states[l - 1]
+        num = ((hl - hprev) ** 2).sum()
+        denom = (hprev ** 2).sum()
+        zeta2 = zeta2 + w[l] * (num / (denom + eps))
+    return zeta2
+
 
 
 def train(args: TrainArgs):
@@ -412,7 +468,42 @@ def train(args: TrainArgs):
                     next(model.parameters()).grad is None
                 ), "Probe model shouldn't have grads at this point"
 
-            loss = model(input_ids, labels)
+            # Request hidden states and per-layer logits for self-distillation
+            outputs = model(input_ids, labels, return_hidden_states=True)
+
+            # Model may return just a loss (legacy) or a dict with detailed outputs
+            if isinstance(outputs, dict):
+                ce_loss = outputs.get("loss")
+                logits = outputs.get("logits")
+                per_layer_logits = outputs.get("per_layer_logits")
+                hidden_states = outputs.get("hidden_states")
+            else:
+                # Legacy behavior: outputs is the loss tensor
+                ce_loss = outputs
+                logits = None
+                per_layer_logits = None
+                hidden_states = None
+
+            # If we have per-layer logits and hidden states, compute self-distillation losses
+            if (per_layer_logits is not None) and (hidden_states is not None):
+                device = input_ids.device
+                L = len(hidden_states) - 1  # layers count where idx 0 is embeddings
+
+                # ensure CE loss available
+                if ce_loss is None and logits is not None:
+                    ce_loss = F.cross_entropy(logits.view(-1, logits.size(-1)), labels.view(-1))
+
+                w = compute_layer_weights(L, float(args.sd_k), device)
+                q_target = per_layer_logits[-1]
+
+                zeta1 = compute_zeta1(per_layer_logits, q_target, w)
+                zeta2 = compute_zeta2(hidden_states, w)
+
+                zeta = zeta1 + args.sd_alpha * zeta2
+                loss = ce_loss + zeta
+            else:
+                # fallback to standard loss
+                loss = ce_loss
 
             if args.grad_acc_steps > 1:
                 model.set_requires_gradient_sync(train_state.acc_step == 0)
